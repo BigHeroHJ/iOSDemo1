@@ -15,6 +15,8 @@
 		3F3B8D8520557A70000CD179 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 3F3B8D8420557A70000CD179 /* main.m */; };
 		3F3B8D8F20557A70000CD179 /* caogaoan3Tests.m in Sources */ = {isa = PBXBuildFile; fileRef = 3F3B8D8E20557A70000CD179 /* caogaoan3Tests.m */; };
 		3F3B8D9A20557A70000CD179 /* caogaoan3UITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 3F3B8D9920557A70000CD179 /* caogaoan3UITests.m */; };
+		3F3B8DA820557B1C000CD179 /* Podfile in Resources */ = {isa = PBXBuildFile; fileRef = 3F3B8DA720557B1C000CD179 /* Podfile */; };
+		67E97E3A8D9003E14594BBBF /* libPods-caogaoan3.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 716E1E53E55C5EF5EC90906F /* libPods-caogaoan3.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -35,6 +37,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		25FA2FC84E2BB44DE664D6AA /* Pods-caogaoan3.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-caogaoan3.debug.xcconfig"; path = "Pods/Target Support Files/Pods-caogaoan3/Pods-caogaoan3.debug.xcconfig"; sourceTree = "<group>"; };
+		3C73453CE994885FDD0EBE8B /* Pods-caogaoan3.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-caogaoan3.release.xcconfig"; path = "Pods/Target Support Files/Pods-caogaoan3/Pods-caogaoan3.release.xcconfig"; sourceTree = "<group>"; };
 		3F3B8D7220557A70000CD179 /* caogaoan3.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = caogaoan3.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		3F3B8D7520557A70000CD179 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		3F3B8D7620557A70000CD179 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -51,6 +55,8 @@
 		3F3B8D9520557A70000CD179 /* caogaoan3UITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = caogaoan3UITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		3F3B8D9920557A70000CD179 /* caogaoan3UITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = caogaoan3UITests.m; sourceTree = "<group>"; };
 		3F3B8D9B20557A70000CD179 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		3F3B8DA720557B1C000CD179 /* Podfile */ = {isa = PBXFileReference; lastKnownFileType = text; path = Podfile; sourceTree = "<group>"; };
+		716E1E53E55C5EF5EC90906F /* libPods-caogaoan3.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-caogaoan3.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,6 +64,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				67E97E3A8D9003E14594BBBF /* libPods-caogaoan3.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -81,10 +88,13 @@
 		3F3B8D6920557A70000CD179 = {
 			isa = PBXGroup;
 			children = (
+				3F3B8DA720557B1C000CD179 /* Podfile */,
 				3F3B8D7420557A70000CD179 /* caogaoan3 */,
 				3F3B8D8D20557A70000CD179 /* caogaoan3Tests */,
 				3F3B8D9820557A70000CD179 /* caogaoan3UITests */,
 				3F3B8D7320557A70000CD179 /* Products */,
+				6EDA0B61A819BC1A6871022B /* Pods */,
+				457C3F78B11D61979BFDD340 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -132,6 +142,23 @@
 			path = caogaoan3UITests;
 			sourceTree = "<group>";
 		};
+		457C3F78B11D61979BFDD340 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				716E1E53E55C5EF5EC90906F /* libPods-caogaoan3.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		6EDA0B61A819BC1A6871022B /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				25FA2FC84E2BB44DE664D6AA /* Pods-caogaoan3.debug.xcconfig */,
+				3C73453CE994885FDD0EBE8B /* Pods-caogaoan3.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -139,9 +166,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 3F3B8D9E20557A70000CD179 /* Build configuration list for PBXNativeTarget "caogaoan3" */;
 			buildPhases = (
+				26F37E0F6C0F5E55BCF7CB2F /* [CP] Check Pods Manifest.lock */,
 				3F3B8D6E20557A70000CD179 /* Sources */,
 				3F3B8D6F20557A70000CD179 /* Frameworks */,
 				3F3B8D7020557A70000CD179 /* Resources */,
+				7F60773E650C83943BCB542B /* [CP] Embed Pods Frameworks */,
+				772447BCB7243F74E4E77E5D /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -240,6 +270,7 @@
 			files = (
 				3F3B8D8220557A70000CD179 /* LaunchScreen.storyboard in Resources */,
 				3F3B8D7F20557A70000CD179 /* Assets.xcassets in Resources */,
+				3F3B8DA820557B1C000CD179 /* Podfile in Resources */,
 				3F3B8D7D20557A70000CD179 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -259,6 +290,57 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		26F37E0F6C0F5E55BCF7CB2F /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-caogaoan3-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		772447BCB7243F74E4E77E5D /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-caogaoan3/Pods-caogaoan3-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		7F60773E650C83943BCB542B /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-caogaoan3/Pods-caogaoan3-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		3F3B8D6E20557A70000CD179 /* Sources */ = {
@@ -428,6 +510,7 @@
 		};
 		3F3B8D9F20557A70000CD179 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 25FA2FC84E2BB44DE664D6AA /* Pods-caogaoan3.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -441,6 +524,7 @@
 		};
 		3F3B8DA020557A70000CD179 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 3C73453CE994885FDD0EBE8B /* Pods-caogaoan3.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
