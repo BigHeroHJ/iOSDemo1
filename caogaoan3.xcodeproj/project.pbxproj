@@ -16,6 +16,11 @@
 		3F3B8D8F20557A70000CD179 /* caogaoan3Tests.m in Sources */ = {isa = PBXBuildFile; fileRef = 3F3B8D8E20557A70000CD179 /* caogaoan3Tests.m */; };
 		3F3B8D9A20557A70000CD179 /* caogaoan3UITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 3F3B8D9920557A70000CD179 /* caogaoan3UITests.m */; };
 		3F3B8DA820557B1C000CD179 /* Podfile in Resources */ = {isa = PBXBuildFile; fileRef = 3F3B8DA720557B1C000CD179 /* Podfile */; };
+		3F3B8DB420557C25000CD179 /* Father.m in Sources */ = {isa = PBXBuildFile; fileRef = 3F3B8DAA20557C25000CD179 /* Father.m */; };
+		3F3B8DB520557C25000CD179 /* TestMsgSend.m in Sources */ = {isa = PBXBuildFile; fileRef = 3F3B8DAD20557C25000CD179 /* TestMsgSend.m */; };
+		3F3B8DB620557C25000CD179 /* TestMsgsend1.m in Sources */ = {isa = PBXBuildFile; fileRef = 3F3B8DAF20557C25000CD179 /* TestMsgsend1.m */; };
+		3F3B8DB720557C25000CD179 /* TestMsgSendFather.m in Sources */ = {isa = PBXBuildFile; fileRef = 3F3B8DB120557C25000CD179 /* TestMsgSendFather.m */; };
+		3F3B8DB820557C25000CD179 /* Son.m in Sources */ = {isa = PBXBuildFile; fileRef = 3F3B8DB320557C25000CD179 /* Son.m */; };
 		67E97E3A8D9003E14594BBBF /* libPods-caogaoan3.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 716E1E53E55C5EF5EC90906F /* libPods-caogaoan3.a */; };
 /* End PBXBuildFile section */
 
@@ -56,6 +61,16 @@
 		3F3B8D9920557A70000CD179 /* caogaoan3UITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = caogaoan3UITests.m; sourceTree = "<group>"; };
 		3F3B8D9B20557A70000CD179 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		3F3B8DA720557B1C000CD179 /* Podfile */ = {isa = PBXFileReference; lastKnownFileType = text; path = Podfile; sourceTree = "<group>"; };
+		3F3B8DA920557C25000CD179 /* Father.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Father.h; sourceTree = "<group>"; };
+		3F3B8DAA20557C25000CD179 /* Father.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Father.m; sourceTree = "<group>"; };
+		3F3B8DAC20557C25000CD179 /* TestMsgSend.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TestMsgSend.h; sourceTree = "<group>"; };
+		3F3B8DAD20557C25000CD179 /* TestMsgSend.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TestMsgSend.m; sourceTree = "<group>"; };
+		3F3B8DAE20557C25000CD179 /* TestMsgsend1.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TestMsgsend1.h; sourceTree = "<group>"; };
+		3F3B8DAF20557C25000CD179 /* TestMsgsend1.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TestMsgsend1.m; sourceTree = "<group>"; };
+		3F3B8DB020557C25000CD179 /* TestMsgSendFather.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TestMsgSendFather.h; sourceTree = "<group>"; };
+		3F3B8DB120557C25000CD179 /* TestMsgSendFather.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TestMsgSendFather.m; sourceTree = "<group>"; };
+		3F3B8DB220557C25000CD179 /* Son.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Son.h; sourceTree = "<group>"; };
+		3F3B8DB320557C25000CD179 /* Son.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Son.m; sourceTree = "<group>"; };
 		716E1E53E55C5EF5EC90906F /* libPods-caogaoan3.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-caogaoan3.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -111,6 +126,11 @@
 		3F3B8D7420557A70000CD179 /* caogaoan3 */ = {
 			isa = PBXGroup;
 			children = (
+				3F3B8DAB20557C25000CD179 /* 消息转发机制 */,
+				3F3B8DA920557C25000CD179 /* Father.h */,
+				3F3B8DAA20557C25000CD179 /* Father.m */,
+				3F3B8DB220557C25000CD179 /* Son.h */,
+				3F3B8DB320557C25000CD179 /* Son.m */,
 				3F3B8D7520557A70000CD179 /* AppDelegate.h */,
 				3F3B8D7620557A70000CD179 /* AppDelegate.m */,
 				3F3B8D7820557A70000CD179 /* ViewController.h */,
@@ -140,6 +160,19 @@
 				3F3B8D9B20557A70000CD179 /* Info.plist */,
 			);
 			path = caogaoan3UITests;
+			sourceTree = "<group>";
+		};
+		3F3B8DAB20557C25000CD179 /* 消息转发机制 */ = {
+			isa = PBXGroup;
+			children = (
+				3F3B8DAC20557C25000CD179 /* TestMsgSend.h */,
+				3F3B8DAD20557C25000CD179 /* TestMsgSend.m */,
+				3F3B8DAE20557C25000CD179 /* TestMsgsend1.h */,
+				3F3B8DAF20557C25000CD179 /* TestMsgsend1.m */,
+				3F3B8DB020557C25000CD179 /* TestMsgSendFather.h */,
+				3F3B8DB120557C25000CD179 /* TestMsgSendFather.m */,
+			);
+			path = "消息转发机制";
 			sourceTree = "<group>";
 		};
 		457C3F78B11D61979BFDD340 /* Frameworks */ = {
@@ -347,9 +380,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3F3B8DB820557C25000CD179 /* Son.m in Sources */,
 				3F3B8D7A20557A70000CD179 /* ViewController.m in Sources */,
+				3F3B8DB420557C25000CD179 /* Father.m in Sources */,
+				3F3B8DB520557C25000CD179 /* TestMsgSend.m in Sources */,
 				3F3B8D8520557A70000CD179 /* main.m in Sources */,
 				3F3B8D7720557A70000CD179 /* AppDelegate.m in Sources */,
+				3F3B8DB720557C25000CD179 /* TestMsgSendFather.m in Sources */,
+				3F3B8DB620557C25000CD179 /* TestMsgsend1.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
