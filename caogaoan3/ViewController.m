@@ -72,10 +72,27 @@
     
     Son * s1 = [Son new];
     
+    [self runtimeGetPropertyList];
     //    NSLog(@"%@", NSStringFromClass([Son class]));
     //    NSLog(@"%@", NSStringFromClass([Father class]));
 }
-
+- (void)runtimeGetPropertyList
+{
+     Son * s1 = [Son new];
+    
+    unsigned int count;
+    objc_property_t *prop = class_copyPropertyList([Son class], &count);
+    
+    for (int i = 0; i < count; i++) {
+        const char* name = property_getName(prop[i]);
+        const char* attributes = property_getAttributes(prop[i]);
+        
+        NSLog(@"%s %s", name, attributes);
+    }
+    
+    
+    
+}
 - (void)testMsg_send
 {
     NSLog(@"向obj 发送test的 消息");

@@ -9,5 +9,5 @@
 #import "Father.h"
 
 @interface Son : Father
-
+@property NSString * name;
 @end
