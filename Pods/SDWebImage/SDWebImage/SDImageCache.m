@@ -364,16 +364,18 @@ FOUNDATION_STATIC_INLINE NSUInteger SDCacheCostForImage(UIImage *image) {
 }
 
 - (nullable NSOperation *)queryCacheOperationForKey:(nullable NSString *)key done:(nullable SDCacheQueryCompletedBlock)doneBlock {
-    if (!key) {
+    if (!key) {//key 不存在
         if (doneBlock) {
             doneBlock(nil, nil, SDImageCacheTypeNone);
         }
         return nil;
     }
 
-    // First check the in-memory cache...
+    // First check the in-memory cache...  先从 内存中获取 如果没有 再坚持磁盘中 都再这个方法
     UIImage *image = [self imageFromMemoryCacheForKey:key];
-    if (image) {
+    
+#warning  cga 修改 为了看源码 ！
+    if (!image) {
         NSData *diskData = nil;
         if (image.images) {
             diskData = [self diskImageDataBySearchingAllPathsForKey:key];

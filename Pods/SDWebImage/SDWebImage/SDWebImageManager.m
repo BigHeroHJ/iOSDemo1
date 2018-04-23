@@ -129,21 +129,24 @@
 
     BOOL isFailedUrl = NO;
     if (url) {
-        @synchronized (self.failedURLs) {
+        @synchronized (self.failedURLs) {// 检查 失败的url 中是否有传递过来的url
             isFailedUrl = [self.failedURLs containsObject:url];
         }
     }
 
+    // 如果url长度为0 或者 （option不是设置为SDWebImageRetryFailed 且 是已经在load 失效的地址url 中）
+    NSLog(@"%d",SDWebImageRetryFailed);
     if (url.absoluteString.length == 0 || (!(options & SDWebImageRetryFailed) && isFailedUrl)) {
         [self callCompletionBlockForOperation:operation completion:completedBlock error:[NSError errorWithDomain:NSURLErrorDomain code:NSURLErrorFileDoesNotExist userInfo:nil] url:url];
         return operation;
     }
 
     @synchronized (self.runningOperations) {
-        [self.runningOperations addObject:operation];
+        [self.runningOperations addObject:operation];// 把这个操作 添加到manage 的runningOperations 数组中
     }
     NSString *key = [self cacheKeyForURL:url];
 
+    //根据key 从cache 中 查询
     operation.cacheOperation = [self.imageCache queryCacheOperationForKey:key done:^(UIImage *cachedImage, NSData *cachedData, SDImageCacheType cacheType) {
         if (operation.isCancelled) {
             [self safelyRemoveOperationFromRunning:operation];
@@ -159,6 +162,7 @@
 
             // download if no image or requested to refresh anyway, and download allowed by delegate
             SDWebImageDownloaderOptions downloaderOptions = 0;
+            // 如果options 设置为SDWebImageLowPriority 则 对应downloaderOptions 设置为SDWebImageDownloaderLowPriority 其他雷同
             if (options & SDWebImageLowPriority) downloaderOptions |= SDWebImageDownloaderLowPriority;
             if (options & SDWebImageProgressiveDownload) downloaderOptions |= SDWebImageDownloaderProgressiveDownload;
             if (options & SDWebImageRefreshCached) downloaderOptions |= SDWebImageDownloaderUseNSURLCache;
@@ -175,7 +179,9 @@
                 downloaderOptions |= SDWebImageDownloaderIgnoreCachedResponse;
             }
             
+            // 开始下载
             SDWebImageDownloadToken *subOperationToken = [self.imageDownloader downloadImageWithURL:url options:downloaderOptions progress:progressBlock completed:^(UIImage *downloadedImage, NSData *downloadedData, NSError *error, BOOL finished) {
+                //completed 回调 block
                 __strong __typeof(weakOperation) strongOperation = weakOperation;
                 if (!strongOperation || strongOperation.isCancelled) {
                     // Do nothing if the operation was cancelled

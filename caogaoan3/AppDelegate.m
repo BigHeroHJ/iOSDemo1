@@ -17,14 +17,72 @@
 
 @implementation AppDelegate
 
+static int s_fatal_signals[] = {
+    SIGABRT,
+    SIGBUS,
+    SIGFPE,
+    SIGILL,
+    SIGSEGV,
+    SIGTRAP,
+    SIGTERM,
+    SIGKILL,
+};
+
+static const char* s_fatal_signal_names[] = {
+    "SIGABRT",
+    "SIGBUS",
+    "SIGFPE",
+    "SIGILL",
+    "SIGSEGV",
+    "SIGTRAP",
+    "SIGTERM",
+    "SIGKILL",
+};
+
+static int s_fatal_signal_num = sizeof(s_fatal_signals) / sizeof(s_fatal_signals[0]);
+
+void handleEx (NSException * ex)
+{
+   NSArray <NSString *> *exStackArr = ex.callStackSymbols;
+    for (int i = 0; i < exStackArr.count; i++) {
+       
+        NSLog(@"%@",exStackArr[i]);
+    }
+    
+//    CFRunLoopRef runloop = CFRunLoopGetCurrent();
+//    CFArrayRef allModes = CFRunLoopCopyAllModes(runloop);
+//
+//    {
+//        //for (NSString * mode in (__bridge NSArray * )allModes) {
+//            CFRunLoopRunInMode(kCFRunLoopDefaultMode, 0.001, false);
+//        //}
+//    }
+//
+//    CFRelease(allModes);
+    
+}
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
+    
+    for (int i =0 ; i < s_fatal_signal_num; i++) {
+        signal(s_fatal_signals[i], handleEx);
+    }
+    
+    NSSetUncaughtExceptionHandler(handleEx);
+    
+    [self testCrash];
+    
 //    self.window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
 //    self.window.rootViewController = [[RACController alloc] init];
 //    [self.window makeKeyAndVisible];
     return YES;
 }
 
+- (void)testCrash
+{
+    NSArray * arr = @[@"1",@"2",@"3",@"4",@"5",@"6"];
+    NSLog(@"%@",arr[9]);
+}
 
 - (void)applicationWillResignActive:(UIApplication *)application {
     // Sent when the application is about to move from active to inactive state. This can occur for certain types of temporary interruptions (such as an incoming phone call or SMS message) or when the user quits the application and it begins the transition to the background state.

@@ -4,6 +4,7 @@ target 'caogaoan3' do
 pod 'SDWebImage'
 pod 'AFNetworking'
 pod 'ReactiveCocoa','~>2.5.0'
+pod 'YYKit'
 end
 
 

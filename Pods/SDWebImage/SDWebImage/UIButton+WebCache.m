@@ -103,6 +103,7 @@ static inline NSString * backgroundImageURLKeyForState(UIControlState state) {
     return self.imageURLStorage[backgroundImageURLKeyForState(state)];
 }
 
+// 设置图片
 - (void)sd_setBackgroundImageWithURL:(nullable NSURL *)url forState:(UIControlState)state {
     [self sd_setBackgroundImageWithURL:url forState:state placeholderImage:nil options:0 completed:nil];
 }
@@ -123,18 +124,21 @@ static inline NSString * backgroundImageURLKeyForState(UIControlState state) {
     [self sd_setBackgroundImageWithURL:url forState:state placeholderImage:placeholder options:0 completed:completedBlock];
 }
 
+//uibutton 设置backgroundimage
 - (void)sd_setBackgroundImageWithURL:(nullable NSURL *)url
                             forState:(UIControlState)state
                     placeholderImage:(nullable UIImage *)placeholder
                              options:(SDWebImageOptions)options
                            completed:(nullable SDExternalCompletionBlock)completedBlock {
+    //设置的url 不存在的话 从字典中移除 键值对
     if (!url) {
         [self.imageURLStorage removeObjectForKey:backgroundImageURLKeyForState(state)];
     } else {
-        self.imageURLStorage[backgroundImageURLKeyForState(state)] = url;
+        self.imageURLStorage[backgroundImageURLKeyForState(state)] = url;//添加键值对
     }
     
     __weak typeof(self)weakSelf = self;
+    // 调用uiview 的分类 去设置
     [self sd_internalSetImageWithURL:url
                     placeholderImage:placeholder
                              options:options

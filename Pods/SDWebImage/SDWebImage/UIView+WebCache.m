@@ -30,6 +30,7 @@ static char TAG_ACTIVITY_SHOW;
     return objc_getAssociatedObject(self, &imageURLKey);
 }
 
+//基本上 uiview 的子类设置的图片请求获取的方法都会调用这个方法 uiview + webcache 内部设置图片
 - (void)sd_internalSetImageWithURL:(nullable NSURL *)url
                   placeholderImage:(nullable UIImage *)placeholder
                            options:(SDWebImageOptions)options
@@ -40,6 +41,7 @@ static char TAG_ACTIVITY_SHOW;
     return [self sd_internalSetImageWithURL:url placeholderImage:placeholder options:options operationKey:operationKey setImageBlock:setImageBlock progress:progressBlock completed:completedBlock context:nil];
 }
 
+//内部设置 imagewithurl
 - (void)sd_internalSetImageWithURL:(nullable NSURL *)url
                   placeholderImage:(nullable UIImage *)placeholder
                            options:(SDWebImageOptions)options
@@ -48,16 +50,24 @@ static char TAG_ACTIVITY_SHOW;
                           progress:(nullable SDWebImageDownloaderProgressBlock)progressBlock
                          completed:(nullable SDExternalCompletionBlock)completedBlock
                            context:(nullable NSDictionary *)context {
+    // 获取 operation 操作的key 就是生成的一个代表 进行下载操作的key 值
     NSString *validOperationKey = operationKey ?: NSStringFromClass([self class]);
+    
     [self sd_cancelImageLoadOperationWithKey:validOperationKey];
+    
+    //动态的 添加一个熟悉 来保存 传入进来的url
     objc_setAssociatedObject(self, &imageURLKey, url, OBJC_ASSOCIATION_RETAIN_NONATOMIC);
     
+    // 这个位运算的 & 表示 option 不是SDWebImageDelayPlaceholder 的话 才走if 内部
+    //https://www.jianshu.com/p/66bae556483d 不了解位运算的 看看
     if (!(options & SDWebImageDelayPlaceholder)) {
         if ([context valueForKey:SDWebImageInternalSetImageGroupKey]) {
             dispatch_group_t group = [context valueForKey:SDWebImageInternalSetImageGroupKey];
             dispatch_group_enter(group);
         }
+        //一个 在主线程的宏  让设置图片在主线中设置
         dispatch_main_async_safe(^{
+            //设置placeholder
             [self sd_setImage:placeholder imageData:nil basedOnClassOrViaCustomSetImageBlock:setImageBlock];
         });
     }
@@ -69,17 +79,18 @@ static char TAG_ACTIVITY_SHOW;
         }
         
         SDWebImageManager *manager;
+        // 取出manager 
         if ([context valueForKey:SDWebImageExternalCustomManagerKey]) {
             manager = (SDWebImageManager *)[context valueForKey:SDWebImageExternalCustomManagerKey];
         } else {
-            manager = [SDWebImageManager sharedManager];
+            manager = [SDWebImageManager sharedManager];// 单例
         }
         
         __weak __typeof(self)wself = self;
         id <SDWebImageOperation> operation = [manager loadImageWithURL:url options:options progress:progressBlock completed:^(UIImage *image, NSData *data, NSError *error, SDImageCacheType cacheType, BOOL finished, NSURL *imageURL) {
             __strong __typeof (wself) sself = wself;
-            [sself sd_removeActivityIndicator];
-            if (!sself) { return; }
+            [sself sd_removeActivityIndicator];// load 完url 后 移除 菊花
+            if (!sself) { return; }// 如果 自身不存在 就return
             BOOL shouldCallCompletedBlock = finished || (options & SDWebImageAvoidAutoSetImage);
             BOOL shouldNotSetImage = ((image && (options & SDWebImageAvoidAutoSetImage)) ||
                                       (!image && !(options & SDWebImageDelayPlaceholder)));
