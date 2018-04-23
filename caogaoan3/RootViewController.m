@@ -9,6 +9,7 @@
 #import "RootViewController.h"
 #import "ArchiveCopyController.h"
 #import "GCDViewController.h"
+#import "CollectionView/CollectionViewController.h"
 
 
 @interface RootViewController ()
@@ -20,7 +21,7 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     
-    self.dataArray = [NSArray arrayWithObjects:@"Runtime自动归档",@"GCD",@"RAC+MVVM",@"IMUI",@"GPUImage",@"消息转发机制",nil];
+    self.dataArray = [NSArray arrayWithObjects:@"Runtime自动归档",@"GCD",@"RAC+MVVM",@"IMUI",@"GPUImage",@"消息转发机制",@"CollectionView",nil];
 }
 
 - (void)didReceiveMemoryWarning {
@@ -53,6 +54,11 @@
     }else if (indexPath.row == 1){
         GCDViewController * gdcVC = [GCDViewController new];
         [self.navigationController pushViewController:gdcVC animated:YES];
+    }else if (indexPath.row == 6){
+        
+        CollectionViewController * collecVC = [[CollectionViewController alloc] init];
+        [self.navigationController pushViewController:collecVC animated:YES];
+        
     }
 }
 /*

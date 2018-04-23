@@ -33,6 +33,7 @@
 		3FB8B1DB20878DCC00F5E420 /* GCDViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3FB8B1DA20878DCC00F5E420 /* GCDViewController.m */; };
 		3FBF8DB7205ABC0700D6A716 /* SocketController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3FBF8DB6205ABC0700D6A716 /* SocketController.m */; };
 		67E97E3A8D9003E14594BBBF /* libPods-caogaoan3.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 716E1E53E55C5EF5EC90906F /* libPods-caogaoan3.a */; };
+		B2F471AB208D84760082C375 /* CollectionViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B2F471AA208D84760082C375 /* CollectionViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -105,6 +106,8 @@
 		3FBF8DB5205ABC0700D6A716 /* SocketController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SocketController.h; sourceTree = "<group>"; };
 		3FBF8DB6205ABC0700D6A716 /* SocketController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SocketController.m; sourceTree = "<group>"; };
 		716E1E53E55C5EF5EC90906F /* libPods-caogaoan3.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-caogaoan3.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		B2F471A9208D84760082C375 /* CollectionViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CollectionViewController.h; sourceTree = "<group>"; };
+		B2F471AA208D84760082C375 /* CollectionViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CollectionViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -159,6 +162,7 @@
 		3F3B8D7420557A70000CD179 /* caogaoan3 */ = {
 			isa = PBXGroup;
 			children = (
+				B2F471A8208D84530082C375 /* CollectionView */,
 				3F991F812084EB1700C4274D /* RootViewController.h */,
 				3F991F822084EB1700C4274D /* RootViewController.m */,
 				3FB8B1D820878DAB00F5E420 /* GCD */,
@@ -317,6 +321,15 @@
 				3C73453CE994885FDD0EBE8B /* Pods-caogaoan3.release.xcconfig */,
 			);
 			name = Pods;
+			sourceTree = "<group>";
+		};
+		B2F471A8208D84530082C375 /* CollectionView */ = {
+			isa = PBXGroup;
+			children = (
+				B2F471A9208D84760082C375 /* CollectionViewController.h */,
+				B2F471AA208D84760082C375 /* CollectionViewController.m */,
+			);
+			path = CollectionView;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -515,6 +528,7 @@
 				3F82D480205FEFE900853596 /* IMController.m in Sources */,
 				3F82D478205FDDFB00853596 /* CoreTextController.m in Sources */,
 				3F3B8DB520557C25000CD179 /* TestMsgSend.m in Sources */,
+				B2F471AB208D84760082C375 /* CollectionViewController.m in Sources */,
 				3F3B8D8520557A70000CD179 /* main.m in Sources */,
 				3F3B8D7720557A70000CD179 /* AppDelegate.m in Sources */,
 				3F3B8DB720557C25000CD179 /* TestMsgSendFather.m in Sources */,
