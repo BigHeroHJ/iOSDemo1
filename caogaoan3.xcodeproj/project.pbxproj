@@ -22,6 +22,13 @@
 		3F3B8DB720557C25000CD179 /* TestMsgSendFather.m in Sources */ = {isa = PBXBuildFile; fileRef = 3F3B8DB120557C25000CD179 /* TestMsgSendFather.m */; };
 		3F3B8DB820557C25000CD179 /* Son.m in Sources */ = {isa = PBXBuildFile; fileRef = 3F3B8DB320557C25000CD179 /* Son.m */; };
 		3F3EFC67208253A4002948DF /* LookBlockInRuntime.m in Sources */ = {isa = PBXBuildFile; fileRef = 3F3EFC66208253A4002948DF /* LookBlockInRuntime.m */; };
+		3F82D3E1208E1C3300F7D4F0 /* CustomLayout.m in Sources */ = {isa = PBXBuildFile; fileRef = 3F82D3E0208E1C3300F7D4F0 /* CustomLayout.m */; };
+		3F82D3E6208E1D4F00F7D4F0 /* 2.plist in Resources */ = {isa = PBXBuildFile; fileRef = 3F82D3E2208E1D4E00F7D4F0 /* 2.plist */; };
+		3F82D3E7208E1D4F00F7D4F0 /* 1.plist in Resources */ = {isa = PBXBuildFile; fileRef = 3F82D3E3208E1D4E00F7D4F0 /* 1.plist */; };
+		3F82D3E8208E1D4F00F7D4F0 /* 0.plist in Resources */ = {isa = PBXBuildFile; fileRef = 3F82D3E4208E1D4E00F7D4F0 /* 0.plist */; };
+		3F82D3E9208E1D4F00F7D4F0 /* 3.plist in Resources */ = {isa = PBXBuildFile; fileRef = 3F82D3E5208E1D4F00F7D4F0 /* 3.plist */; };
+		3F82D3EC208E1F5100F7D4F0 /* CusModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 3F82D3EB208E1F5100F7D4F0 /* CusModel.m */; };
+		3F82D3EF208E213D00F7D4F0 /* CusFlowLayout.m in Sources */ = {isa = PBXBuildFile; fileRef = 3F82D3EE208E213D00F7D4F0 /* CusFlowLayout.m */; };
 		3F82D478205FDDFB00853596 /* CoreTextController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3F82D477205FDDFB00853596 /* CoreTextController.m */; };
 		3F82D47B205FDE1900853596 /* CTDisplayView.m in Sources */ = {isa = PBXBuildFile; fileRef = 3F82D47A205FDE1900853596 /* CTDisplayView.m */; };
 		3F82D480205FEFE900853596 /* IMController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3F82D47F205FEFE900853596 /* IMController.m */; };
@@ -85,6 +92,16 @@
 		3F3B8DB320557C25000CD179 /* Son.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Son.m; sourceTree = "<group>"; };
 		3F3EFC65208253A4002948DF /* LookBlockInRuntime.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LookBlockInRuntime.h; sourceTree = "<group>"; };
 		3F3EFC66208253A4002948DF /* LookBlockInRuntime.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LookBlockInRuntime.m; sourceTree = "<group>"; };
+		3F82D3DF208E1C3300F7D4F0 /* CustomLayout.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CustomLayout.h; sourceTree = "<group>"; };
+		3F82D3E0208E1C3300F7D4F0 /* CustomLayout.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CustomLayout.m; sourceTree = "<group>"; };
+		3F82D3E2208E1D4E00F7D4F0 /* 2.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = 2.plist; sourceTree = "<group>"; };
+		3F82D3E3208E1D4E00F7D4F0 /* 1.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = 1.plist; sourceTree = "<group>"; };
+		3F82D3E4208E1D4E00F7D4F0 /* 0.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = 0.plist; sourceTree = "<group>"; };
+		3F82D3E5208E1D4F00F7D4F0 /* 3.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = 3.plist; sourceTree = "<group>"; };
+		3F82D3EA208E1F5100F7D4F0 /* CusModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CusModel.h; sourceTree = "<group>"; };
+		3F82D3EB208E1F5100F7D4F0 /* CusModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CusModel.m; sourceTree = "<group>"; };
+		3F82D3ED208E213D00F7D4F0 /* CusFlowLayout.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CusFlowLayout.h; sourceTree = "<group>"; };
+		3F82D3EE208E213D00F7D4F0 /* CusFlowLayout.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CusFlowLayout.m; sourceTree = "<group>"; };
 		3F82D476205FDDFB00853596 /* CoreTextController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CoreTextController.h; sourceTree = "<group>"; };
 		3F82D477205FDDFB00853596 /* CoreTextController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CoreTextController.m; sourceTree = "<group>"; };
 		3F82D479205FDE1900853596 /* CTDisplayView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CTDisplayView.h; sourceTree = "<group>"; };
@@ -326,8 +343,18 @@
 		B2F471A8208D84530082C375 /* CollectionView */ = {
 			isa = PBXGroup;
 			children = (
+				3F82D3E4208E1D4E00F7D4F0 /* 0.plist */,
+				3F82D3E3208E1D4E00F7D4F0 /* 1.plist */,
+				3F82D3E2208E1D4E00F7D4F0 /* 2.plist */,
+				3F82D3E5208E1D4F00F7D4F0 /* 3.plist */,
 				B2F471A9208D84760082C375 /* CollectionViewController.h */,
 				B2F471AA208D84760082C375 /* CollectionViewController.m */,
+				3F82D3DF208E1C3300F7D4F0 /* CustomLayout.h */,
+				3F82D3E0208E1C3300F7D4F0 /* CustomLayout.m */,
+				3F82D3EA208E1F5100F7D4F0 /* CusModel.h */,
+				3F82D3EB208E1F5100F7D4F0 /* CusModel.m */,
+				3F82D3ED208E213D00F7D4F0 /* CusFlowLayout.h */,
+				3F82D3EE208E213D00F7D4F0 /* CusFlowLayout.m */,
 			);
 			path = CollectionView;
 			sourceTree = "<group>";
@@ -441,8 +468,12 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3F82D3E7208E1D4F00F7D4F0 /* 1.plist in Resources */,
 				3F3B8D8220557A70000CD179 /* LaunchScreen.storyboard in Resources */,
+				3F82D3E6208E1D4F00F7D4F0 /* 2.plist in Resources */,
 				3F3B8D7F20557A70000CD179 /* Assets.xcassets in Resources */,
+				3F82D3E9208E1D4F00F7D4F0 /* 3.plist in Resources */,
+				3F82D3E8208E1D4F00F7D4F0 /* 0.plist in Resources */,
 				3F3B8DA820557B1C000CD179 /* Podfile in Resources */,
 				3F3B8D7D20557A70000CD179 /* Main.storyboard in Resources */,
 			);
@@ -521,6 +552,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				3F3B8DB820557C25000CD179 /* Son.m in Sources */,
+				3F82D3EC208E1F5100F7D4F0 /* CusModel.m in Sources */,
 				3F3B8D7A20557A70000CD179 /* ViewController.m in Sources */,
 				3F3EFC67208253A4002948DF /* LookBlockInRuntime.m in Sources */,
 				3FB8B1DB20878DCC00F5E420 /* GCDViewController.m in Sources */,
@@ -532,12 +564,14 @@
 				3F3B8D8520557A70000CD179 /* main.m in Sources */,
 				3F3B8D7720557A70000CD179 /* AppDelegate.m in Sources */,
 				3F3B8DB720557C25000CD179 /* TestMsgSendFather.m in Sources */,
+				3F82D3EF208E213D00F7D4F0 /* CusFlowLayout.m in Sources */,
 				3F82D47B205FDE1900853596 /* CTDisplayView.m in Sources */,
 				3F991F7A2084E6BA00C4274D /* ArchiverTool.m in Sources */,
 				3F3B8DB620557C25000CD179 /* TestMsgsend1.m in Sources */,
 				3F991F7D2084EA6400C4274D /* ArchiveCopyController.m in Sources */,
 				3F991F832084EB1700C4274D /* RootViewController.m in Sources */,
 				3F991F772084E64B00C4274D /* Person.m in Sources */,
+				3F82D3E1208E1C3300F7D4F0 /* CustomLayout.m in Sources */,
 				3F82D484205FF89800853596 /* RACController.m in Sources */,
 				3FBF8DB7205ABC0700D6A716 /* SocketController.m in Sources */,
 			);

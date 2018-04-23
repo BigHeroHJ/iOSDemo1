@@ -81,7 +81,7 @@ void handleEx (NSException * ex)
 - (void)testCrash
 {
     NSArray * arr = @[@"1",@"2",@"3",@"4",@"5",@"6"];
-    NSLog(@"%@",arr[9]);
+   // NSLog(@"%@",arr[9]);
 }
 
 - (void)applicationWillResignActive:(UIApplication *)application {
