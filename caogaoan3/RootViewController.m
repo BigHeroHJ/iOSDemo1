@@ -10,6 +10,10 @@
 #import "ArchiveCopyController.h"
 #import "GCDViewController.h"
 #import "CollectionView/CollectionViewController.h"
+#import "RILIViewController.h"
+#import "PHViewController.h"
+#import "TestPresentController.h"
+#import "BLEViewController.h"
 
 
 @interface RootViewController ()
@@ -21,7 +25,17 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     
-    self.dataArray = [NSArray arrayWithObjects:@"Runtime自动归档",@"GCD",@"RAC+MVVM",@"IMUI",@"GPUImage",@"消息转发机制",@"CollectionView",nil];
+    self.dataArray = [NSArray arrayWithObjects:@"Runtime自动归档",@"GCD",@"RAC+MVVM",@"IMUI",@"GPUImage",@"消息转发机制",@"CollectionView",@"RIL",@"PH",@"presentOverFullScreen",@"BLE",nil];
+    [self testWeiYunSuan];
+}
+
+- (void)testWeiYunSuan
+{
+    int temp = 1024 ;
+    NSLog(@"输出十六进制位:%x -- 对应的二进制位数：%2o",temp,temp);
+    NSLog(@"第一位 %d",temp & 0xff);
+    NSLog(@"第二位 %d",temp >> 8 & 0xff);
+
 }
 
 - (void)didReceiveMemoryWarning {
@@ -49,16 +63,37 @@
 {
 //    [super tableView:tableView didDeselectRowAtIndexPath:indexPath];
     if(indexPath.row == 0){
+        
         ArchiveCopyController * vc = [ArchiveCopyController new ];
         [self.navigationController pushViewController:vc animated:YES];
+        
     }else if (indexPath.row == 1){
+        
         GCDViewController * gdcVC = [GCDViewController new];
         [self.navigationController pushViewController:gdcVC animated:YES];
+        
     }else if (indexPath.row == 6){
         
         CollectionViewController * collecVC = [[CollectionViewController alloc] init];
         [self.navigationController pushViewController:collecVC animated:YES];
         
+    }else if(indexPath.item == 7){
+        
+        RILIViewController * collecVC = [[RILIViewController alloc] init];
+        [self.navigationController pushViewController:collecVC animated:YES];
+        
+    }else if(indexPath.item == 8){
+        
+        PHViewController * collecVC = [[PHViewController alloc] init];
+        [self.navigationController pushViewController:collecVC animated:YES];
+        
+    }else if(indexPath.item == 9){
+        
+        TestPresentController * testPresentVC = [TestPresentController new];
+        [self.navigationController pushViewController:testPresentVC animated:YES];
+    }else if(indexPath.item == 10){
+        BLEViewController * bleVC = [[BLEViewController alloc] init];
+        [self.navigationController pushViewController:bleVC animated:YES];
     }
 }
 /*

@@ -18,6 +18,11 @@
 {
     NSLock   *lock;
 }
+@property (nonatomic, strong) dispatch_semaphore_t commandSemaphore;
+@property (nonatomic, strong) dispatch_semaphore_t sendSemaphore;
+@property (nonatomic, strong) dispatch_semaphore_t fullSendSemaphore;
+
+
 @end
 
 @implementation GCDViewController
@@ -37,8 +42,45 @@
     //[self testOSSpinLock];
     //[self compareOSSPinLockWithNSLock];
     
-    [self testPriorityReserve];
+    //[self testPriorityReserve];
+    
+    [self testSignal];
 }
+//信号量的测试
+- (void)testSignal
+{
+    self.sendSemaphore = dispatch_semaphore_create(1);
+    self.commandSemaphore = dispatch_semaphore_create(0);
+    self.fullSendSemaphore = dispatch_semaphore_create(1);
+  __block  long x, y ,z ;
+    dispatch_async(dispatch_get_global_queue(0, 0), ^{
+        if (self.fullSendSemaphore)
+        {
+            for (NSInteger i = 0; i < 5; ++ i) { //
+             x = dispatch_semaphore_signal(self.fullSendSemaphore);
+                usleep(10);
+                NSLog(@"fullSendSemaphore :%ld",x);
+
+             y = dispatch_semaphore_signal(self.commandSemaphore);
+                usleep(10);
+                NSLog(@"commandSemaphore :%ld",y);
+
+             z = dispatch_semaphore_signal(self.sendSemaphore);
+                usleep(10);
+                NSLog(@"sendSemaphore :%ld",z);
+            }
+            x = dispatch_semaphore_wait(self.fullSendSemaphore,DISPATCH_TIME_FOREVER);
+            y = dispatch_semaphore_wait(self.commandSemaphore,DISPATCH_TIME_FOREVER);
+            z = dispatch_semaphore_wait(self.sendSemaphore,DISPATCH_TIME_FOREVER);
+            NSLog(@"over fullSendSemaphore :%ld",x);
+            NSLog(@"over  commandSemaphore :%ld",y);
+            NSLog(@"over sendSemaphore :%ld",z);
+        }
+    });
+    
+    
+}
+
 
 - (void)doAction{
     [lock lock];
