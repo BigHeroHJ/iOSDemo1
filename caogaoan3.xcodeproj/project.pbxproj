@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		3F1F2C6620B3EEDF00BAC7EE /* MonityViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3F1F2C6520B3EEDF00BAC7EE /* MonityViewController.m */; };
 		3F37235D20AD5AEA00059A8F /* BLEViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3F37235C20AD5AEA00059A8F /* BLEViewController.m */; };
 		3F37236020AD5AFD00059A8F /* BLEManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 3F37235F20AD5AFD00059A8F /* BLEManager.m */; };
 		3F37236420AD6BD000059A8F /* BlePeripheral.m in Sources */ = {isa = PBXBuildFile; fileRef = 3F37236320AD6BD000059A8F /* BlePeripheral.m */; };
@@ -75,6 +76,8 @@
 /* Begin PBXFileReference section */
 		25FA2FC84E2BB44DE664D6AA /* Pods-caogaoan3.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-caogaoan3.debug.xcconfig"; path = "Pods/Target Support Files/Pods-caogaoan3/Pods-caogaoan3.debug.xcconfig"; sourceTree = "<group>"; };
 		3C73453CE994885FDD0EBE8B /* Pods-caogaoan3.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-caogaoan3.release.xcconfig"; path = "Pods/Target Support Files/Pods-caogaoan3/Pods-caogaoan3.release.xcconfig"; sourceTree = "<group>"; };
+		3F1F2C6420B3EEDF00BAC7EE /* MonityViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MonityViewController.h; sourceTree = "<group>"; };
+		3F1F2C6520B3EEDF00BAC7EE /* MonityViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MonityViewController.m; sourceTree = "<group>"; };
 		3F37235B20AD5AEA00059A8F /* BLEViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BLEViewController.h; sourceTree = "<group>"; };
 		3F37235C20AD5AEA00059A8F /* BLEViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BLEViewController.m; sourceTree = "<group>"; };
 		3F37235E20AD5AFD00059A8F /* BLEManager.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BLEManager.h; sourceTree = "<group>"; };
@@ -190,6 +193,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		3F1F2C6320B3EEC800BAC7EE /* Monity */ = {
+			isa = PBXGroup;
+			children = (
+				3F1F2C6420B3EEDF00BAC7EE /* MonityViewController.h */,
+				3F1F2C6520B3EEDF00BAC7EE /* MonityViewController.m */,
+			);
+			path = Monity;
+			sourceTree = "<group>";
+		};
 		3F37235A20AD5AD700059A8F /* BLE */ = {
 			isa = PBXGroup;
 			children = (
@@ -230,6 +242,7 @@
 		3F3B8D7420557A70000CD179 /* caogaoan3 */ = {
 			isa = PBXGroup;
 			children = (
+				3F1F2C6320B3EEC800BAC7EE /* Monity */,
 				3F37235A20AD5AD700059A8F /* BLE */,
 				3F8B784A20A925F900163DE8 /* PresentVC */,
 				3F52E272209FE93F00F32721 /* PHoto */,
@@ -645,6 +658,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3F1F2C6620B3EEDF00BAC7EE /* MonityViewController.m in Sources */,
 				3F3B8DB820557C25000CD179 /* Son.m in Sources */,
 				3F82D3EC208E1F5100F7D4F0 /* CusModel.m in Sources */,
 				3F3B8D7A20557A70000CD179 /* ViewController.m in Sources */,
