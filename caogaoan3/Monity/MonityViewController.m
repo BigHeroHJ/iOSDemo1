@@ -40,7 +40,9 @@
     dispatch_source_set_timer(_timer, DISPATCH_TIME_NOW, 1 * NSEC_PER_SEC, 0.5 * NSEC_PER_SEC);
     dispatch_source_set_event_handler(_timer, ^{
       float percent =  [self appUsageOfCPU];
-        NSLog(@"percent %f",percent);
+      NSLog(@"percent %f",percent);
+      float memoryUse = [self appMemoryUsage];
+      NSLog(@"memoryUse percent %f",memoryUse);
     });
     dispatch_resume(_timer);
    
@@ -60,8 +62,17 @@
 {
     struct mach_task_basic_info  mach_task_info_temp ;//mach_task_basic_info_t 是系统的 mach_task_basic_info这个类型的变量
     
+    //获取当前的task
+    struct mach_task_basic_info info;
+    mach_msg_type_number_t count = MACH_TASK_BASIC_INFO_COUNT;
     
-    return 0;
+    kern_return_t kr ;
+    kr = task_info(mach_task_self(), MACH_TASK_BASIC_INFO, (task_info_t)&info, &count);
+    if(kr != KERN_SUCCESS){
+        return -1;
+    }
+    return info.resident_size / 1000.0f / 1000.0f;
+    
 }
 - (void)memory_test
 {
@@ -76,6 +87,27 @@
         policy_t        policy;             /* default policy for new threads */
         integer_t       suspend_count;      /* suspend count for task */
     };
+    
+    //但是下面这个结构体 不推荐使用了apple
+    struct task_basic_info {
+        integer_t       suspend_count;  /* suspend count for task */
+        vm_size_t       virtual_size;   /* virtual memory size (bytes) */
+        vm_size_t       resident_size;  /* resident memory size (bytes) */
+        time_value_t    user_time;      /* total user run time for
+                                         terminated threads */
+        time_value_t    system_time;    /* total system run time for
+                                         terminated threads */
+        policy_t    policy;        /* default policy for new threads */
+    };
+    
+    //和thread_info 类似 都有获取task 或者thread info信息的函数
+    kern_return_t task_info
+    (
+     task_name_t target_task,
+     task_flavor_t flavor,//指定MACH_TASK_BASIC_INFO 这个类型会输出mach_task_basic_info 这个结构体信息
+     task_info_t task_info_out,//信息输出的缓存区位置
+     mach_msg_type_number_t *task_info_outCnt//信息输出的缓存区的size
+     );
 }
 
 
@@ -87,13 +119,13 @@
    // task_info_t task_info_ = NULL;
     mach_msg_type_number_t task_info_count ;
     task_info_count = TASK_INFO_MAX;
-    //获取当前的进程
+    //获取当前的进程  和进程有关的task。用task_info 获取
     // 使用该函数 传递的参数为integer_t类型的指针 task_info_t ，把数组转为这个指针
     kr = task_info(mach_task_self(), MACH_TASK_BASIC_INFO, (task_info_t)task_info_data, &task_info_count);
     if(kr != KERN_SUCCESS){
         return -1;
     }
-    
+    //**********************************************
     thread_array_t thread_list;//线程缓存的数组
     mach_msg_type_number_t thread_count;//
    
@@ -105,7 +137,6 @@
     
     thread_info_data_t threadInfo;//线程输出到的缓存区位置
     mach_msg_type_number_t thread_info_count;//线程存放的缓存区大小
-    
     thread_basic_info_t basi_info_t;
     
     float cpusage = 0;
@@ -137,7 +168,7 @@
     kern_return_t task_info
     (
      task_name_t target_task,
-     task_flavor_t flavor,
+     task_flavor_t flavor,//THREAD_BASIC_INFO指定这个类型 会输出thread_basic_info的线程
      task_info_t task_info_out,
      mach_msg_type_number_t *task_info_outCnt
      );
