@@ -7,10 +7,12 @@
 //
 
 #import "MonityViewController.h"
+
 #import <mach/mach.h>
 #import <Foundation/NSProcessInfo.h>
 
-
+#import <sys/sysctl.h>
+#import <mach/thread_act.h>
 
 @interface MonityViewController ()
 {
@@ -23,6 +25,7 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
 
+    self.view.backgroundColor = [UIColor whiteColor];
 #if TARGET_OS_SIMULATOR
 #else
 #endif
@@ -43,14 +46,26 @@
       NSLog(@"percent %f",percent);
       float memoryUse = [self appMemoryUsage];
       NSLog(@"memoryUse percent %f",memoryUse);
+        
+        [self totalMemory];
+       
+        //NSLog(@"memoryUse percent2 %llu",[self memoryUsage]);
+       
+        NSLog(@"availableMemory %lluMB",[self availableMemory]);
+//        size_t size = 1024 * 1024;
+//        char *string = malloc(size);
+        
     });
     dispatch_resume(_timer);
    
-    dispatch_after(dispatch_time(DISPATCH_TIME_NOW, (int64_t)(1 * NSEC_PER_SEC)), dispatch_get_global_queue(0, 0), ^{
-        for (int i = 0; i < 1000000; i++) {
-            NSLog(@"%d",i);
-        }
-    });}
+//    dispatch_after(dispatch_time(DISPATCH_TIME_NOW, (int64_t)(1 * NSEC_PER_SEC)), dispatch_get_global_queue(0, 0), ^{
+//        for (int i = 0; i < 100000; i++) {
+//            NSLog(@"%d",i);
+//        }
+//    });
+    
+    
+}
 
 - (void)viewWillDisappear:(BOOL)animated
 {
@@ -58,9 +73,121 @@
 }
 
 #pragma mark --memory
+//设备总内存大小
+- (void)totalMemory
+{
+    //http://gamesfromwithin.com/whered-that-memory-go
+    //sysctl()
+    //#define    HW_PHYSMEM     5        /* int: total memory */
+    //#define    HW_USERMEM     6        /* int: non-kernel memory */
+    
+    int mem;
+    int mib[2];
+    mib[0] = CTL_HW;
+    mib[1] = HW_PHYSMEM;
+    size_t length = sizeof(mem);
+    sysctl(mib, 2, &mem, &length, NULL, 0);
+    NSLog(@"Physical memory: %.2fMB", mem/1024.0f/1024.0f);
+    
+    mib[1] = HW_USERMEM;
+    length = sizeof(mem);
+    sysctl(mib, 2, &mem, &length, NULL, 0);
+    NSLog(@"User memory: %.2fMB", mem/1024.0f/1024.0f);
+    
+}
+
+// 可用内存大小
+- (uint64_t)availableMemory
+{
+    host_info_t vmStats;
+    vm_statistics_data_t vm_data;
+    
+    vmStats = (host_info_t)&vm_data;// 将integer_t 指针vmStats =  &vm_data 等于这个结构体类型的指针 中间 转化一下类型
+    //我们可以将指针强制转换成int型或者其他类型。同样，我们也可以将任何一个常数转换成int型再赋值给指针。所有的指针所占的空间大小都是4字节，他们只是声明的类型不同，他们的值都是地址指向某个东西，他们对于机器来说没有本质差别，他们之间可以进行强制类型转换。
+    
+    mach_msg_type_number_t infoCount = HOST_BASIC_INFO_COUNT;
+    //eg: 指定 purgeable HOST_VM_PURGABLE  可以获取相应的可清楚的内存 在对应的结构体信息数组中struct vm_purgeable_info {
+    // vm_purgeable_stat_t fifo_data[8];
+    // vm_purgeable_stat_t obsolete_data;
+    // vm_purgeable_stat_t lifo_data[8];
+    // }; 当然HOST_BASIC_INFO_COUNT 获取的 信息中有purgeable_count 这个 也是获取对应的count
+    
+    // 获取方式也是和 获取task thread 类似 系统提供的函数
+    //mach_task_self() 这个是获取task 当前   mach_host_self()获取当前host
+    kern_return_t kr = host_statistics(mach_host_self(), HOST_BASIC_INFO, vmStats, &infoCount);
+    //mach/kern_return.h 中定义 返回结果
+    if(kr != KERN_SUCCESS){
+        return -1;
+    }
+    return vm_page_size * vm_data.free_count / 1024.0f / 1024.0f;//free_count 这个结合pagesize 就表示给我们可用的内存的数量 vm_page_size 实在全局定义的变量 在iPhone 上是4K
+}
+
+- (void)docmentOfavailableMemory
+{
+    //获取VM statistic 通过host_statistics() 指定 HOST_VM_INFO_COUNT是来获取到
+    struct vm_statistics {
+        natural_t    free_count;        /* # of pages free */ //natural_t 其实是unsigned int 类型
+        natural_t    active_count;        /* # of pages active */
+        natural_t    inactive_count;        /* # of pages inactive */
+        natural_t    wire_count;        /* # of pages wired down */
+        natural_t    zero_fill_count;    /* # of zero fill pages */
+        natural_t    reactivations;        /* # of pages reactivated */
+        natural_t    pageins;        /* # of pageins */
+        natural_t    pageouts;        /* # of pageouts */
+        natural_t    faults;            /* # of faults */
+        natural_t    cow_faults;        /* # of copy-on-writes */
+        natural_t    lookups;        /* object cache lookups */
+        natural_t    hits;            /* object cache hits */
+        
+        /* added for rev1 */
+        natural_t    purgeable_count;    /* # of pages purgeable */
+        natural_t    purges;            /* # of pages purged */
+        
+        /* added for rev2 */
+        /*
+         * NB: speculative pages are already accounted for in "free_count",
+         * so "speculative_count" is the number of "free" pages that are
+         * used to hold data that was read speculatively from disk but
+         * haven't actually been used by anyone so far.
+         */
+        natural_t    speculative_count;    /* # of pages speculative */
+    };
+    //也有对应的 vm_statistics64
+    
+    kern_return_t host_statistics
+    (
+     host_t host_priv,
+     host_flavor_t flavor,
+     host_info_t host_info_out,
+     mach_msg_type_number_t *host_info_outCnt
+     );
+}
+
+//- (uint64_t)memoryUsage {
+//    kern_return_t rval = 0;
+//    mach_port_t task = mach_task_self();
+//
+//    struct task_basic_info info = { 0 };
+//    mach_msg_type_number_t tcnt = TASK_BASIC_INFO_COUNT;
+//    task_flavor_t flavor = TASK_BASIC_INFO;
+//
+//    task_info_t tptr = (task_info_t)&info;
+//
+//    if (tcnt > sizeof(info)) {
+//        return 0;
+//    }
+//
+//    rval = task_info(task, flavor, tptr, &tcnt);
+//    if (rval != KERN_SUCCESS) {
+//        return 0;
+//    }
+//
+//    return info.resident_size;
+//}
+//获取 当前进程的 内存使用
 - (float)appMemoryUsage
 {
-    struct mach_task_basic_info  mach_task_info_temp ;//mach_task_basic_info_t 是系统的 mach_task_basic_info这个类型的变量
+    //struct mach_task_basic_info  mach_task_info_temp ;//mach_task_basic_info_t 是系统的 mach_task_basic_info这个类型的变量
     
     //获取当前的task
     struct mach_task_basic_info info;
@@ -71,7 +198,7 @@
     if(kr != KERN_SUCCESS){
         return -1;
     }
-    return info.resident_size / 1000.0f / 1000.0f;
+    return info.resident_size / 1024.0f / 1024.0f;
     
 }
 - (void)memory_test
@@ -164,6 +291,7 @@
 {
     //每个mach task,mach 是没有提供进程， 但在BSD层 有个一对一的映射 一个BSD进程 对应一个mach task 任务（在底层关联的mack task） 每个mach task 是这个进程的一个执行环境  可以获取到其中的线程等等
     
+    //函数方法 存放在 mach/thread_act.h 文件中
     //获取进程的mach task 函数
     kern_return_t task_info
     (
@@ -173,6 +301,7 @@
      mach_msg_type_number_t *task_info_outCnt
      );
     
+    //结构体信息一般存放在 mach/thread_info.h 中
     // mach 层中基本的thread 信息
     struct thread_basic_info {
         time_value_t    user_time;      /* user run time */
@@ -202,6 +331,17 @@
      thread_info_t thread_info_out,// 信息返回的缓存区
      mach_msg_type_number_t *thread_info_outCnt//信息返回的长度
      );
+    
+    // 线程状态  通过指定的flavor 类型为x86_THREAD_STATE64  可以获取这个线程的状态
+    kern_return_t thread_get_state
+    (
+     thread_act_t target_act,
+     thread_state_flavor_t flavor,
+     thread_state_t old_state,
+     mach_msg_type_number_t *old_stateCnt
+     );
+    
+//    thread_get_state(<#thread_act_t target_act#>, <#thread_state_flavor_t flavor#>, <#thread_state_t old_state#>, <#mach_msg_type_number_t *old_stateCnt#>)
 }
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];

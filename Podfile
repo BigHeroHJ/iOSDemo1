@@ -5,6 +5,11 @@ pod 'SDWebImage'
 pod 'AFNetworking'
 pod 'ReactiveCocoa','~>2.5.0'
 pod 'YYKit'
+
+pod 'FLEX', '~> 2.0', :configurations => ['Debug']
+
+pod 'GCDWebServer', '~> 3.0'
+
 end
 
 
