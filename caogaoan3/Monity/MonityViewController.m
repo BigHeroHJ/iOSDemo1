@@ -17,6 +17,8 @@
 @interface MonityViewController ()
 {
     dispatch_source_t _timer;
+    CFRunLoopObserverRef  _observer;
+    
 }
 @end
 
@@ -26,6 +28,9 @@
     [super viewDidLoad];
 
     self.view.backgroundColor = [UIColor whiteColor];
+    
+    [self addRunLoop];
+    
 #if TARGET_OS_SIMULATOR
 #else
 #endif
@@ -65,6 +70,52 @@
 //    });
     
     
+}
+
+- (void)addRunLoop
+{
+    CFRunLoopObserverContext context = {
+        0,
+        (__bridge void *)self,
+        NULL,
+        NULL
+    };
+    _observer =CFRunLoopObserverCreate(kCFAllocatorDefault, kCFRunLoopAllActivities, YES, 0, observerCallBack, NULL);
+    
+    CFRunLoopAddObserver(CFRunLoopGetMain(), _observer, kCFRunLoopCommonModes);
+    
+}
+
+void observerCallBack(CFRunLoopObserverRef observer, CFRunLoopActivity activity, void *info)
+{
+    switch (activity) {
+        case kCFRunLoopEntry:
+            NSLog(@"runloop entry");
+            break;
+            
+        case kCFRunLoopExit:
+            NSLog(@"runloop exit");
+            break;
+            
+        case kCFRunLoopAfterWaiting:
+            NSLog(@"runloop after waiting");
+            break;
+            
+        case kCFRunLoopBeforeTimers:
+            NSLog(@"runloop before timers");
+            break;
+            
+        case kCFRunLoopBeforeSources:
+            NSLog(@"runloop before sources");
+            break;
+            
+        case kCFRunLoopBeforeWaiting:
+            NSLog(@"runloop before waiting");
+            break;
+            
+        default:
+            break;
+    }
 }
 
 - (void)viewWillDisappear:(BOOL)animated
