@@ -14,16 +14,40 @@
 #import <sys/sysctl.h>
 #import <mach/thread_act.h>
 
+const float out_timeInterval = 0.5f;
+const MonityViewController * selfCalss = nil;
+const int64_t lxd_time_out_interval = 1.0f;
+
+
 @interface MonityViewController ()
 {
     dispatch_source_t _timer;
     CFRunLoopObserverRef  _observer;
     
+    
+    
 }
+
+@property(nonatomic,strong) dispatch_queue_t  fluecy_queue;
+@property(nonatomic,assign) BOOL isMoniting;
+@property(nonatomic,assign) CFRunLoopActivity currentState_runloop;
+@property(nonatomic,strong)     dispatch_semaphore_t   semaphore_out;
+
+
+
 @end
 
 @implementation MonityViewController
 
+- (id)init
+{
+    if(self = [super init]){
+        selfCalss = self;
+        self.semaphore_out = dispatch_semaphore_create(0);
+
+    }
+    return self;
+}
 - (void)viewDidLoad {
     [super viewDidLoad];
 
@@ -72,6 +96,16 @@
     
 }
 
+#pragma mark -- runloop 去检测是否卡顿
+
+- (dispatch_queue_t)fluecy_queue
+{
+    if(_fluecy_queue == nil){
+        _fluecy_queue = dispatch_queue_create("com.cga.fluecyQueue", NULL);
+    }
+    return _fluecy_queue;
+}
+
 - (void)addRunLoop
 {
     CFRunLoopObserverContext context = {
@@ -80,14 +114,47 @@
         NULL,
         NULL
     };
-    _observer =CFRunLoopObserverCreate(kCFAllocatorDefault, kCFRunLoopAllActivities, YES, 0, observerCallBack, NULL);
+    //这个context 结构体 是在回调中 获取跟踪信息的 如果为空则 callback 中的info 为null
+    _observer =CFRunLoopObserverCreate(kCFAllocatorDefault, kCFRunLoopAllActivities, YES, 0, observerCallBack, &context);
     
     CFRunLoopAddObserver(CFRunLoopGetMain(), _observer, kCFRunLoopCommonModes);
     
+    //检测卡顿的 时机 是在
+    //1.runloop 即将处理source0 和 在进入休眠之前beforeWaiting
+    //2.在afterWaiting 之后 即将唤醒
 }
+
+- (void)addMonityOfMainQueue
+{
+    if(self.isMoniting) return;
+    self.isMoniting = YES;
+    
+    dispatch_async(self.fluecy_queue, ^{
+        while (self.isMoniting) {
+            if (self.currentState_runloop == kCFRunLoopBeforeWaiting) {
+                __block BOOL timeOut = YES;
+                dispatch_async(dispatch_get_main_queue(), ^{
+                    timeOut = NO;
+                    dispatch_semaphore_signal(self.semaphore_out);
+                });
+                
+                //当前线程睡了 一个阈值之后 主线程 还未修改bool值 表示超时
+                [NSThread sleepForTimeInterval:out_timeInterval];
+                if(timeOut){
+                    //超时了
+                }
+                //等待主线程 发送信号 继续检测
+                dispatch_semaphore_wait(self.semaphore_out, DISPATCH_TIME_FOREVER);
+            }
+        }
+    });
+}
+
 
 void observerCallBack(CFRunLoopObserverRef observer, CFRunLoopActivity activity, void *info)
 {
+    selfCalss.currentState_runloop = activity;
+    dispatch_semaphore_signal(selfCalss.semaphore_out);
     switch (activity) {
         case kCFRunLoopEntry:
             NSLog(@"runloop entry");
