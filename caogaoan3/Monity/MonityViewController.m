@@ -31,7 +31,7 @@ const int64_t lxd_time_out_interval = 1.0f;
 @property(nonatomic,strong) dispatch_queue_t  fluecy_queue;
 @property(nonatomic,assign) BOOL isMoniting;
 @property(nonatomic,assign) CFRunLoopActivity currentState_runloop;
-@property(nonatomic,strong)     dispatch_semaphore_t   semaphore_out;
+@property(nonatomic,strong) dispatch_semaphore_t   semaphore_out;
 
 
 
@@ -68,24 +68,24 @@ const int64_t lxd_time_out_interval = 1.0f;
     //activeProcessorCount 设备cpu核数The number of active processing cores available on the computer.
 
     
-    _timer = dispatch_source_create(DISPATCH_SOURCE_TYPE_TIMER, 0, 0, dispatch_get_main_queue());
-    dispatch_source_set_timer(_timer, DISPATCH_TIME_NOW, 1 * NSEC_PER_SEC, 0.5 * NSEC_PER_SEC);
-    dispatch_source_set_event_handler(_timer, ^{
-      float percent =  [self appUsageOfCPU];
-      NSLog(@"percent %f",percent);
-      float memoryUse = [self appMemoryUsage];
-      NSLog(@"memoryUse percent %f",memoryUse);
-        
-        [self totalMemory];
-       
-        //NSLog(@"memoryUse percent2 %llu",[self memoryUsage]);
-       
-        NSLog(@"availableMemory %lluMB",[self availableMemory]);
-//        size_t size = 1024 * 1024;
-//        char *string = malloc(size);
-        
-    });
-    dispatch_resume(_timer);
+//    _timer = dispatch_source_create(DISPATCH_SOURCE_TYPE_TIMER, 0, 0, dispatch_get_main_queue());
+//    dispatch_source_set_timer(_timer, DISPATCH_TIME_NOW, 1 * NSEC_PER_SEC, 0.5 * NSEC_PER_SEC);
+//    dispatch_source_set_event_handler(_timer, ^{
+////      float percent =  [self appUsageOfCPU];
+////      NSLog(@"percent %f",percent);
+////      float memoryUse = [self appMemoryUsage];
+////      NSLog(@"memoryUse percent %f",memoryUse);
+////
+////        [self totalMemory];
+////
+////        //NSLog(@"memoryUse percent2 %llu",[self memoryUsage]);
+////
+////        NSLog(@"availableMemory %lluMB",[self availableMemory]);
+//////        size_t size = 1024 * 1024;
+//////        char *string = malloc(size);
+//
+//    });
+//    dispatch_resume(_timer);
    
 //    dispatch_after(dispatch_time(DISPATCH_TIME_NOW, (int64_t)(1 * NSEC_PER_SEC)), dispatch_get_global_queue(0, 0), ^{
 //        for (int i = 0; i < 100000; i++) {
@@ -97,6 +97,13 @@ const int64_t lxd_time_out_interval = 1.0f;
 }
 
 #pragma mark -- runloop 去检测是否卡顿
+- (void)touchesBegan:(NSSet<UITouch *> *)touches withEvent:(UIEvent *)event
+{
+    NSLog(@"点击处理事件");
+    sleep(5);
+    NSLog(@"事件处理完成");
+//    sleep(5);
+}
 
 - (dispatch_queue_t)fluecy_queue
 {
@@ -122,6 +129,9 @@ const int64_t lxd_time_out_interval = 1.0f;
     //检测卡顿的 时机 是在
     //1.runloop 即将处理source0 和 在进入休眠之前beforeWaiting
     //2.在afterWaiting 之后 即将唤醒
+    
+    [self addMonityOfMainQueue];
+    
 }
 
 - (void)addMonityOfMainQueue
@@ -129,23 +139,44 @@ const int64_t lxd_time_out_interval = 1.0f;
     if(self.isMoniting) return;
     self.isMoniting = YES;
     
+//    dispatch_async(self.fluecy_queue, ^{
+//        while (self.isMoniting) {
+//            if (self.currentState_runloop == kCFRunLoopBeforeWaiting) {
+//                __block BOOL timeOut = YES;
+//                dispatch_async(dispatch_get_main_queue(), ^{
+//                    timeOut = NO;
+//                    dispatch_semaphore_signal(self.semaphore_out);
+//                });
+//
+//                //当前线程睡了 一个阈值之后 主线程 还未修改bool值 表示超时
+//                [NSThread sleepForTimeInterval:out_timeInterval];
+//                if(timeOut){
+//                    //超时了
+//                    NSLog(@"卡顿");
+//                }
+//                //等待主线程 发送信号 继续检测
+//                dispatch_semaphore_wait(self.semaphore_out, DISPATCH_TIME_FOREVER);
+//            }
+//        }
+//    });
+    
+    __block long timeoutCount = 0;
     dispatch_async(self.fluecy_queue, ^{
         while (self.isMoniting) {
-            if (self.currentState_runloop == kCFRunLoopBeforeWaiting) {
-                __block BOOL timeOut = YES;
-                dispatch_async(dispatch_get_main_queue(), ^{
-                    timeOut = NO;
-                    dispatch_semaphore_signal(self.semaphore_out);
-                });
-                
-                //当前线程睡了 一个阈值之后 主线程 还未修改bool值 表示超时
-                [NSThread sleepForTimeInterval:out_timeInterval];
-                if(timeOut){
-                    //超时了
+            //解释： \不断的去检测信号量发出 在observer 回调中 发出一般的信号的话  返回49 直接跳过状态，接受事件如果 超时的话 在这两个状态中会等待超过100毫秒
+            long st = dispatch_semaphore_wait(self.semaphore_out, dispatch_time(DISPATCH_TIME_NOW, 100*NSEC_PER_MSEC));//过了100毫秒
+            // st 返回的结果值 返回为0 不需要等待 直接执行下面的  返回为49 时 等待100毫秒 等待当前的信号量增加发出
+            NSLog(@"%ld",st);
+            if(st != 0){
+                if(self.currentState_runloop == kCFRunLoopBeforeSources || self.currentState_runloop == kCFRunLoopAfterWaiting){
+                   if(++timeoutCount < 5) {
+                       continue;
+                   }
+                    // 五次小卡
+                    NSLog(@"卡顿啊 有点卡");
                 }
-                //等待主线程 发送信号 继续检测
-                dispatch_semaphore_wait(self.semaphore_out, DISPATCH_TIME_FOREVER);
             }
+            timeoutCount = 0;
         }
     });
 }
@@ -155,31 +186,32 @@ void observerCallBack(CFRunLoopObserverRef observer, CFRunLoopActivity activity,
 {
     selfCalss.currentState_runloop = activity;
     dispatch_semaphore_signal(selfCalss.semaphore_out);
-    switch (activity) {
+    NSLog(@"call");
+        switch (activity) {
         case kCFRunLoopEntry:
-            NSLog(@"runloop entry");
+            NSLog(@" runloop entry");
             break;
-            
+
         case kCFRunLoopExit:
-            NSLog(@"runloop exit");
+            NSLog(@"  runloop exit");
             break;
-            
+
         case kCFRunLoopAfterWaiting:
-            NSLog(@"runloop after waiting");
+            NSLog(@"    runloop after waiting");
             break;
-            
+
         case kCFRunLoopBeforeTimers:
-            NSLog(@"runloop before timers");
+            NSLog(@"      runloop before timers");
             break;
-            
+
         case kCFRunLoopBeforeSources:
-            NSLog(@"runloop before sources");
+            NSLog(@"        runloop before sources");
             break;
-            
+
         case kCFRunLoopBeforeWaiting:
-            NSLog(@"runloop before waiting");
+            NSLog(@"          runloop before waiting");
             break;
-            
+
         default:
             break;
     }

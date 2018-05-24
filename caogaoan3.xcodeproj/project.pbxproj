@@ -46,6 +46,16 @@
 		3F884A13208F6F0D005D6CD8 /* Runtime_weak.m in Sources */ = {isa = PBXBuildFile; fileRef = 3F884A12208F6F0D005D6CD8 /* Runtime_weak.m */; settings = {COMPILER_FLAGS = "-objc-arc"; }; };
 		3F8B784D20A9261900163DE8 /* TestPresentController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3F8B784C20A9261900163DE8 /* TestPresentController.m */; };
 		3F8B785020A9262900163DE8 /* PresentChildController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3F8B784F20A9262900163DE8 /* PresentChildController.m */; };
+		3F91B07420B6899D00936CFB /* XFDTToolsConfig.m in Sources */ = {isa = PBXBuildFile; fileRef = 3F91B07220B6899D00936CFB /* XFDTToolsConfig.m */; };
+		3F91B07520B6899D00936CFB /* XFDTTools.m in Sources */ = {isa = PBXBuildFile; fileRef = 3F91B07320B6899D00936CFB /* XFDTTools.m */; };
+		3F91B07820B68C6500936CFB /* DysMorphismButton.m in Sources */ = {isa = PBXBuildFile; fileRef = 3F91B07620B68C6400936CFB /* DysMorphismButton.m */; };
+		3F91B07B20B6968F00936CFB /* XFDLogoWindow.m in Sources */ = {isa = PBXBuildFile; fileRef = 3F91B07A20B6968F00936CFB /* XFDLogoWindow.m */; };
+		3F91B07F20B69F1900936CFB /* ToolsTestController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3F91B07D20B69F1900936CFB /* ToolsTestController.m */; };
+		3F91B08020B69F1900936CFB /* ToolsTestController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3F91B07E20B69F1900936CFB /* ToolsTestController.xib */; };
+		3F91B08320B6B2BB00936CFB /* XFDUtilityWindow.m in Sources */ = {isa = PBXBuildFile; fileRef = 3F91B08220B6B2BB00936CFB /* XFDUtilityWindow.m */; };
+		3F91B08620B6B5A500936CFB /* XFDBaseViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3F91B08520B6B5A500936CFB /* XFDBaseViewController.m */; };
+		3F91B08920B6D3EA00936CFB /* XFDDetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3F91B08820B6D3EA00936CFB /* XFDDetailViewController.m */; };
+		3F91B08C20B6D7F700936CFB /* XFDToolsCategoryCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 3F91B08B20B6D7F700936CFB /* XFDToolsCategoryCell.m */; };
 		3F991F772084E64B00C4274D /* Person.m in Sources */ = {isa = PBXBuildFile; fileRef = 3F991F762084E64B00C4274D /* Person.m */; };
 		3F991F7A2084E6BA00C4274D /* ArchiverTool.m in Sources */ = {isa = PBXBuildFile; fileRef = 3F991F792084E6BA00C4274D /* ArchiverTool.m */; };
 		3F991F7D2084EA6400C4274D /* ArchiveCopyController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3F991F7C2084EA6400C4274D /* ArchiveCopyController.m */; };
@@ -150,6 +160,25 @@
 		3F8B784C20A9261900163DE8 /* TestPresentController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TestPresentController.m; sourceTree = "<group>"; };
 		3F8B784E20A9262900163DE8 /* PresentChildController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PresentChildController.h; sourceTree = "<group>"; };
 		3F8B784F20A9262900163DE8 /* PresentChildController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PresentChildController.m; sourceTree = "<group>"; };
+		3F91B07020B6899D00936CFB /* XFDTToolsConfig.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XFDTToolsConfig.h; sourceTree = "<group>"; };
+		3F91B07120B6899D00936CFB /* XFDTTools.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XFDTTools.h; sourceTree = "<group>"; };
+		3F91B07220B6899D00936CFB /* XFDTToolsConfig.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XFDTToolsConfig.m; sourceTree = "<group>"; };
+		3F91B07320B6899D00936CFB /* XFDTTools.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XFDTTools.m; sourceTree = "<group>"; };
+		3F91B07620B68C6400936CFB /* DysMorphismButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DysMorphismButton.m; sourceTree = "<group>"; };
+		3F91B07720B68C6500936CFB /* DysMorphismButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DysMorphismButton.h; sourceTree = "<group>"; };
+		3F91B07920B6968F00936CFB /* XFDLogoWindow.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = XFDLogoWindow.h; sourceTree = "<group>"; };
+		3F91B07A20B6968F00936CFB /* XFDLogoWindow.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = XFDLogoWindow.m; sourceTree = "<group>"; };
+		3F91B07C20B69F1900936CFB /* ToolsTestController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ToolsTestController.h; sourceTree = "<group>"; };
+		3F91B07D20B69F1900936CFB /* ToolsTestController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ToolsTestController.m; sourceTree = "<group>"; };
+		3F91B07E20B69F1900936CFB /* ToolsTestController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ToolsTestController.xib; sourceTree = "<group>"; };
+		3F91B08120B6B2BB00936CFB /* XFDUtilityWindow.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = XFDUtilityWindow.h; sourceTree = "<group>"; };
+		3F91B08220B6B2BB00936CFB /* XFDUtilityWindow.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = XFDUtilityWindow.m; sourceTree = "<group>"; };
+		3F91B08420B6B5A500936CFB /* XFDBaseViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = XFDBaseViewController.h; sourceTree = "<group>"; };
+		3F91B08520B6B5A500936CFB /* XFDBaseViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = XFDBaseViewController.m; sourceTree = "<group>"; };
+		3F91B08720B6D3EA00936CFB /* XFDDetailViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = XFDDetailViewController.h; sourceTree = "<group>"; };
+		3F91B08820B6D3EA00936CFB /* XFDDetailViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = XFDDetailViewController.m; sourceTree = "<group>"; };
+		3F91B08A20B6D7F700936CFB /* XFDToolsCategoryCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = XFDToolsCategoryCell.h; sourceTree = "<group>"; };
+		3F91B08B20B6D7F700936CFB /* XFDToolsCategoryCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = XFDToolsCategoryCell.m; sourceTree = "<group>"; };
 		3F991F752084E64B00C4274D /* Person.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Person.h; sourceTree = "<group>"; };
 		3F991F762084E64B00C4274D /* Person.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Person.m; sourceTree = "<group>"; };
 		3F991F782084E6BA00C4274D /* ArchiverTool.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ArchiverTool.h; sourceTree = "<group>"; };
@@ -242,6 +271,7 @@
 		3F3B8D7420557A70000CD179 /* caogaoan3 */ = {
 			isa = PBXGroup;
 			children = (
+				3F91B06F20B6898300936CFB /* XFDTool */,
 				3F1F2C6320B3EEC800BAC7EE /* Monity */,
 				3F37235A20AD5AD700059A8F /* BLE */,
 				3F8B784A20A925F900163DE8 /* PresentVC */,
@@ -379,6 +409,32 @@
 				3F8B784F20A9262900163DE8 /* PresentChildController.m */,
 			);
 			path = PresentVC;
+			sourceTree = "<group>";
+		};
+		3F91B06F20B6898300936CFB /* XFDTool */ = {
+			isa = PBXGroup;
+			children = (
+				3F91B07720B68C6500936CFB /* DysMorphismButton.h */,
+				3F91B07620B68C6400936CFB /* DysMorphismButton.m */,
+				3F91B07120B6899D00936CFB /* XFDTTools.h */,
+				3F91B07320B6899D00936CFB /* XFDTTools.m */,
+				3F91B07020B6899D00936CFB /* XFDTToolsConfig.h */,
+				3F91B07220B6899D00936CFB /* XFDTToolsConfig.m */,
+				3F91B07920B6968F00936CFB /* XFDLogoWindow.h */,
+				3F91B07A20B6968F00936CFB /* XFDLogoWindow.m */,
+				3F91B07C20B69F1900936CFB /* ToolsTestController.h */,
+				3F91B07D20B69F1900936CFB /* ToolsTestController.m */,
+				3F91B07E20B69F1900936CFB /* ToolsTestController.xib */,
+				3F91B08120B6B2BB00936CFB /* XFDUtilityWindow.h */,
+				3F91B08220B6B2BB00936CFB /* XFDUtilityWindow.m */,
+				3F91B08420B6B5A500936CFB /* XFDBaseViewController.h */,
+				3F91B08520B6B5A500936CFB /* XFDBaseViewController.m */,
+				3F91B08720B6D3EA00936CFB /* XFDDetailViewController.h */,
+				3F91B08820B6D3EA00936CFB /* XFDDetailViewController.m */,
+				3F91B08A20B6D7F700936CFB /* XFDToolsCategoryCell.h */,
+				3F91B08B20B6D7F700936CFB /* XFDToolsCategoryCell.m */,
+			);
+			path = XFDTool;
 			sourceTree = "<group>";
 		};
 		3F991F742084E62200C4274D /* Runtime自动归档 */ = {
@@ -561,6 +617,7 @@
 			files = (
 				3F82D3E7208E1D4F00F7D4F0 /* 1.plist in Resources */,
 				3F3B8D8220557A70000CD179 /* LaunchScreen.storyboard in Resources */,
+				3F91B08020B69F1900936CFB /* ToolsTestController.xib in Resources */,
 				3F82D3E6208E1D4F00F7D4F0 /* 2.plist in Resources */,
 				3F3B8D7F20557A70000CD179 /* Assets.xcassets in Resources */,
 				3F82D3E9208E1D4F00F7D4F0 /* 3.plist in Resources */,
@@ -646,6 +703,7 @@
 				3F3B8DB820557C25000CD179 /* Son.m in Sources */,
 				3F82D3EC208E1F5100F7D4F0 /* CusModel.m in Sources */,
 				3F3B8D7A20557A70000CD179 /* ViewController.m in Sources */,
+				3F91B08920B6D3EA00936CFB /* XFDDetailViewController.m in Sources */,
 				3F3EFC67208253A4002948DF /* LookBlockInRuntime.m in Sources */,
 				3F37236420AD6BD000059A8F /* BlePeripheral.m in Sources */,
 				3FB8B1DB20878DCC00F5E420 /* GCDViewController.m in Sources */,
@@ -653,7 +711,12 @@
 				3F52E279209FE9D300F32721 /* PHManager.m in Sources */,
 				3F82D480205FEFE900853596 /* IMController.m in Sources */,
 				3F82D478205FDDFB00853596 /* CoreTextController.m in Sources */,
+				3F91B07420B6899D00936CFB /* XFDTToolsConfig.m in Sources */,
 				3F3B8DB520557C25000CD179 /* TestMsgSend.m in Sources */,
+				3F91B07520B6899D00936CFB /* XFDTTools.m in Sources */,
+				3F91B07820B68C6500936CFB /* DysMorphismButton.m in Sources */,
+				3F91B08320B6B2BB00936CFB /* XFDUtilityWindow.m in Sources */,
+				3F91B08620B6B5A500936CFB /* XFDBaseViewController.m in Sources */,
 				B2F471AB208D84760082C375 /* CollectionViewController.m in Sources */,
 				3F37236020AD5AFD00059A8F /* BLEManager.m in Sources */,
 				3F3B8D8520557A70000CD179 /* main.m in Sources */,
@@ -670,12 +733,15 @@
 				3F52E276209FE95700F32721 /* PHViewController.m in Sources */,
 				3F991F772084E64B00C4274D /* Person.m in Sources */,
 				3F884A13208F6F0D005D6CD8 /* Runtime_weak.m in Sources */,
+				3F91B08C20B6D7F700936CFB /* XFDToolsCategoryCell.m in Sources */,
 				3F52E27F20A035FB00F32721 /* PhotoBrowerController.m in Sources */,
 				3F82D3E1208E1C3300F7D4F0 /* CustomLayout.m in Sources */,
 				3F82D484205FF89800853596 /* RACController.m in Sources */,
 				3F8B785020A9262900163DE8 /* PresentChildController.m in Sources */,
 				3F52E27C20A02EC900F32721 /* PHBrower.m in Sources */,
 				3F52E28220A0364C00F32721 /* PhotoBrowerTransition.m in Sources */,
+				3F91B07F20B69F1900936CFB /* ToolsTestController.m in Sources */,
+				3F91B07B20B6968F00936CFB /* XFDLogoWindow.m in Sources */,
 				3F37235D20AD5AEA00059A8F /* BLEViewController.m in Sources */,
 				3FBF8DB7205ABC0700D6A716 /* SocketController.m in Sources */,
 			);

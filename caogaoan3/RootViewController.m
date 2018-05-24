@@ -15,6 +15,8 @@
 #import "TestPresentController.h"
 #import "BLEViewController.h"
 #import "MonityViewController.h"
+#import "ToolsTestController.h"
+
 
 
 @interface RootViewController ()
@@ -26,7 +28,7 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     
-    self.dataArray = [NSArray arrayWithObjects:@"Runtime自动归档",@"GCD",@"RAC+MVVM",@"IMUI",@"GPUImage",@"消息转发机制",@"CollectionView",@"RIL",@"PH",@"presentOverFullScreen",@"BLE",@"MonityVC",nil];
+    self.dataArray = [NSArray arrayWithObjects:@"Runtime自动归档",@"GCD",@"RAC+MVVM",@"IMUI",@"GPUImage",@"消息转发机制",@"CollectionView",@"RIL",@"PH",@"presentOverFullScreen",@"BLE",@"MonityVC",@"ToolsXFD",nil];
     [self testWeiYunSuan];
 }
 
@@ -97,6 +99,9 @@
         [self.navigationController pushViewController:bleVC animated:YES];
     }else if (indexPath.row == 11){
         MonityViewController * monityVC = [[MonityViewController alloc] init];
+        [self.navigationController pushViewController:monityVC animated:YES];
+    }else if (indexPath.row == 12){
+        ToolsTestController * monityVC = [[ToolsTestController alloc] init];
         [self.navigationController pushViewController:monityVC animated:YES];
     }
 }
