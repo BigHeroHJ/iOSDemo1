@@ -7,6 +7,7 @@
 //
 
 #import "XFDBaseViewController.h"
+#import "XFDDetailViewController.h"
 
 @interface XFDBaseViewController ()
 @property (nonatomic, strong) UITableView *tableView;
@@ -23,7 +24,7 @@
     
     //创建一个UIButton
     UIButton *backButton = [[UIButton alloc]initWithFrame:CGRectMake(0, 0, 40, 40)];
-    [backButton setTitle:@"完成" forState:UIControlStateNormal];
+    [backButton setTitle:@"LOGO" forState:UIControlStateNormal];
     [backButton addTarget:self action:@selector(backItemClick) forControlEvents:UIControlEventTouchUpInside];
     UIBarButtonItem *backItem = [[UIBarButtonItem alloc]initWithCustomView:backButton];
     self.navigationItem.rightBarButtonItem = backItem;
@@ -36,13 +37,13 @@
 {
     if(self.dimissUtilityBlock){
         self.dimissUtilityBlock();
+    }else{
+        if(self.navigationController.viewControllers.count > 1){
+        XFDDetailViewController *firstVc = (XFDDetailViewController *)self.navigationController.viewControllers.firstObject;
+            firstVc.dimissUtilityBlock();
+        }
     }
+    
 }
-
-- (void)didReceiveMemoryWarning {
-    [super didReceiveMemoryWarning];
-    // Dispose of any resources that can be recreated.
-}
-
 
 @end

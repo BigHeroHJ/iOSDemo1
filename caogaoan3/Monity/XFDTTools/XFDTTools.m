@@ -10,7 +10,6 @@
 #import "XFDLogoWindow.h"
 #import "XFDUtilityWindow.h"
 
-
 @interface XFDTTools()<XFDLogoWindowDelegate,XFDUtilityWindowDelegate>
 {
     CGRect   _logoLastFrame;//logo 按钮上一次的位置
@@ -37,6 +36,9 @@
     return instance;
 }
 
+/**
+ 初始化
+ */
 - (id)init
 {
     self = [super init];
@@ -60,6 +62,9 @@
     }
 }
 
+/**
+ 供外部调用 当前隐藏状态
+ */
 - (BOOL)getToolHidden
 {
     return _hidden;
@@ -69,7 +74,7 @@
  */
 - (void)showEntry:(BOOL)isShow
 {
-    [self setHidden:isShow];
+    [self setHidden:!isShow];
 }
 
 /**
@@ -97,13 +102,17 @@
 }
 
 #pragma mark -- XFDUtilityDelegate 方法
+/**
+ 代理方法 关闭工具窗口
+ */
 - (void)onWindowClose
 {
-  //关闭工具详情的界面 回到logo
+    //关闭工具详情的界面 回到logo
     if(_utilityWindow){
-        _utilityWindow = nil;
+//        _utilityWindow = nil;
+        _utilityWindow.hidden = YES;
         _logoWindow.hidden = NO;
-         [_logoWindow setFrame:CGRectMake(_logoLastFrame.origin.x, _logoLastFrame.origin.y, XFD_LOGO_WIDTH, XFD_LOGO_WIDTH)];
+        [_logoWindow setFrame:CGRectMake(_logoLastFrame.origin.x, _logoLastFrame.origin.y, XFD_LOGO_WIDTH, XFD_LOGO_WIDTH)];
         [self layoutLogoFrame];
     }
 }
@@ -111,7 +120,7 @@
 #pragma mark -- logoWindow 手势代理方法处理
 - (void)handlePanOffset:(CGPoint)offset state:(UIGestureRecognizerState)state
 {
-   CGRect frame = CGRectOffset(_logoWindow.frame, offset.x, offset.y);
+    CGRect frame = CGRectOffset(_logoWindow.frame, offset.x, offset.y);
     [_logoWindow setFrame:CGRectMake(frame.origin.x, frame.origin.y, XFD_LOGO_WIDTH, XFD_LOGO_HEIGHT)];
     
     if (state == UIGestureRecognizerStateEnded) {
@@ -119,6 +128,9 @@
     }
 }
 
+/**
+ 点击logo 到工具界面
+ */
 - (void)onClickDetailWindow {
     _logoLastFrame = _logoWindow.frame;
     _logoWindow.hidden = YES;
@@ -130,6 +142,9 @@
     }
 }
 
+/**
+ 吸附左右屏
+ */
 - (void)layoutLogoFrame
 {
     [UIView beginAnimations:nil context:nil];
@@ -138,7 +153,6 @@
     [UIView setAnimationDelegate:self];
     
     CGRect frame = _logoWindow.frame;
-    
     if(frame.origin.y < 0){
         frame.origin.y = 0;
     }
@@ -151,9 +165,7 @@
     {
         frame.origin.y = [UIScreen mainScreen].bounds.size.height - XFD_LOGO_HEIGHT;
     }
-    
     [_logoWindow setFrame:CGRectMake(frame.origin.x, frame.origin.y, XFD_LOGO_WIDTH, XFD_LOGO_HEIGHT)];
-    
     [UIView commitAnimations];
 }
 @end

@@ -7,15 +7,7 @@
 //
 
 #import <UIKit/UIKit.h>
-
-#warning 放到define 文件中去
-#define XFD_LOGO_HEIGHT  50.0f
-#define XFD_LOGO_WIDTH  50.0f
-
-#define XFD_MAINSCREEN_WIDTH [UIScreen mainScreen].bounds.size.width
-#define XFD_MAINSCREEN_HEIGHT [UIScreen mainScreen].bounds.size.height
-
-
+#import "XFDTToolsDefine.h"
 
 @protocol XFDLogoWindowDelegate <NSObject>
 /**

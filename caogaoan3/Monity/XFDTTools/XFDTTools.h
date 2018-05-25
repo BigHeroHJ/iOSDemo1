@@ -13,7 +13,7 @@
 /**
  工具是否显示
  */
-@property (nonatomic, assign,getter=getToolHidden) BOOL hidden;
+@property (nonatomic, assign,getter=getToolHidden,readonly) BOOL hidden;
 
 /**
  * 初始化XFDTTools

@@ -1,0 +1,18 @@
+BEGIN TRANSACTION;
+INSERT INTO `TB_Battery`(`Id`,`remaining`) VALUES (1, 100);
+INSERT INTO `TB_Battery`(`Id`,`remaining`) VALUES (2, 98);
+INSERT INTO `TB_Battery`(`Id`,`remaining`) VALUES (3, 96);
+INSERT INTO `TB_Battery`(`Id`,`remaining`) VALUES (4, 94);
+INSERT INTO `TB_Battery`(`Id`,`remaining`) VALUES (5, 92);
+INSERT INTO `TB_Battery`(`Id`,`remaining`) VALUES (6, 90);
+INSERT INTO `TB_Battery`(`Id`,`remaining`) VALUES (7, 88);
+INSERT INTO `TB_Battery`(`Id`,`remaining`) VALUES (8, 86);
+INSERT INTO `TB_Battery`(`Id`,`remaining`) VALUES (9, 84);
+INSERT INTO `TB_Battery`(`Id`,`remaining`) VALUES (10, 82);
+INSERT INTO `TB_Battery`(`Id`,`remaining`) VALUES (11, 80);
+INSERT INTO `TB_Battery`(`Id`,`remaining`) VALUES (12, 78);
+INSERT INTO `TB_Battery`(`Id`,`remaining`) VALUES (13, 76);
+INSERT INTO `TB_Battery`(`Id`,`remaining`) VALUES (14, 74);
+INSERT INTO `TB_Battery`(`Id`,`remaining`) VALUES (15, 72);
+INSERT INTO `TB_Battery`(`Id`,`remaining`) VALUES (16, 70);
+COMMIT;

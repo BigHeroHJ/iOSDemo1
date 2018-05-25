@@ -32,7 +32,12 @@
 
 - (void)initLogo
 {
-    [self addSubview:self.logoBtn];
+    UIViewController * tempVC = [[UIViewController alloc] init];
+    tempVC.view.frame = self.bounds;
+    tempVC.view.backgroundColor = [UIColor clearColor];
+    self.rootViewController = tempVC;
+    [tempVC.view addSubview:self.logoBtn];
+//  [self addSubview:self.logoBtn];
 }
 
 - (UIButton *)logoBtn
