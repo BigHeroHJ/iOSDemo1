@@ -15,7 +15,6 @@
 #import "TestPresentController.h"
 #import "BLEViewController.h"
 #import "MonityViewController.h"
-#import "ToolsTestController.h"
 
 
 
@@ -58,7 +57,7 @@
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
     UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:@"cell" forIndexPath:indexPath];
     cell.textLabel.text = self.dataArray[indexPath.row];
- 
+    cell.accessoryType = UITableViewCellAccessoryDisclosureIndicator;
     return cell;
 }
 
@@ -99,9 +98,6 @@
         [self.navigationController pushViewController:bleVC animated:YES];
     }else if (indexPath.row == 11){
         MonityViewController * monityVC = [[MonityViewController alloc] init];
-        [self.navigationController pushViewController:monityVC animated:YES];
-    }else if (indexPath.row == 12){
-        ToolsTestController * monityVC = [[ToolsTestController alloc] init];
         [self.navigationController pushViewController:monityVC animated:YES];
     }
 }
