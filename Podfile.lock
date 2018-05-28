@@ -18,6 +18,7 @@ PODS:
   - GCDWebServer (3.4.2):
     - GCDWebServer/Core (= 3.4.2)
   - GCDWebServer/Core (3.4.2)
+  - PLCrashReporter (1.2.0)
   - ReactiveCocoa (2.5):
     - ReactiveCocoa/UI (= 2.5)
   - ReactiveCocoa/Core (2.5):
@@ -36,6 +37,7 @@ DEPENDENCIES:
   - AFNetworking
   - FLEX (~> 2.0)
   - GCDWebServer (~> 3.0)
+  - PLCrashReporter
   - ReactiveCocoa (~> 2.5.0)
   - SDWebImage
   - YYKit
@@ -44,10 +46,11 @@ SPEC CHECKSUMS:
   AFNetworking: 5e0e199f73d8626b11e79750991f5d173d1f8b67
   FLEX: bd1a39e55b56bb413b6f1b34b3c10a0dc44ef079
   GCDWebServer: 8d67ee9f634b4bb91eb4b8aee440318a5fc6debd
+  PLCrashReporter: 16927d86a093d0b9cf110545dacb77cb0ed0f243
   ReactiveCocoa: e2db045570aa97c695e7aa97c2bcab222ae51f4a
   SDWebImage: 791bb72962b3492327ddcac4b1880bd1b5458431
   YYKit: 7cda43304a8dc3696c449041e2cb3107b4e236e7
 
-PODFILE CHECKSUM: da8afd4cf346a8f55297c750a099754d40eee6a2
+PODFILE CHECKSUM: ed46771ffbdbc389575dbe45c8e4b0e4fc0886b5
 
 COCOAPODS: 1.3.1
