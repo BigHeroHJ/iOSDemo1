@@ -15,7 +15,7 @@
 #import "TestPresentController.h"
 #import "BLEViewController.h"
 #import "MonityViewController.h"
-
+#import "ChartViewController.h"
 
 
 @interface RootViewController ()
@@ -27,7 +27,7 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     
-    self.dataArray = [NSArray arrayWithObjects:@"Runtime自动归档",@"GCD",@"RAC+MVVM",@"IMUI",@"GPUImage",@"消息转发机制",@"CollectionView",@"RIL",@"PH",@"presentOverFullScreen",@"BLE",@"MonityVC",@"ToolsXFD",nil];
+    self.dataArray = [NSArray arrayWithObjects:@"Runtime自动归档",@"GCD",@"RAC+MVVM",@"IMUI",@"GPUImage",@"消息转发机制",@"CollectionView",@"RIL",@"PH",@"presentOverFullScreen",@"BLE",@"MonityVC",@"Charts",nil];
     [self testWeiYunSuan];
 }
 
@@ -99,6 +99,9 @@
     }else if (indexPath.row == 11){
         MonityViewController * monityVC = [[MonityViewController alloc] init];
         [self.navigationController pushViewController:monityVC animated:YES];
+    }else if(indexPath.row == 12){
+        ChartViewController * chartVC = [ChartViewController new];
+        [self.navigationController pushViewController:chartVC animated:YES];
     }
 }
 /*
