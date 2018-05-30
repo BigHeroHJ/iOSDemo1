@@ -8,12 +8,6 @@
 
 /* Begin PBXBuildFile section */
 		3F1F2C6620B3EEDF00BAC7EE /* MonityViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3F1F2C6520B3EEDF00BAC7EE /* MonityViewController.m */; };
-		3F282D0E20BD753100000697 /* XFDTCpuDetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3F282D0120BD753000000697 /* XFDTCpuDetailViewController.m */; };
-		3F282D0F20BD753100000697 /* XFDTAxisModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 3F282D0420BD753000000697 /* XFDTAxisModel.m */; };
-		3F282D1020BD753100000697 /* XFDTCavsObj.m in Sources */ = {isa = PBXBuildFile; fileRef = 3F282D0620BD753000000697 /* XFDTCavsObj.m */; };
-		3F282D1120BD753100000697 /* XFDTChartView.m in Sources */ = {isa = PBXBuildFile; fileRef = 3F282D0920BD753000000697 /* XFDTChartView.m */; };
-		3F282D1220BD753100000697 /* XFDTGridLayer.m in Sources */ = {isa = PBXBuildFile; fileRef = 3F282D0B20BD753000000697 /* XFDTGridLayer.m */; };
-		3F282D1320BD753100000697 /* XFDTLineAxis.m in Sources */ = {isa = PBXBuildFile; fileRef = 3F282D0D20BD753000000697 /* XFDTLineAxis.m */; };
 		3F37235D20AD5AEA00059A8F /* BLEViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3F37235C20AD5AEA00059A8F /* BLEViewController.m */; };
 		3F37236020AD5AFD00059A8F /* BLEManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 3F37235F20AD5AFD00059A8F /* BLEManager.m */; };
 		3F37236420AD6BD000059A8F /* BlePeripheral.m in Sources */ = {isa = PBXBuildFile; fileRef = 3F37236320AD6BD000059A8F /* BlePeripheral.m */; };
@@ -95,6 +89,12 @@
 		3F991F7A2084E6BA00C4274D /* ArchiverTool.m in Sources */ = {isa = PBXBuildFile; fileRef = 3F991F792084E6BA00C4274D /* ArchiverTool.m */; };
 		3F991F7D2084EA6400C4274D /* ArchiveCopyController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3F991F7C2084EA6400C4274D /* ArchiveCopyController.m */; };
 		3F991F832084EB1700C4274D /* RootViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3F991F822084EB1700C4274D /* RootViewController.m */; };
+		3FAB6D8220BEC1EB00279FD9 /* XFDTChartCommCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 3FAB6D7520BEC1EB00279FD9 /* XFDTChartCommCell.m */; };
+		3FAB6D8320BEC1EB00279FD9 /* XFDTCpuDetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3FAB6D7720BEC1EB00279FD9 /* XFDTCpuDetailViewController.m */; };
+		3FAB6D8420BEC1EB00279FD9 /* XFDTCavsObj.m in Sources */ = {isa = PBXBuildFile; fileRef = 3FAB6D7A20BEC1EB00279FD9 /* XFDTCavsObj.m */; };
+		3FAB6D8520BEC1EB00279FD9 /* XFDTChartView.m in Sources */ = {isa = PBXBuildFile; fileRef = 3FAB6D7D20BEC1EB00279FD9 /* XFDTChartView.m */; };
+		3FAB6D8620BEC1EB00279FD9 /* XFDTGridLayer.m in Sources */ = {isa = PBXBuildFile; fileRef = 3FAB6D7F20BEC1EB00279FD9 /* XFDTGridLayer.m */; };
+		3FAB6D8720BEC1EB00279FD9 /* XFDTLineAxis.m in Sources */ = {isa = PBXBuildFile; fileRef = 3FAB6D8120BEC1EB00279FD9 /* XFDTLineAxis.m */; };
 		3FB8B1DB20878DCC00F5E420 /* GCDViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3FB8B1DA20878DCC00F5E420 /* GCDViewController.m */; };
 		3FBF8DB7205ABC0700D6A716 /* SocketController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3FBF8DB6205ABC0700D6A716 /* SocketController.m */; };
 		67E97E3A8D9003E14594BBBF /* libPods-caogaoan3.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 716E1E53E55C5EF5EC90906F /* libPods-caogaoan3.a */; };
@@ -123,19 +123,6 @@
 		3C73453CE994885FDD0EBE8B /* Pods-caogaoan3.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-caogaoan3.release.xcconfig"; path = "Pods/Target Support Files/Pods-caogaoan3/Pods-caogaoan3.release.xcconfig"; sourceTree = "<group>"; };
 		3F1F2C6420B3EEDF00BAC7EE /* MonityViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MonityViewController.h; sourceTree = "<group>"; };
 		3F1F2C6520B3EEDF00BAC7EE /* MonityViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MonityViewController.m; sourceTree = "<group>"; };
-		3F282D0020BD753000000697 /* XFDTCpuDetailViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XFDTCpuDetailViewController.h; sourceTree = "<group>"; };
-		3F282D0120BD753000000697 /* XFDTCpuDetailViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XFDTCpuDetailViewController.m; sourceTree = "<group>"; };
-		3F282D0320BD753000000697 /* XFDTAxisModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XFDTAxisModel.h; sourceTree = "<group>"; };
-		3F282D0420BD753000000697 /* XFDTAxisModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XFDTAxisModel.m; sourceTree = "<group>"; };
-		3F282D0520BD753000000697 /* XFDTCavsObj.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XFDTCavsObj.h; sourceTree = "<group>"; };
-		3F282D0620BD753000000697 /* XFDTCavsObj.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XFDTCavsObj.m; sourceTree = "<group>"; };
-		3F282D0720BD753000000697 /* XFDTChartConfig.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XFDTChartConfig.h; sourceTree = "<group>"; };
-		3F282D0820BD753000000697 /* XFDTChartView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XFDTChartView.h; sourceTree = "<group>"; };
-		3F282D0920BD753000000697 /* XFDTChartView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XFDTChartView.m; sourceTree = "<group>"; };
-		3F282D0A20BD753000000697 /* XFDTGridLayer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XFDTGridLayer.h; sourceTree = "<group>"; };
-		3F282D0B20BD753000000697 /* XFDTGridLayer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XFDTGridLayer.m; sourceTree = "<group>"; };
-		3F282D0C20BD753000000697 /* XFDTLineAxis.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XFDTLineAxis.h; sourceTree = "<group>"; };
-		3F282D0D20BD753000000697 /* XFDTLineAxis.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XFDTLineAxis.m; sourceTree = "<group>"; };
 		3F37235B20AD5AEA00059A8F /* BLEViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BLEViewController.h; sourceTree = "<group>"; };
 		3F37235C20AD5AEA00059A8F /* BLEViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BLEViewController.m; sourceTree = "<group>"; };
 		3F37235E20AD5AFD00059A8F /* BLEManager.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BLEManager.h; sourceTree = "<group>"; };
@@ -292,6 +279,19 @@
 		3F991F7C2084EA6400C4274D /* ArchiveCopyController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ArchiveCopyController.m; sourceTree = "<group>"; };
 		3F991F812084EB1700C4274D /* RootViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RootViewController.h; sourceTree = "<group>"; };
 		3F991F822084EB1700C4274D /* RootViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RootViewController.m; sourceTree = "<group>"; };
+		3FAB6D7420BEC1EB00279FD9 /* XFDTChartCommCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XFDTChartCommCell.h; sourceTree = "<group>"; };
+		3FAB6D7520BEC1EB00279FD9 /* XFDTChartCommCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XFDTChartCommCell.m; sourceTree = "<group>"; };
+		3FAB6D7620BEC1EB00279FD9 /* XFDTCpuDetailViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XFDTCpuDetailViewController.h; sourceTree = "<group>"; };
+		3FAB6D7720BEC1EB00279FD9 /* XFDTCpuDetailViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XFDTCpuDetailViewController.m; sourceTree = "<group>"; };
+		3FAB6D7920BEC1EB00279FD9 /* XFDTCavsObj.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XFDTCavsObj.h; sourceTree = "<group>"; };
+		3FAB6D7A20BEC1EB00279FD9 /* XFDTCavsObj.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XFDTCavsObj.m; sourceTree = "<group>"; };
+		3FAB6D7B20BEC1EB00279FD9 /* XFDTChartConfig.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XFDTChartConfig.h; sourceTree = "<group>"; };
+		3FAB6D7C20BEC1EB00279FD9 /* XFDTChartView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XFDTChartView.h; sourceTree = "<group>"; };
+		3FAB6D7D20BEC1EB00279FD9 /* XFDTChartView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XFDTChartView.m; sourceTree = "<group>"; };
+		3FAB6D7E20BEC1EB00279FD9 /* XFDTGridLayer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XFDTGridLayer.h; sourceTree = "<group>"; };
+		3FAB6D7F20BEC1EB00279FD9 /* XFDTGridLayer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XFDTGridLayer.m; sourceTree = "<group>"; };
+		3FAB6D8020BEC1EB00279FD9 /* XFDTLineAxis.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XFDTLineAxis.h; sourceTree = "<group>"; };
+		3FAB6D8120BEC1EB00279FD9 /* XFDTLineAxis.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XFDTLineAxis.m; sourceTree = "<group>"; };
 		3FB8B1D920878DCC00F5E420 /* GCDViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GCDViewController.h; sourceTree = "<group>"; };
 		3FB8B1DA20878DCC00F5E420 /* GCDViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GCDViewController.m; sourceTree = "<group>"; };
 		3FBF8DB5205ABC0700D6A716 /* SocketController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SocketController.h; sourceTree = "<group>"; };
@@ -335,34 +335,6 @@
 				3F1F2C6520B3EEDF00BAC7EE /* MonityViewController.m */,
 			);
 			path = Monity;
-			sourceTree = "<group>";
-		};
-		3F282CFF20BD753000000697 /* CPUDetail */ = {
-			isa = PBXGroup;
-			children = (
-				3F282D0020BD753000000697 /* XFDTCpuDetailViewController.h */,
-				3F282D0120BD753000000697 /* XFDTCpuDetailViewController.m */,
-			);
-			path = CPUDetail;
-			sourceTree = "<group>";
-		};
-		3F282D0220BD753000000697 /* Charts */ = {
-			isa = PBXGroup;
-			children = (
-				3F282D0320BD753000000697 /* XFDTAxisModel.h */,
-				3F282D0420BD753000000697 /* XFDTAxisModel.m */,
-				3F282D0520BD753000000697 /* XFDTCavsObj.h */,
-				3F282D0620BD753000000697 /* XFDTCavsObj.m */,
-				3F282D0720BD753000000697 /* XFDTChartConfig.h */,
-				3F282D0820BD753000000697 /* XFDTChartView.h */,
-				3F282D0920BD753000000697 /* XFDTChartView.m */,
-				3F282D0A20BD753000000697 /* XFDTGridLayer.h */,
-				3F282D0B20BD753000000697 /* XFDTGridLayer.m */,
-				3F282D0C20BD753000000697 /* XFDTLineAxis.h */,
-				3F282D0D20BD753000000697 /* XFDTLineAxis.m */,
-			);
-			name = Charts;
-			path = ../../../../../Documents/XFDTTools/XFDTToolsKit/XFDTTools/UIManager/Charts;
 			sourceTree = "<group>";
 		};
 		3F37235A20AD5AD700059A8F /* BLE */ = {
@@ -508,8 +480,8 @@
 		3F7273F320BCE70D00907F12 /* Chart */ = {
 			isa = PBXGroup;
 			children = (
-				3F282D0220BD753000000697 /* Charts */,
-				3F282CFF20BD753000000697 /* CPUDetail */,
+				3FAB6D7820BEC1EB00279FD9 /* Charts */,
+				3FAB6D7320BEC1EB00279FD9 /* CPUDetail */,
 				3F7273F720BCE72F00907F12 /* charts */,
 				3F7273F420BCE72A00907F12 /* ChartViewController.h */,
 				3F7273F520BCE72A00907F12 /* ChartViewController.m */,
@@ -764,6 +736,35 @@
 			path = "Runtime自动归档";
 			sourceTree = "<group>";
 		};
+		3FAB6D7320BEC1EB00279FD9 /* CPUDetail */ = {
+			isa = PBXGroup;
+			children = (
+				3FAB6D7420BEC1EB00279FD9 /* XFDTChartCommCell.h */,
+				3FAB6D7520BEC1EB00279FD9 /* XFDTChartCommCell.m */,
+				3FAB6D7620BEC1EB00279FD9 /* XFDTCpuDetailViewController.h */,
+				3FAB6D7720BEC1EB00279FD9 /* XFDTCpuDetailViewController.m */,
+			);
+			name = CPUDetail;
+			path = ../../../../translate_dttools_v1__ios__lib/XFDTTools/XFDTToolsKit/XFDTTools/UIManager/CPUDetail;
+			sourceTree = "<group>";
+		};
+		3FAB6D7820BEC1EB00279FD9 /* Charts */ = {
+			isa = PBXGroup;
+			children = (
+				3FAB6D7920BEC1EB00279FD9 /* XFDTCavsObj.h */,
+				3FAB6D7A20BEC1EB00279FD9 /* XFDTCavsObj.m */,
+				3FAB6D7B20BEC1EB00279FD9 /* XFDTChartConfig.h */,
+				3FAB6D7C20BEC1EB00279FD9 /* XFDTChartView.h */,
+				3FAB6D7D20BEC1EB00279FD9 /* XFDTChartView.m */,
+				3FAB6D7E20BEC1EB00279FD9 /* XFDTGridLayer.h */,
+				3FAB6D7F20BEC1EB00279FD9 /* XFDTGridLayer.m */,
+				3FAB6D8020BEC1EB00279FD9 /* XFDTLineAxis.h */,
+				3FAB6D8120BEC1EB00279FD9 /* XFDTLineAxis.m */,
+			);
+			name = Charts;
+			path = ../../../../translate_dttools_v1__ios__lib/XFDTTools/XFDTToolsKit/XFDTTools/UIManager/Charts;
+			sourceTree = "<group>";
+		};
 		3FB8B1D820878DAB00F5E420 /* GCD */ = {
 			isa = PBXGroup;
 			children = (
@@ -1016,7 +1017,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				3F1F2C6620B3EEDF00BAC7EE /* MonityViewController.m in Sources */,
-				3F282D0E20BD753100000697 /* XFDTCpuDetailViewController.m in Sources */,
 				3F3B8DB820557C25000CD179 /* Son.m in Sources */,
 				3F9094AE20B80F0800B9FA31 /* XFDTSystemInfo.m in Sources */,
 				3F82D3EC208E1F5100F7D4F0 /* CusModel.m in Sources */,
@@ -1035,20 +1035,22 @@
 				3F9094AD20B80F0800B9FA31 /* XFDTMemorySystemInfo.m in Sources */,
 				3F72740E20BCE82D00907F12 /* GLBarChart.m in Sources */,
 				3F9094AA20B80F0800B9FA31 /* XFDTBatterySystemInfo.m in Sources */,
-				3F282D1320BD753100000697 /* XFDTLineAxis.m in Sources */,
 				3F52E279209FE9D300F32721 /* PHManager.m in Sources */,
+				3FAB6D8720BEC1EB00279FD9 /* XFDTLineAxis.m in Sources */,
 				3F72741420BCE82D00907F12 /* GLChartData.m in Sources */,
 				3F82D480205FEFE900853596 /* IMController.m in Sources */,
-				3F282D1020BD753100000697 /* XFDTCavsObj.m in Sources */,
 				3F82D478205FDDFB00853596 /* CoreTextController.m in Sources */,
+				3FAB6D8420BEC1EB00279FD9 /* XFDTCavsObj.m in Sources */,
 				3F3B8DB520557C25000CD179 /* TestMsgSend.m in Sources */,
 				B2F471AB208D84760082C375 /* CollectionViewController.m in Sources */,
 				3F37236020AD5AFD00059A8F /* BLEManager.m in Sources */,
 				3F3B8D8520557A70000CD179 /* main.m in Sources */,
+				3FAB6D8220BEC1EB00279FD9 /* XFDTChartCommCell.m in Sources */,
 				3F90949D20B80F0800B9FA31 /* XFDShowParamManager.m in Sources */,
 				3F9094A320B80F0800B9FA31 /* XFDToolCategoryCell.m in Sources */,
 				3F72741120BCE82D00907F12 /* GLChartIndicator.m in Sources */,
 				3F52E271209FE1BA00F32721 /* RILIViewController.m in Sources */,
+				3FAB6D8320BEC1EB00279FD9 /* XFDTCpuDetailViewController.m in Sources */,
 				3F9094AB20B80F0800B9FA31 /* XFDTCPUSystemInfo+DB.m in Sources */,
 				3F3B8D7720557A70000CD179 /* AppDelegate.m in Sources */,
 				3F90949F20B80F0800B9FA31 /* XFDDetailViewController.m in Sources */,
@@ -1063,7 +1065,6 @@
 				3F991F7A2084E6BA00C4274D /* ArchiverTool.m in Sources */,
 				3F3B8DB620557C25000CD179 /* TestMsgsend1.m in Sources */,
 				3F8B784D20A9261900163DE8 /* TestPresentController.m in Sources */,
-				3F282D0F20BD753100000697 /* XFDTAxisModel.m in Sources */,
 				3F7273F620BCE72A00907F12 /* ChartViewController.m in Sources */,
 				3F991F7D2084EA6400C4274D /* ArchiveCopyController.m in Sources */,
 				3F991F832084EB1700C4274D /* RootViewController.m in Sources */,
@@ -1071,8 +1072,8 @@
 				3F72741220BCE82D00907F12 /* GLChartLineMarker.m in Sources */,
 				3F991F772084E64B00C4274D /* Person.m in Sources */,
 				3F9094B020B80F0800B9FA31 /* XFDTDBManager.m in Sources */,
-				3F282D1120BD753100000697 /* XFDTChartView.m in Sources */,
-				3F282D1220BD753100000697 /* XFDTGridLayer.m in Sources */,
+				3FAB6D8520BEC1EB00279FD9 /* XFDTChartView.m in Sources */,
+				3FAB6D8620BEC1EB00279FD9 /* XFDTGridLayer.m in Sources */,
 				3F884A13208F6F0D005D6CD8 /* Runtime_weak.m in Sources */,
 				3F9094A520B80F0800B9FA31 /* XFDToolsCategoryCell.m in Sources */,
 				3F9094AF20B80F0800B9FA31 /* NSFileManager+XFDTExt.m in Sources */,
