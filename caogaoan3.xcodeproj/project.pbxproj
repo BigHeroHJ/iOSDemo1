@@ -33,15 +33,6 @@
 		3F52E27F20A035FB00F32721 /* PhotoBrowerController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3F52E27E20A035FB00F32721 /* PhotoBrowerController.m */; };
 		3F52E28220A0364C00F32721 /* PhotoBrowerTransition.m in Sources */ = {isa = PBXBuildFile; fileRef = 3F52E28120A0364C00F32721 /* PhotoBrowerTransition.m */; };
 		3F7273F620BCE72A00907F12 /* ChartViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3F7273F520BCE72A00907F12 /* ChartViewController.m */; };
-		3F72740D20BCE82D00907F12 /* GLBar.m in Sources */ = {isa = PBXBuildFile; fileRef = 3F7273FA20BCE82C00907F12 /* GLBar.m */; };
-		3F72740E20BCE82D00907F12 /* GLBarChart.m in Sources */ = {isa = PBXBuildFile; fileRef = 3F7273FC20BCE82C00907F12 /* GLBarChart.m */; };
-		3F72740F20BCE82D00907F12 /* GLLineChart.m in Sources */ = {isa = PBXBuildFile; fileRef = 3F7273FE20BCE82C00907F12 /* GLLineChart.m */; };
-		3F72741020BCE82D00907F12 /* GLChartDotMarker.m in Sources */ = {isa = PBXBuildFile; fileRef = 3F72740120BCE82C00907F12 /* GLChartDotMarker.m */; };
-		3F72741120BCE82D00907F12 /* GLChartIndicator.m in Sources */ = {isa = PBXBuildFile; fileRef = 3F72740320BCE82C00907F12 /* GLChartIndicator.m */; };
-		3F72741220BCE82D00907F12 /* GLChartLineMarker.m in Sources */ = {isa = PBXBuildFile; fileRef = 3F72740520BCE82C00907F12 /* GLChartLineMarker.m */; };
-		3F72741320BCE82D00907F12 /* GLChart.m in Sources */ = {isa = PBXBuildFile; fileRef = 3F72740820BCE82C00907F12 /* GLChart.m */; };
-		3F72741420BCE82D00907F12 /* GLChartData.m in Sources */ = {isa = PBXBuildFile; fileRef = 3F72740A20BCE82C00907F12 /* GLChartData.m */; };
-		3F72741520BCE82D00907F12 /* UIColor+Helper.m in Sources */ = {isa = PBXBuildFile; fileRef = 3F72740C20BCE82D00907F12 /* UIColor+Helper.m */; };
 		3F82D3E1208E1C3300F7D4F0 /* CustomLayout.m in Sources */ = {isa = PBXBuildFile; fileRef = 3F82D3E0208E1C3300F7D4F0 /* CustomLayout.m */; };
 		3F82D3E6208E1D4F00F7D4F0 /* 2.plist in Resources */ = {isa = PBXBuildFile; fileRef = 3F82D3E2208E1D4E00F7D4F0 /* 2.plist */; };
 		3F82D3E7208E1D4F00F7D4F0 /* 1.plist in Resources */ = {isa = PBXBuildFile; fileRef = 3F82D3E3208E1D4E00F7D4F0 /* 1.plist */; };
@@ -89,12 +80,12 @@
 		3F991F7A2084E6BA00C4274D /* ArchiverTool.m in Sources */ = {isa = PBXBuildFile; fileRef = 3F991F792084E6BA00C4274D /* ArchiverTool.m */; };
 		3F991F7D2084EA6400C4274D /* ArchiveCopyController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3F991F7C2084EA6400C4274D /* ArchiveCopyController.m */; };
 		3F991F832084EB1700C4274D /* RootViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3F991F822084EB1700C4274D /* RootViewController.m */; };
-		3FAB6D8220BEC1EB00279FD9 /* XFDTChartCommCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 3FAB6D7520BEC1EB00279FD9 /* XFDTChartCommCell.m */; };
-		3FAB6D8320BEC1EB00279FD9 /* XFDTCpuDetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3FAB6D7720BEC1EB00279FD9 /* XFDTCpuDetailViewController.m */; };
-		3FAB6D8420BEC1EB00279FD9 /* XFDTCavsObj.m in Sources */ = {isa = PBXBuildFile; fileRef = 3FAB6D7A20BEC1EB00279FD9 /* XFDTCavsObj.m */; };
-		3FAB6D8520BEC1EB00279FD9 /* XFDTChartView.m in Sources */ = {isa = PBXBuildFile; fileRef = 3FAB6D7D20BEC1EB00279FD9 /* XFDTChartView.m */; };
-		3FAB6D8620BEC1EB00279FD9 /* XFDTGridLayer.m in Sources */ = {isa = PBXBuildFile; fileRef = 3FAB6D7F20BEC1EB00279FD9 /* XFDTGridLayer.m */; };
-		3FAB6D8720BEC1EB00279FD9 /* XFDTLineAxis.m in Sources */ = {isa = PBXBuildFile; fileRef = 3FAB6D8120BEC1EB00279FD9 /* XFDTLineAxis.m */; };
+		3FAB6DC120BEC4EF00279FD9 /* XFDTCavsObj.m in Sources */ = {isa = PBXBuildFile; fileRef = 3FAB6DB420BEC4EF00279FD9 /* XFDTCavsObj.m */; };
+		3FAB6DC220BEC4EF00279FD9 /* XFDTChartView.m in Sources */ = {isa = PBXBuildFile; fileRef = 3FAB6DB720BEC4EF00279FD9 /* XFDTChartView.m */; };
+		3FAB6DC320BEC4EF00279FD9 /* XFDTGridLayer.m in Sources */ = {isa = PBXBuildFile; fileRef = 3FAB6DB920BEC4EF00279FD9 /* XFDTGridLayer.m */; };
+		3FAB6DC420BEC4EF00279FD9 /* XFDTLineAxis.m in Sources */ = {isa = PBXBuildFile; fileRef = 3FAB6DBB20BEC4EF00279FD9 /* XFDTLineAxis.m */; };
+		3FAB6DC520BEC4EF00279FD9 /* XFDTChartCommCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 3FAB6DBE20BEC4EF00279FD9 /* XFDTChartCommCell.m */; };
+		3FAB6DC620BEC4EF00279FD9 /* XFDTCpuDetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3FAB6DC020BEC4EF00279FD9 /* XFDTCpuDetailViewController.m */; };
 		3FB8B1DB20878DCC00F5E420 /* GCDViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3FB8B1DA20878DCC00F5E420 /* GCDViewController.m */; };
 		3FBF8DB7205ABC0700D6A716 /* SocketController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3FBF8DB6205ABC0700D6A716 /* SocketController.m */; };
 		67E97E3A8D9003E14594BBBF /* libPods-caogaoan3.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 716E1E53E55C5EF5EC90906F /* libPods-caogaoan3.a */; };
@@ -173,24 +164,6 @@
 		3F52E28120A0364C00F32721 /* PhotoBrowerTransition.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PhotoBrowerTransition.m; sourceTree = "<group>"; };
 		3F7273F420BCE72A00907F12 /* ChartViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ChartViewController.h; sourceTree = "<group>"; };
 		3F7273F520BCE72A00907F12 /* ChartViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ChartViewController.m; sourceTree = "<group>"; };
-		3F7273F920BCE82C00907F12 /* GLBar.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GLBar.h; sourceTree = "<group>"; };
-		3F7273FA20BCE82C00907F12 /* GLBar.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GLBar.m; sourceTree = "<group>"; };
-		3F7273FB20BCE82C00907F12 /* GLBarChart.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GLBarChart.h; sourceTree = "<group>"; };
-		3F7273FC20BCE82C00907F12 /* GLBarChart.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GLBarChart.m; sourceTree = "<group>"; };
-		3F7273FD20BCE82C00907F12 /* GLLineChart.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GLLineChart.h; sourceTree = "<group>"; };
-		3F7273FE20BCE82C00907F12 /* GLLineChart.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GLLineChart.m; sourceTree = "<group>"; };
-		3F72740020BCE82C00907F12 /* GLChartDotMarker.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GLChartDotMarker.h; sourceTree = "<group>"; };
-		3F72740120BCE82C00907F12 /* GLChartDotMarker.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GLChartDotMarker.m; sourceTree = "<group>"; };
-		3F72740220BCE82C00907F12 /* GLChartIndicator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GLChartIndicator.h; sourceTree = "<group>"; };
-		3F72740320BCE82C00907F12 /* GLChartIndicator.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GLChartIndicator.m; sourceTree = "<group>"; };
-		3F72740420BCE82C00907F12 /* GLChartLineMarker.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GLChartLineMarker.h; sourceTree = "<group>"; };
-		3F72740520BCE82C00907F12 /* GLChartLineMarker.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GLChartLineMarker.m; sourceTree = "<group>"; };
-		3F72740720BCE82C00907F12 /* GLChart.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GLChart.h; sourceTree = "<group>"; };
-		3F72740820BCE82C00907F12 /* GLChart.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GLChart.m; sourceTree = "<group>"; };
-		3F72740920BCE82C00907F12 /* GLChartData.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GLChartData.h; sourceTree = "<group>"; };
-		3F72740A20BCE82C00907F12 /* GLChartData.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GLChartData.m; sourceTree = "<group>"; };
-		3F72740B20BCE82D00907F12 /* UIColor+Helper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIColor+Helper.h"; sourceTree = "<group>"; };
-		3F72740C20BCE82D00907F12 /* UIColor+Helper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIColor+Helper.m"; sourceTree = "<group>"; };
 		3F82D3DF208E1C3300F7D4F0 /* CustomLayout.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CustomLayout.h; sourceTree = "<group>"; };
 		3F82D3E0208E1C3300F7D4F0 /* CustomLayout.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CustomLayout.m; sourceTree = "<group>"; };
 		3F82D3E2208E1D4E00F7D4F0 /* 2.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = 2.plist; sourceTree = "<group>"; };
@@ -279,19 +252,19 @@
 		3F991F7C2084EA6400C4274D /* ArchiveCopyController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ArchiveCopyController.m; sourceTree = "<group>"; };
 		3F991F812084EB1700C4274D /* RootViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RootViewController.h; sourceTree = "<group>"; };
 		3F991F822084EB1700C4274D /* RootViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RootViewController.m; sourceTree = "<group>"; };
-		3FAB6D7420BEC1EB00279FD9 /* XFDTChartCommCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XFDTChartCommCell.h; sourceTree = "<group>"; };
-		3FAB6D7520BEC1EB00279FD9 /* XFDTChartCommCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XFDTChartCommCell.m; sourceTree = "<group>"; };
-		3FAB6D7620BEC1EB00279FD9 /* XFDTCpuDetailViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XFDTCpuDetailViewController.h; sourceTree = "<group>"; };
-		3FAB6D7720BEC1EB00279FD9 /* XFDTCpuDetailViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XFDTCpuDetailViewController.m; sourceTree = "<group>"; };
-		3FAB6D7920BEC1EB00279FD9 /* XFDTCavsObj.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XFDTCavsObj.h; sourceTree = "<group>"; };
-		3FAB6D7A20BEC1EB00279FD9 /* XFDTCavsObj.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XFDTCavsObj.m; sourceTree = "<group>"; };
-		3FAB6D7B20BEC1EB00279FD9 /* XFDTChartConfig.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XFDTChartConfig.h; sourceTree = "<group>"; };
-		3FAB6D7C20BEC1EB00279FD9 /* XFDTChartView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XFDTChartView.h; sourceTree = "<group>"; };
-		3FAB6D7D20BEC1EB00279FD9 /* XFDTChartView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XFDTChartView.m; sourceTree = "<group>"; };
-		3FAB6D7E20BEC1EB00279FD9 /* XFDTGridLayer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XFDTGridLayer.h; sourceTree = "<group>"; };
-		3FAB6D7F20BEC1EB00279FD9 /* XFDTGridLayer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XFDTGridLayer.m; sourceTree = "<group>"; };
-		3FAB6D8020BEC1EB00279FD9 /* XFDTLineAxis.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XFDTLineAxis.h; sourceTree = "<group>"; };
-		3FAB6D8120BEC1EB00279FD9 /* XFDTLineAxis.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XFDTLineAxis.m; sourceTree = "<group>"; };
+		3FAB6DB320BEC4EF00279FD9 /* XFDTCavsObj.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XFDTCavsObj.h; sourceTree = "<group>"; };
+		3FAB6DB420BEC4EF00279FD9 /* XFDTCavsObj.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XFDTCavsObj.m; sourceTree = "<group>"; };
+		3FAB6DB520BEC4EF00279FD9 /* XFDTChartConfig.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XFDTChartConfig.h; sourceTree = "<group>"; };
+		3FAB6DB620BEC4EF00279FD9 /* XFDTChartView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XFDTChartView.h; sourceTree = "<group>"; };
+		3FAB6DB720BEC4EF00279FD9 /* XFDTChartView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XFDTChartView.m; sourceTree = "<group>"; };
+		3FAB6DB820BEC4EF00279FD9 /* XFDTGridLayer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XFDTGridLayer.h; sourceTree = "<group>"; };
+		3FAB6DB920BEC4EF00279FD9 /* XFDTGridLayer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XFDTGridLayer.m; sourceTree = "<group>"; };
+		3FAB6DBA20BEC4EF00279FD9 /* XFDTLineAxis.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XFDTLineAxis.h; sourceTree = "<group>"; };
+		3FAB6DBB20BEC4EF00279FD9 /* XFDTLineAxis.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XFDTLineAxis.m; sourceTree = "<group>"; };
+		3FAB6DBD20BEC4EF00279FD9 /* XFDTChartCommCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XFDTChartCommCell.h; sourceTree = "<group>"; };
+		3FAB6DBE20BEC4EF00279FD9 /* XFDTChartCommCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XFDTChartCommCell.m; sourceTree = "<group>"; };
+		3FAB6DBF20BEC4EF00279FD9 /* XFDTCpuDetailViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XFDTCpuDetailViewController.h; sourceTree = "<group>"; };
+		3FAB6DC020BEC4EF00279FD9 /* XFDTCpuDetailViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XFDTCpuDetailViewController.m; sourceTree = "<group>"; };
 		3FB8B1D920878DCC00F5E420 /* GCDViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GCDViewController.h; sourceTree = "<group>"; };
 		3FB8B1DA20878DCC00F5E420 /* GCDViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GCDViewController.m; sourceTree = "<group>"; };
 		3FBF8DB5205ABC0700D6A716 /* SocketController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SocketController.h; sourceTree = "<group>"; };
@@ -480,62 +453,12 @@
 		3F7273F320BCE70D00907F12 /* Chart */ = {
 			isa = PBXGroup;
 			children = (
-				3FAB6D7820BEC1EB00279FD9 /* Charts */,
-				3FAB6D7320BEC1EB00279FD9 /* CPUDetail */,
-				3F7273F720BCE72F00907F12 /* charts */,
+				3FAB6DB220BEC4EF00279FD9 /* Charts */,
+				3FAB6DBC20BEC4EF00279FD9 /* CPUDetail */,
 				3F7273F420BCE72A00907F12 /* ChartViewController.h */,
 				3F7273F520BCE72A00907F12 /* ChartViewController.m */,
 			);
 			path = Chart;
-			sourceTree = "<group>";
-		};
-		3F7273F720BCE72F00907F12 /* charts */ = {
-			isa = PBXGroup;
-			children = (
-				3F7273F820BCE82C00907F12 /* Charts的副本 */,
-				3F7273FF20BCE82C00907F12 /* Components的副本 */,
-				3F72740620BCE82C00907F12 /* Core的副本 */,
-			);
-			path = charts;
-			sourceTree = "<group>";
-		};
-		3F7273F820BCE82C00907F12 /* Charts的副本 */ = {
-			isa = PBXGroup;
-			children = (
-				3F7273F920BCE82C00907F12 /* GLBar.h */,
-				3F7273FA20BCE82C00907F12 /* GLBar.m */,
-				3F7273FB20BCE82C00907F12 /* GLBarChart.h */,
-				3F7273FC20BCE82C00907F12 /* GLBarChart.m */,
-				3F7273FD20BCE82C00907F12 /* GLLineChart.h */,
-				3F7273FE20BCE82C00907F12 /* GLLineChart.m */,
-			);
-			path = "Charts的副本";
-			sourceTree = "<group>";
-		};
-		3F7273FF20BCE82C00907F12 /* Components的副本 */ = {
-			isa = PBXGroup;
-			children = (
-				3F72740020BCE82C00907F12 /* GLChartDotMarker.h */,
-				3F72740120BCE82C00907F12 /* GLChartDotMarker.m */,
-				3F72740220BCE82C00907F12 /* GLChartIndicator.h */,
-				3F72740320BCE82C00907F12 /* GLChartIndicator.m */,
-				3F72740420BCE82C00907F12 /* GLChartLineMarker.h */,
-				3F72740520BCE82C00907F12 /* GLChartLineMarker.m */,
-			);
-			path = "Components的副本";
-			sourceTree = "<group>";
-		};
-		3F72740620BCE82C00907F12 /* Core的副本 */ = {
-			isa = PBXGroup;
-			children = (
-				3F72740720BCE82C00907F12 /* GLChart.h */,
-				3F72740820BCE82C00907F12 /* GLChart.m */,
-				3F72740920BCE82C00907F12 /* GLChartData.h */,
-				3F72740A20BCE82C00907F12 /* GLChartData.m */,
-				3F72740B20BCE82D00907F12 /* UIColor+Helper.h */,
-				3F72740C20BCE82D00907F12 /* UIColor+Helper.m */,
-			);
-			path = "Core的副本";
 			sourceTree = "<group>";
 		};
 		3F82D474205FDDC700853596 /* CoreText */ = {
@@ -736,33 +659,31 @@
 			path = "Runtime自动归档";
 			sourceTree = "<group>";
 		};
-		3FAB6D7320BEC1EB00279FD9 /* CPUDetail */ = {
+		3FAB6DB220BEC4EF00279FD9 /* Charts */ = {
 			isa = PBXGroup;
 			children = (
-				3FAB6D7420BEC1EB00279FD9 /* XFDTChartCommCell.h */,
-				3FAB6D7520BEC1EB00279FD9 /* XFDTChartCommCell.m */,
-				3FAB6D7620BEC1EB00279FD9 /* XFDTCpuDetailViewController.h */,
-				3FAB6D7720BEC1EB00279FD9 /* XFDTCpuDetailViewController.m */,
+				3FAB6DB320BEC4EF00279FD9 /* XFDTCavsObj.h */,
+				3FAB6DB420BEC4EF00279FD9 /* XFDTCavsObj.m */,
+				3FAB6DB520BEC4EF00279FD9 /* XFDTChartConfig.h */,
+				3FAB6DB620BEC4EF00279FD9 /* XFDTChartView.h */,
+				3FAB6DB720BEC4EF00279FD9 /* XFDTChartView.m */,
+				3FAB6DB820BEC4EF00279FD9 /* XFDTGridLayer.h */,
+				3FAB6DB920BEC4EF00279FD9 /* XFDTGridLayer.m */,
+				3FAB6DBA20BEC4EF00279FD9 /* XFDTLineAxis.h */,
+				3FAB6DBB20BEC4EF00279FD9 /* XFDTLineAxis.m */,
 			);
-			name = CPUDetail;
-			path = ../../../../translate_dttools_v1__ios__lib/XFDTTools/XFDTToolsKit/XFDTTools/UIManager/CPUDetail;
+			path = Charts;
 			sourceTree = "<group>";
 		};
-		3FAB6D7820BEC1EB00279FD9 /* Charts */ = {
+		3FAB6DBC20BEC4EF00279FD9 /* CPUDetail */ = {
 			isa = PBXGroup;
 			children = (
-				3FAB6D7920BEC1EB00279FD9 /* XFDTCavsObj.h */,
-				3FAB6D7A20BEC1EB00279FD9 /* XFDTCavsObj.m */,
-				3FAB6D7B20BEC1EB00279FD9 /* XFDTChartConfig.h */,
-				3FAB6D7C20BEC1EB00279FD9 /* XFDTChartView.h */,
-				3FAB6D7D20BEC1EB00279FD9 /* XFDTChartView.m */,
-				3FAB6D7E20BEC1EB00279FD9 /* XFDTGridLayer.h */,
-				3FAB6D7F20BEC1EB00279FD9 /* XFDTGridLayer.m */,
-				3FAB6D8020BEC1EB00279FD9 /* XFDTLineAxis.h */,
-				3FAB6D8120BEC1EB00279FD9 /* XFDTLineAxis.m */,
+				3FAB6DBD20BEC4EF00279FD9 /* XFDTChartCommCell.h */,
+				3FAB6DBE20BEC4EF00279FD9 /* XFDTChartCommCell.m */,
+				3FAB6DBF20BEC4EF00279FD9 /* XFDTCpuDetailViewController.h */,
+				3FAB6DC020BEC4EF00279FD9 /* XFDTCpuDetailViewController.m */,
 			);
-			name = Charts;
-			path = ../../../../translate_dttools_v1__ios__lib/XFDTTools/XFDTToolsKit/XFDTTools/UIManager/Charts;
+			path = CPUDetail;
 			sourceTree = "<group>";
 		};
 		3FB8B1D820878DAB00F5E420 /* GCD */ = {
@@ -1027,40 +948,36 @@
 				3FB8B1DB20878DCC00F5E420 /* GCDViewController.m in Sources */,
 				3F9094A420B80F0800B9FA31 /* XFDToolCommonCell.m in Sources */,
 				3F9094A820B80F0800B9FA31 /* XFDTToolsConfig.m in Sources */,
-				3F72741520BCE82D00907F12 /* UIColor+Helper.m in Sources */,
 				3F9094B120B80F0800B9FA31 /* XFDTPerformanceMonitor.m in Sources */,
+				3FAB6DC120BEC4EF00279FD9 /* XFDTCavsObj.m in Sources */,
+				3FAB6DC420BEC4EF00279FD9 /* XFDTLineAxis.m in Sources */,
 				3F3B8DB420557C25000CD179 /* Father.m in Sources */,
-				3F72741020BCE82D00907F12 /* GLChartDotMarker.m in Sources */,
 				3F9094A120B80F0800B9FA31 /* XFDPerformanceDetailController.m in Sources */,
 				3F9094AD20B80F0800B9FA31 /* XFDTMemorySystemInfo.m in Sources */,
-				3F72740E20BCE82D00907F12 /* GLBarChart.m in Sources */,
 				3F9094AA20B80F0800B9FA31 /* XFDTBatterySystemInfo.m in Sources */,
 				3F52E279209FE9D300F32721 /* PHManager.m in Sources */,
-				3FAB6D8720BEC1EB00279FD9 /* XFDTLineAxis.m in Sources */,
-				3F72741420BCE82D00907F12 /* GLChartData.m in Sources */,
 				3F82D480205FEFE900853596 /* IMController.m in Sources */,
 				3F82D478205FDDFB00853596 /* CoreTextController.m in Sources */,
-				3FAB6D8420BEC1EB00279FD9 /* XFDTCavsObj.m in Sources */,
 				3F3B8DB520557C25000CD179 /* TestMsgSend.m in Sources */,
 				B2F471AB208D84760082C375 /* CollectionViewController.m in Sources */,
 				3F37236020AD5AFD00059A8F /* BLEManager.m in Sources */,
 				3F3B8D8520557A70000CD179 /* main.m in Sources */,
-				3FAB6D8220BEC1EB00279FD9 /* XFDTChartCommCell.m in Sources */,
 				3F90949D20B80F0800B9FA31 /* XFDShowParamManager.m in Sources */,
 				3F9094A320B80F0800B9FA31 /* XFDToolCategoryCell.m in Sources */,
-				3F72741120BCE82D00907F12 /* GLChartIndicator.m in Sources */,
 				3F52E271209FE1BA00F32721 /* RILIViewController.m in Sources */,
-				3FAB6D8320BEC1EB00279FD9 /* XFDTCpuDetailViewController.m in Sources */,
 				3F9094AB20B80F0800B9FA31 /* XFDTCPUSystemInfo+DB.m in Sources */,
 				3F3B8D7720557A70000CD179 /* AppDelegate.m in Sources */,
 				3F90949F20B80F0800B9FA31 /* XFDDetailViewController.m in Sources */,
 				3F3B8DB720557C25000CD179 /* TestMsgSendFather.m in Sources */,
+				3FAB6DC620BEC4EF00279FD9 /* XFDTCpuDetailViewController.m in Sources */,
 				3F82D3EF208E213D00F7D4F0 /* CusFlowLayout.m in Sources */,
 				3F9094B320B80F0800B9FA31 /* XFDTSystemInfoFormatter.m in Sources */,
-				3F72740D20BCE82D00907F12 /* GLBar.m in Sources */,
 				3F90949E20B80F0800B9FA31 /* XFDBaseViewController.m in Sources */,
 				3F9094AC20B80F0800B9FA31 /* XFDTCPUSystemInfo.m in Sources */,
+				3FAB6DC320BEC4EF00279FD9 /* XFDTGridLayer.m in Sources */,
 				3F82D47B205FDE1900853596 /* CTDisplayView.m in Sources */,
+				3FAB6DC520BEC4EF00279FD9 /* XFDTChartCommCell.m in Sources */,
+				3FAB6DC220BEC4EF00279FD9 /* XFDTChartView.m in Sources */,
 				3F9094A720B80F0800B9FA31 /* XFDTTools.m in Sources */,
 				3F991F7A2084E6BA00C4274D /* ArchiverTool.m in Sources */,
 				3F3B8DB620557C25000CD179 /* TestMsgsend1.m in Sources */,
@@ -1069,18 +986,14 @@
 				3F991F7D2084EA6400C4274D /* ArchiveCopyController.m in Sources */,
 				3F991F832084EB1700C4274D /* RootViewController.m in Sources */,
 				3F52E276209FE95700F32721 /* PHViewController.m in Sources */,
-				3F72741220BCE82D00907F12 /* GLChartLineMarker.m in Sources */,
 				3F991F772084E64B00C4274D /* Person.m in Sources */,
 				3F9094B020B80F0800B9FA31 /* XFDTDBManager.m in Sources */,
-				3FAB6D8520BEC1EB00279FD9 /* XFDTChartView.m in Sources */,
-				3FAB6D8620BEC1EB00279FD9 /* XFDTGridLayer.m in Sources */,
 				3F884A13208F6F0D005D6CD8 /* Runtime_weak.m in Sources */,
 				3F9094A520B80F0800B9FA31 /* XFDToolsCategoryCell.m in Sources */,
 				3F9094AF20B80F0800B9FA31 /* NSFileManager+XFDTExt.m in Sources */,
 				3F52E27F20A035FB00F32721 /* PhotoBrowerController.m in Sources */,
 				3F9094A920B80F0800B9FA31 /* XFDTBaseSystemInfo.m in Sources */,
 				3F82D3E1208E1C3300F7D4F0 /* CustomLayout.m in Sources */,
-				3F72740F20BCE82D00907F12 /* GLLineChart.m in Sources */,
 				3F9094B720B80F0800B9FA31 /* XFSMSystemInfo.m in Sources */,
 				3F82D484205FF89800853596 /* RACController.m in Sources */,
 				3F8B785020A9262900163DE8 /* PresentChildController.m in Sources */,
@@ -1089,7 +1002,6 @@
 				3F52E28220A0364C00F32721 /* PhotoBrowerTransition.m in Sources */,
 				3F9094A020B80F0800B9FA31 /* XFDLogoWindow.m in Sources */,
 				3F37235D20AD5AEA00059A8F /* BLEViewController.m in Sources */,
-				3F72741320BCE82D00907F12 /* GLChart.m in Sources */,
 				3F9094B220B80F0800B9FA31 /* XFDTSystemInfoFetcher.m in Sources */,
 				3FBF8DB7205ABC0700D6A716 /* SocketController.m in Sources */,
 			);
