@@ -47,47 +47,67 @@
 		3F884A13208F6F0D005D6CD8 /* Runtime_weak.m in Sources */ = {isa = PBXBuildFile; fileRef = 3F884A12208F6F0D005D6CD8 /* Runtime_weak.m */; settings = {COMPILER_FLAGS = "-objc-arc"; }; };
 		3F8B784D20A9261900163DE8 /* TestPresentController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3F8B784C20A9261900163DE8 /* TestPresentController.m */; };
 		3F8B785020A9262900163DE8 /* PresentChildController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3F8B784F20A9262900163DE8 /* PresentChildController.m */; };
-		3F90949B20B80F0800B9FA31 /* gt_checkbox.png in Resources */ = {isa = PBXBuildFile; fileRef = 3F90945A20B80F0800B9FA31 /* gt_checkbox.png */; };
-		3F90949C20B80F0800B9FA31 /* gt_checkbox_sel.png in Resources */ = {isa = PBXBuildFile; fileRef = 3F90945B20B80F0800B9FA31 /* gt_checkbox_sel.png */; };
-		3F90949D20B80F0800B9FA31 /* XFDShowParamManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 3F90946020B80F0800B9FA31 /* XFDShowParamManager.m */; };
-		3F90949E20B80F0800B9FA31 /* XFDBaseViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3F90946320B80F0800B9FA31 /* XFDBaseViewController.m */; };
-		3F90949F20B80F0800B9FA31 /* XFDDetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3F90946520B80F0800B9FA31 /* XFDDetailViewController.m */; };
-		3F9094A020B80F0800B9FA31 /* XFDLogoWindow.m in Sources */ = {isa = PBXBuildFile; fileRef = 3F90946720B80F0800B9FA31 /* XFDLogoWindow.m */; };
-		3F9094A120B80F0800B9FA31 /* XFDPerformanceDetailController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3F90946920B80F0800B9FA31 /* XFDPerformanceDetailController.m */; };
-		3F9094A220B80F0800B9FA31 /* XFDShowParamCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 3F90946B20B80F0800B9FA31 /* XFDShowParamCell.m */; };
-		3F9094A320B80F0800B9FA31 /* XFDToolCategoryCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 3F90946D20B80F0800B9FA31 /* XFDToolCategoryCell.m */; };
-		3F9094A420B80F0800B9FA31 /* XFDToolCommonCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 3F90946F20B80F0800B9FA31 /* XFDToolCommonCell.m */; };
-		3F9094A520B80F0800B9FA31 /* XFDToolsCategoryCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 3F90947120B80F0800B9FA31 /* XFDToolsCategoryCell.m */; };
-		3F9094A620B80F0800B9FA31 /* XFDUtilityWindow.m in Sources */ = {isa = PBXBuildFile; fileRef = 3F90947320B80F0800B9FA31 /* XFDUtilityWindow.m */; };
-		3F9094A720B80F0800B9FA31 /* XFDTTools.m in Sources */ = {isa = PBXBuildFile; fileRef = 3F90947520B80F0800B9FA31 /* XFDTTools.m */; };
-		3F9094A820B80F0800B9FA31 /* XFDTToolsConfig.m in Sources */ = {isa = PBXBuildFile; fileRef = 3F90947720B80F0800B9FA31 /* XFDTToolsConfig.m */; };
-		3F9094A920B80F0800B9FA31 /* XFDTBaseSystemInfo.m in Sources */ = {isa = PBXBuildFile; fileRef = 3F90947C20B80F0800B9FA31 /* XFDTBaseSystemInfo.m */; };
-		3F9094AA20B80F0800B9FA31 /* XFDTBatterySystemInfo.m in Sources */ = {isa = PBXBuildFile; fileRef = 3F90947E20B80F0800B9FA31 /* XFDTBatterySystemInfo.m */; };
-		3F9094AB20B80F0800B9FA31 /* XFDTCPUSystemInfo+DB.m in Sources */ = {isa = PBXBuildFile; fileRef = 3F90948020B80F0800B9FA31 /* XFDTCPUSystemInfo+DB.m */; };
-		3F9094AC20B80F0800B9FA31 /* XFDTCPUSystemInfo.m in Sources */ = {isa = PBXBuildFile; fileRef = 3F90948220B80F0800B9FA31 /* XFDTCPUSystemInfo.m */; };
-		3F9094AD20B80F0800B9FA31 /* XFDTMemorySystemInfo.m in Sources */ = {isa = PBXBuildFile; fileRef = 3F90948420B80F0800B9FA31 /* XFDTMemorySystemInfo.m */; };
-		3F9094AE20B80F0800B9FA31 /* XFDTSystemInfo.m in Sources */ = {isa = PBXBuildFile; fileRef = 3F90948620B80F0800B9FA31 /* XFDTSystemInfo.m */; };
-		3F9094AF20B80F0800B9FA31 /* NSFileManager+XFDTExt.m in Sources */ = {isa = PBXBuildFile; fileRef = 3F90948820B80F0800B9FA31 /* NSFileManager+XFDTExt.m */; };
-		3F9094B020B80F0800B9FA31 /* XFDTDBManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 3F90948A20B80F0800B9FA31 /* XFDTDBManager.m */; };
-		3F9094B120B80F0800B9FA31 /* XFDTPerformanceMonitor.m in Sources */ = {isa = PBXBuildFile; fileRef = 3F90948D20B80F0800B9FA31 /* XFDTPerformanceMonitor.m */; };
-		3F9094B220B80F0800B9FA31 /* XFDTSystemInfoFetcher.m in Sources */ = {isa = PBXBuildFile; fileRef = 3F90948F20B80F0800B9FA31 /* XFDTSystemInfoFetcher.m */; };
-		3F9094B320B80F0800B9FA31 /* XFDTSystemInfoFormatter.m in Sources */ = {isa = PBXBuildFile; fileRef = 3F90949120B80F0800B9FA31 /* XFDTSystemInfoFormatter.m */; };
-		3F9094B420B80F0800B9FA31 /* XFDTTools.sqlite.sql in Resources */ = {isa = PBXBuildFile; fileRef = 3F90949220B80F0800B9FA31 /* XFDTTools.sqlite.sql */; };
-		3F9094B520B80F0800B9FA31 /* XFDTTools.TestData.DeleteAll.sqlite.sql in Resources */ = {isa = PBXBuildFile; fileRef = 3F90949320B80F0800B9FA31 /* XFDTTools.TestData.DeleteAll.sqlite.sql */; };
-		3F9094B620B80F0800B9FA31 /* XFDTTools.TestData.Insert.sqlite.sql in Resources */ = {isa = PBXBuildFile; fileRef = 3F90949420B80F0800B9FA31 /* XFDTTools.TestData.Insert.sqlite.sql */; };
-		3F9094B720B80F0800B9FA31 /* XFSMSystemInfo.m in Sources */ = {isa = PBXBuildFile; fileRef = 3F90949620B80F0800B9FA31 /* XFSMSystemInfo.m */; };
 		3F991F772084E64B00C4274D /* Person.m in Sources */ = {isa = PBXBuildFile; fileRef = 3F991F762084E64B00C4274D /* Person.m */; };
 		3F991F7A2084E6BA00C4274D /* ArchiverTool.m in Sources */ = {isa = PBXBuildFile; fileRef = 3F991F792084E6BA00C4274D /* ArchiverTool.m */; };
 		3F991F7D2084EA6400C4274D /* ArchiveCopyController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3F991F7C2084EA6400C4274D /* ArchiveCopyController.m */; };
 		3F991F832084EB1700C4274D /* RootViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3F991F822084EB1700C4274D /* RootViewController.m */; };
-		3FAB6DC120BEC4EF00279FD9 /* XFDTCavsObj.m in Sources */ = {isa = PBXBuildFile; fileRef = 3FAB6DB420BEC4EF00279FD9 /* XFDTCavsObj.m */; };
-		3FAB6DC220BEC4EF00279FD9 /* XFDTChartView.m in Sources */ = {isa = PBXBuildFile; fileRef = 3FAB6DB720BEC4EF00279FD9 /* XFDTChartView.m */; };
-		3FAB6DC320BEC4EF00279FD9 /* XFDTGridLayer.m in Sources */ = {isa = PBXBuildFile; fileRef = 3FAB6DB920BEC4EF00279FD9 /* XFDTGridLayer.m */; };
-		3FAB6DC420BEC4EF00279FD9 /* XFDTLineAxis.m in Sources */ = {isa = PBXBuildFile; fileRef = 3FAB6DBB20BEC4EF00279FD9 /* XFDTLineAxis.m */; };
-		3FAB6DC520BEC4EF00279FD9 /* XFDTChartCommCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 3FAB6DBE20BEC4EF00279FD9 /* XFDTChartCommCell.m */; };
-		3FAB6DC620BEC4EF00279FD9 /* XFDTCpuDetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3FAB6DC020BEC4EF00279FD9 /* XFDTCpuDetailViewController.m */; };
 		3FB8B1DB20878DCC00F5E420 /* GCDViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3FB8B1DA20878DCC00F5E420 /* GCDViewController.m */; };
 		3FBF8DB7205ABC0700D6A716 /* SocketController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3FBF8DB6205ABC0700D6A716 /* SocketController.m */; };
+		5998C07E20C02DBA00DC002F /* .gitkeep in Resources */ = {isa = PBXBuildFile; fileRef = 5998BFFB20C02DBA00DC002F /* .gitkeep */; };
+		5998C07F20C02DBA00DC002F /* XFDTTools.m in Sources */ = {isa = PBXBuildFile; fileRef = 5998BFFC20C02DBA00DC002F /* XFDTTools.m */; };
+		5998C08020C02DBA00DC002F /* XFDTDBManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 5998BFFE20C02DBA00DC002F /* XFDTDBManager.m */; };
+		5998C08120C02DBA00DC002F /* NSFileManager+XFDTExt.m in Sources */ = {isa = PBXBuildFile; fileRef = 5998C00320C02DBA00DC002F /* NSFileManager+XFDTExt.m */; };
+		5998C08220C02DBA00DC002F /* XFDTPerformanceMonitor.m in Sources */ = {isa = PBXBuildFile; fileRef = 5998C00420C02DBA00DC002F /* XFDTPerformanceMonitor.m */; };
+		5998C08320C02DBA00DC002F /* XFDTTools.sqlite.sql in Resources */ = {isa = PBXBuildFile; fileRef = 5998C00720C02DBA00DC002F /* XFDTTools.sqlite.sql */; };
+		5998C08420C02DBA00DC002F /* XFDTTools.DeleteAll.sqlite.sql in Resources */ = {isa = PBXBuildFile; fileRef = 5998C00820C02DBA00DC002F /* XFDTTools.DeleteAll.sqlite.sql */; };
+		5998C08520C02DBA00DC002F /* XFDTTools.TestData.Insert.sqlite.sql in Resources */ = {isa = PBXBuildFile; fileRef = 5998C00920C02DBA00DC002F /* XFDTTools.TestData.Insert.sqlite.sql */; };
+		5998C08620C02DBA00DC002F /* XFDTSystemInfoFetcher.m in Sources */ = {isa = PBXBuildFile; fileRef = 5998C00B20C02DBA00DC002F /* XFDTSystemInfoFetcher.m */; };
+		5998C08720C02DBA00DC002F /* XFDTMemorySystemInfo+DB.m in Sources */ = {isa = PBXBuildFile; fileRef = 5998C01220C02DBA00DC002F /* XFDTMemorySystemInfo+DB.m */; };
+		5998C08820C02DBA00DC002F /* XFDTMemorySystemInfo.m in Sources */ = {isa = PBXBuildFile; fileRef = 5998C01320C02DBA00DC002F /* XFDTMemorySystemInfo.m */; };
+		5998C08920C02DBA00DC002F /* XFDTCPUSystemInfo.m in Sources */ = {isa = PBXBuildFile; fileRef = 5998C01820C02DBA00DC002F /* XFDTCPUSystemInfo.m */; };
+		5998C08A20C02DBA00DC002F /* XFDTCPUSystemInfo+DB.m in Sources */ = {isa = PBXBuildFile; fileRef = 5998C01920C02DBA00DC002F /* XFDTCPUSystemInfo+DB.m */; };
+		5998C08B20C02DBA00DC002F /* XFDTBaseSystemInfo.m in Sources */ = {isa = PBXBuildFile; fileRef = 5998C01B20C02DBA00DC002F /* XFDTBaseSystemInfo.m */; };
+		5998C08C20C02DBA00DC002F /* XFDTBatterySystemInfo.m in Sources */ = {isa = PBXBuildFile; fileRef = 5998C01E20C02DBA00DC002F /* XFDTBatterySystemInfo.m */; };
+		5998C08D20C02DBA00DC002F /* XFDTBatterySystemInfo+DB.m in Sources */ = {isa = PBXBuildFile; fileRef = 5998C01F20C02DBA00DC002F /* XFDTBatterySystemInfo+DB.m */; };
+		5998C08E20C02DBA00DC002F /* XFSMSystemInfo.m in Sources */ = {isa = PBXBuildFile; fileRef = 5998C02120C02DBA00DC002F /* XFSMSystemInfo.m */; };
+		5998C08F20C02DBA00DC002F /* .gitkeep in Resources */ = {isa = PBXBuildFile; fileRef = 5998C02320C02DBA00DC002F /* .gitkeep */; };
+		5998C09020C02DBA00DC002F /* XFDTToolsConfig.m in Sources */ = {isa = PBXBuildFile; fileRef = 5998C02420C02DBA00DC002F /* XFDTToolsConfig.m */; };
+		5998C09120C02DBA00DC002F /* .gitkeep in Resources */ = {isa = PBXBuildFile; fileRef = 5998C02620C02DBA00DC002F /* .gitkeep */; };
+		5998C09220C02DBA00DC002F /* XFDTAppLogViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5998C02B20C02DBA00DC002F /* XFDTAppLogViewController.m */; };
+		5998C09320C02DBA00DC002F /* xfdt_create_app_log_table.sql in Resources */ = {isa = PBXBuildFile; fileRef = 5998C02D20C02DBA00DC002F /* xfdt_create_app_log_table.sql */; };
+		5998C09420C02DBA00DC002F /* XFDTLogManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 5998C02F20C02DBA00DC002F /* XFDTLogManager.m */; };
+		5998C09520C02DBA00DC002F /* XFDTAppLogUnitModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 5998C03120C02DBA00DC002F /* XFDTAppLogUnitModel.m */; };
+		5998C09620C02DBA00DC002F /* XFDTAppLogTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 5998C03420C02DBA00DC002F /* XFDTAppLogTableViewCell.m */; };
+		5998C09720C02DBA00DC002F /* XFDTLogConfigView.m in Sources */ = {isa = PBXBuildFile; fileRef = 5998C03620C02DBA00DC002F /* XFDTLogConfigView.m */; };
+		5998C09820C02DBA00DC002F /* XFDTLogLevelChooseView.m in Sources */ = {isa = PBXBuildFile; fileRef = 5998C03920C02DBA00DC002F /* XFDTLogLevelChooseView.m */; };
+		5998C09920C02DBA00DC002F /* gt_checkbox.png in Resources */ = {isa = PBXBuildFile; fileRef = 5998C03B20C02DBA00DC002F /* gt_checkbox.png */; };
+		5998C09A20C02DBA00DC002F /* gt_checkbox_sel.png in Resources */ = {isa = PBXBuildFile; fileRef = 5998C03C20C02DBA00DC002F /* gt_checkbox_sel.png */; };
+		5998C09B20C02DBA00DC002F /* XFDShowParamCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 5998C04020C02DBA00DC002F /* XFDShowParamCell.m */; };
+		5998C09C20C02DBA00DC002F /* XFDTCpuDetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5998C04420C02DBA00DC002F /* XFDTCpuDetailViewController.m */; };
+		5998C09D20C02DBA00DC002F /* XFDTChartCommCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 5998C04920C02DBA00DC002F /* XFDTChartCommCell.m */; };
+		5998C09E20C02DBA00DC002F /* XFDTPerformanceInfoView.m in Sources */ = {isa = PBXBuildFile; fileRef = 5998C04A20C02DBA00DC002F /* XFDTPerformanceInfoView.m */; };
+		5998C09F20C02DBA00DC002F /* XFDToolCategoryCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 5998C04D20C02DBA00DC002F /* XFDToolCategoryCell.m */; };
+		5998C0A020C02DBA00DC002F /* XFDPerformanceDetailController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5998C04E20C02DBA00DC002F /* XFDPerformanceDetailController.m */; };
+		5998C0A120C02DBA00DC002F /* XFDTLineAxis.m in Sources */ = {isa = PBXBuildFile; fileRef = 5998C05520C02DBA00DC002F /* XFDTLineAxis.m */; };
+		5998C0A220C02DBA00DC002F /* XFDTCavsObj.m in Sources */ = {isa = PBXBuildFile; fileRef = 5998C05620C02DBA00DC002F /* XFDTCavsObj.m */; };
+		5998C0A320C02DBA00DC002F /* XFDTGridLayer.m in Sources */ = {isa = PBXBuildFile; fileRef = 5998C05720C02DBA00DC002F /* XFDTGridLayer.m */; };
+		5998C0A420C02DBA00DC002F /* XFDTChartView.m in Sources */ = {isa = PBXBuildFile; fileRef = 5998C05820C02DBA00DC002F /* XFDTChartView.m */; };
+		5998C0A520C02DBA00DC002F /* XFDShowParamManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 5998C05B20C02DBA00DC002F /* XFDShowParamManager.m */; };
+		5998C0A620C02DBA00DC002F /* XFDTShowParamManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 5998C05F20C02DBA00DC002F /* XFDTShowParamManager.m */; };
+		5998C0A720C02DBA00DC002F /* XFDTLogoWindow.m in Sources */ = {isa = PBXBuildFile; fileRef = 5998C06320C02DBA00DC002F /* XFDTLogoWindow.m */; };
+		5998C0A820C02DBA00DC002F /* XFDLogoWindow.m in Sources */ = {isa = PBXBuildFile; fileRef = 5998C06520C02DBA00DC002F /* XFDLogoWindow.m */; };
+		5998C0A920C02DBA00DC002F /* XFDDetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5998C06720C02DBA00DC002F /* XFDDetailViewController.m */; };
+		5998C0AA20C02DBA00DC002F /* XFDTUtilityWindow.m in Sources */ = {isa = PBXBuildFile; fileRef = 5998C06D20C02DBA00DC002F /* XFDTUtilityWindow.m */; };
+		5998C0AB20C02DBA00DC002F /* XFDTShowParamCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 5998C07120C02DBA00DC002F /* XFDTShowParamCell.m */; };
+		5998C0AC20C02DBA00DC002F /* XFDTDetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5998C07220C02DBA00DC002F /* XFDTDetailViewController.m */; };
+		5998C0AD20C02DBA00DC002F /* XFDTBaseViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5998C07420C02DBA00DC002F /* XFDTBaseViewController.m */; };
+		5998C0AE20C02DBA00DC002F /* XFDTToolCommonCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 5998C07520C02DBA00DC002F /* XFDTToolCommonCell.m */; };
+		5998C0AF20C02DBA00DC002F /* XFDTToolCategoryCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 5998C07620C02DBA00DC002F /* XFDTToolCategoryCell.m */; };
+		5998C0B020C02DBA00DC002F /* XFDTPerformanceDetailController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5998C07720C02DBA00DC002F /* XFDTPerformanceDetailController.m */; };
+		5998C0B120C02DBA00DC002F /* XFDUtilityWindow.m in Sources */ = {isa = PBXBuildFile; fileRef = 5998C07820C02DBA00DC002F /* XFDUtilityWindow.m */; };
+		5998C0B220C02DBA00DC002F /* XFDBaseViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5998C07920C02DBA00DC002F /* XFDBaseViewController.m */; };
+		5998C0B320C02DBA00DC002F /* XFDToolsCategoryCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 5998C07B20C02DBA00DC002F /* XFDToolsCategoryCell.m */; };
+		5998C0B420C02DBA00DC002F /* XFDToolCommonCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 5998C07C20C02DBA00DC002F /* XFDToolCommonCell.m */; };
 		67E97E3A8D9003E14594BBBF /* libPods-caogaoan3.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 716E1E53E55C5EF5EC90906F /* libPods-caogaoan3.a */; };
 		B2F471AB208D84760082C375 /* CollectionViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B2F471AA208D84760082C375 /* CollectionViewController.m */; };
 /* End PBXBuildFile section */
@@ -188,62 +208,6 @@
 		3F8B784C20A9261900163DE8 /* TestPresentController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TestPresentController.m; sourceTree = "<group>"; };
 		3F8B784E20A9262900163DE8 /* PresentChildController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PresentChildController.h; sourceTree = "<group>"; };
 		3F8B784F20A9262900163DE8 /* PresentChildController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PresentChildController.m; sourceTree = "<group>"; };
-		3F90945A20B80F0800B9FA31 /* gt_checkbox.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = gt_checkbox.png; sourceTree = "<group>"; };
-		3F90945B20B80F0800B9FA31 /* gt_checkbox_sel.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = gt_checkbox_sel.png; sourceTree = "<group>"; };
-		3F90945E20B80F0800B9FA31 /* XFDMonitorConfig.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XFDMonitorConfig.h; sourceTree = "<group>"; };
-		3F90945F20B80F0800B9FA31 /* XFDShowParamManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XFDShowParamManager.h; sourceTree = "<group>"; };
-		3F90946020B80F0800B9FA31 /* XFDShowParamManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XFDShowParamManager.m; sourceTree = "<group>"; };
-		3F90946220B80F0800B9FA31 /* XFDBaseViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XFDBaseViewController.h; sourceTree = "<group>"; };
-		3F90946320B80F0800B9FA31 /* XFDBaseViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XFDBaseViewController.m; sourceTree = "<group>"; };
-		3F90946420B80F0800B9FA31 /* XFDDetailViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XFDDetailViewController.h; sourceTree = "<group>"; };
-		3F90946520B80F0800B9FA31 /* XFDDetailViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XFDDetailViewController.m; sourceTree = "<group>"; };
-		3F90946620B80F0800B9FA31 /* XFDLogoWindow.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XFDLogoWindow.h; sourceTree = "<group>"; };
-		3F90946720B80F0800B9FA31 /* XFDLogoWindow.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XFDLogoWindow.m; sourceTree = "<group>"; };
-		3F90946820B80F0800B9FA31 /* XFDPerformanceDetailController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XFDPerformanceDetailController.h; sourceTree = "<group>"; };
-		3F90946920B80F0800B9FA31 /* XFDPerformanceDetailController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XFDPerformanceDetailController.m; sourceTree = "<group>"; };
-		3F90946A20B80F0800B9FA31 /* XFDShowParamCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XFDShowParamCell.h; sourceTree = "<group>"; };
-		3F90946B20B80F0800B9FA31 /* XFDShowParamCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XFDShowParamCell.m; sourceTree = "<group>"; };
-		3F90946C20B80F0800B9FA31 /* XFDToolCategoryCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XFDToolCategoryCell.h; sourceTree = "<group>"; };
-		3F90946D20B80F0800B9FA31 /* XFDToolCategoryCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XFDToolCategoryCell.m; sourceTree = "<group>"; };
-		3F90946E20B80F0800B9FA31 /* XFDToolCommonCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XFDToolCommonCell.h; sourceTree = "<group>"; };
-		3F90946F20B80F0800B9FA31 /* XFDToolCommonCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XFDToolCommonCell.m; sourceTree = "<group>"; };
-		3F90947020B80F0800B9FA31 /* XFDToolsCategoryCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XFDToolsCategoryCell.h; sourceTree = "<group>"; };
-		3F90947120B80F0800B9FA31 /* XFDToolsCategoryCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XFDToolsCategoryCell.m; sourceTree = "<group>"; };
-		3F90947220B80F0800B9FA31 /* XFDUtilityWindow.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XFDUtilityWindow.h; sourceTree = "<group>"; };
-		3F90947320B80F0800B9FA31 /* XFDUtilityWindow.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XFDUtilityWindow.m; sourceTree = "<group>"; };
-		3F90947420B80F0800B9FA31 /* XFDTTools.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XFDTTools.h; sourceTree = "<group>"; };
-		3F90947520B80F0800B9FA31 /* XFDTTools.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XFDTTools.m; sourceTree = "<group>"; };
-		3F90947620B80F0800B9FA31 /* XFDTToolsConfig.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XFDTToolsConfig.h; sourceTree = "<group>"; };
-		3F90947720B80F0800B9FA31 /* XFDTToolsConfig.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XFDTToolsConfig.m; sourceTree = "<group>"; };
-		3F90947820B80F0800B9FA31 /* XFDTToolsDefine.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XFDTToolsDefine.h; sourceTree = "<group>"; };
-		3F90947B20B80F0800B9FA31 /* XFDTBaseSystemInfo.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XFDTBaseSystemInfo.h; sourceTree = "<group>"; };
-		3F90947C20B80F0800B9FA31 /* XFDTBaseSystemInfo.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XFDTBaseSystemInfo.m; sourceTree = "<group>"; };
-		3F90947D20B80F0800B9FA31 /* XFDTBatterySystemInfo.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XFDTBatterySystemInfo.h; sourceTree = "<group>"; };
-		3F90947E20B80F0800B9FA31 /* XFDTBatterySystemInfo.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XFDTBatterySystemInfo.m; sourceTree = "<group>"; };
-		3F90947F20B80F0800B9FA31 /* XFDTCPUSystemInfo+DB.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "XFDTCPUSystemInfo+DB.h"; sourceTree = "<group>"; };
-		3F90948020B80F0800B9FA31 /* XFDTCPUSystemInfo+DB.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "XFDTCPUSystemInfo+DB.m"; sourceTree = "<group>"; };
-		3F90948120B80F0800B9FA31 /* XFDTCPUSystemInfo.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XFDTCPUSystemInfo.h; sourceTree = "<group>"; };
-		3F90948220B80F0800B9FA31 /* XFDTCPUSystemInfo.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XFDTCPUSystemInfo.m; sourceTree = "<group>"; };
-		3F90948320B80F0800B9FA31 /* XFDTMemorySystemInfo.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XFDTMemorySystemInfo.h; sourceTree = "<group>"; };
-		3F90948420B80F0800B9FA31 /* XFDTMemorySystemInfo.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XFDTMemorySystemInfo.m; sourceTree = "<group>"; };
-		3F90948520B80F0800B9FA31 /* XFDTSystemInfo.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XFDTSystemInfo.h; sourceTree = "<group>"; };
-		3F90948620B80F0800B9FA31 /* XFDTSystemInfo.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XFDTSystemInfo.m; sourceTree = "<group>"; };
-		3F90948720B80F0800B9FA31 /* NSFileManager+XFDTExt.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSFileManager+XFDTExt.h"; sourceTree = "<group>"; };
-		3F90948820B80F0800B9FA31 /* NSFileManager+XFDTExt.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSFileManager+XFDTExt.m"; sourceTree = "<group>"; };
-		3F90948920B80F0800B9FA31 /* XFDTDBManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XFDTDBManager.h; sourceTree = "<group>"; };
-		3F90948A20B80F0800B9FA31 /* XFDTDBManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XFDTDBManager.m; sourceTree = "<group>"; };
-		3F90948B20B80F0800B9FA31 /* XFDTPerformanceDefine.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XFDTPerformanceDefine.h; sourceTree = "<group>"; };
-		3F90948C20B80F0800B9FA31 /* XFDTPerformanceMonitor.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XFDTPerformanceMonitor.h; sourceTree = "<group>"; };
-		3F90948D20B80F0800B9FA31 /* XFDTPerformanceMonitor.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XFDTPerformanceMonitor.m; sourceTree = "<group>"; };
-		3F90948E20B80F0800B9FA31 /* XFDTSystemInfoFetcher.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XFDTSystemInfoFetcher.h; sourceTree = "<group>"; };
-		3F90948F20B80F0800B9FA31 /* XFDTSystemInfoFetcher.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XFDTSystemInfoFetcher.m; sourceTree = "<group>"; };
-		3F90949020B80F0800B9FA31 /* XFDTSystemInfoFormatter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XFDTSystemInfoFormatter.h; sourceTree = "<group>"; };
-		3F90949120B80F0800B9FA31 /* XFDTSystemInfoFormatter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XFDTSystemInfoFormatter.m; sourceTree = "<group>"; };
-		3F90949220B80F0800B9FA31 /* XFDTTools.sqlite.sql */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = XFDTTools.sqlite.sql; sourceTree = "<group>"; };
-		3F90949320B80F0800B9FA31 /* XFDTTools.TestData.DeleteAll.sqlite.sql */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = XFDTTools.TestData.DeleteAll.sqlite.sql; sourceTree = "<group>"; };
-		3F90949420B80F0800B9FA31 /* XFDTTools.TestData.Insert.sqlite.sql */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = XFDTTools.TestData.Insert.sqlite.sql; sourceTree = "<group>"; };
-		3F90949520B80F0800B9FA31 /* XFSMSystemInfo.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XFSMSystemInfo.h; sourceTree = "<group>"; };
-		3F90949620B80F0800B9FA31 /* XFSMSystemInfo.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XFSMSystemInfo.m; sourceTree = "<group>"; };
 		3F991F752084E64B00C4274D /* Person.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Person.h; sourceTree = "<group>"; };
 		3F991F762084E64B00C4274D /* Person.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Person.m; sourceTree = "<group>"; };
 		3F991F782084E6BA00C4274D /* ArchiverTool.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ArchiverTool.h; sourceTree = "<group>"; };
@@ -252,23 +216,117 @@
 		3F991F7C2084EA6400C4274D /* ArchiveCopyController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ArchiveCopyController.m; sourceTree = "<group>"; };
 		3F991F812084EB1700C4274D /* RootViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RootViewController.h; sourceTree = "<group>"; };
 		3F991F822084EB1700C4274D /* RootViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RootViewController.m; sourceTree = "<group>"; };
-		3FAB6DB320BEC4EF00279FD9 /* XFDTCavsObj.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XFDTCavsObj.h; sourceTree = "<group>"; };
-		3FAB6DB420BEC4EF00279FD9 /* XFDTCavsObj.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XFDTCavsObj.m; sourceTree = "<group>"; };
-		3FAB6DB520BEC4EF00279FD9 /* XFDTChartConfig.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XFDTChartConfig.h; sourceTree = "<group>"; };
-		3FAB6DB620BEC4EF00279FD9 /* XFDTChartView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XFDTChartView.h; sourceTree = "<group>"; };
-		3FAB6DB720BEC4EF00279FD9 /* XFDTChartView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XFDTChartView.m; sourceTree = "<group>"; };
-		3FAB6DB820BEC4EF00279FD9 /* XFDTGridLayer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XFDTGridLayer.h; sourceTree = "<group>"; };
-		3FAB6DB920BEC4EF00279FD9 /* XFDTGridLayer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XFDTGridLayer.m; sourceTree = "<group>"; };
-		3FAB6DBA20BEC4EF00279FD9 /* XFDTLineAxis.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XFDTLineAxis.h; sourceTree = "<group>"; };
-		3FAB6DBB20BEC4EF00279FD9 /* XFDTLineAxis.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XFDTLineAxis.m; sourceTree = "<group>"; };
-		3FAB6DBD20BEC4EF00279FD9 /* XFDTChartCommCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XFDTChartCommCell.h; sourceTree = "<group>"; };
-		3FAB6DBE20BEC4EF00279FD9 /* XFDTChartCommCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XFDTChartCommCell.m; sourceTree = "<group>"; };
-		3FAB6DBF20BEC4EF00279FD9 /* XFDTCpuDetailViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XFDTCpuDetailViewController.h; sourceTree = "<group>"; };
-		3FAB6DC020BEC4EF00279FD9 /* XFDTCpuDetailViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XFDTCpuDetailViewController.m; sourceTree = "<group>"; };
 		3FB8B1D920878DCC00F5E420 /* GCDViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GCDViewController.h; sourceTree = "<group>"; };
 		3FB8B1DA20878DCC00F5E420 /* GCDViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GCDViewController.m; sourceTree = "<group>"; };
 		3FBF8DB5205ABC0700D6A716 /* SocketController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SocketController.h; sourceTree = "<group>"; };
 		3FBF8DB6205ABC0700D6A716 /* SocketController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SocketController.m; sourceTree = "<group>"; };
+		5998BFFB20C02DBA00DC002F /* .gitkeep */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = .gitkeep; sourceTree = "<group>"; };
+		5998BFFC20C02DBA00DC002F /* XFDTTools.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XFDTTools.m; sourceTree = "<group>"; };
+		5998BFFE20C02DBA00DC002F /* XFDTDBManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XFDTDBManager.m; sourceTree = "<group>"; };
+		5998BFFF20C02DBA00DC002F /* XFDTSystemInfoFetcher.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XFDTSystemInfoFetcher.h; sourceTree = "<group>"; };
+		5998C00020C02DBA00DC002F /* XFDTPerformanceDefine.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XFDTPerformanceDefine.h; sourceTree = "<group>"; };
+		5998C00220C02DBA00DC002F /* NSFileManager+XFDTExt.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSFileManager+XFDTExt.h"; sourceTree = "<group>"; };
+		5998C00320C02DBA00DC002F /* NSFileManager+XFDTExt.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSFileManager+XFDTExt.m"; sourceTree = "<group>"; };
+		5998C00420C02DBA00DC002F /* XFDTPerformanceMonitor.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XFDTPerformanceMonitor.m; sourceTree = "<group>"; };
+		5998C00720C02DBA00DC002F /* XFDTTools.sqlite.sql */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = XFDTTools.sqlite.sql; sourceTree = "<group>"; };
+		5998C00820C02DBA00DC002F /* XFDTTools.DeleteAll.sqlite.sql */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = XFDTTools.DeleteAll.sqlite.sql; sourceTree = "<group>"; };
+		5998C00920C02DBA00DC002F /* XFDTTools.TestData.Insert.sqlite.sql */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = XFDTTools.TestData.Insert.sqlite.sql; sourceTree = "<group>"; };
+		5998C00A20C02DBA00DC002F /* XFSMSystemInfo.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XFSMSystemInfo.h; sourceTree = "<group>"; };
+		5998C00B20C02DBA00DC002F /* XFDTSystemInfoFetcher.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XFDTSystemInfoFetcher.m; sourceTree = "<group>"; };
+		5998C00C20C02DBA00DC002F /* XFDTDBManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XFDTDBManager.h; sourceTree = "<group>"; };
+		5998C00D20C02DBA00DC002F /* XFDTPerformanceMonitor.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XFDTPerformanceMonitor.h; sourceTree = "<group>"; };
+		5998C00F20C02DBA00DC002F /* XFDTBaseSystemInfo.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XFDTBaseSystemInfo.h; sourceTree = "<group>"; };
+		5998C01020C02DBA00DC002F /* XFDTBaseSystemInfoDBProxy.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XFDTBaseSystemInfoDBProxy.h; sourceTree = "<group>"; };
+		5998C01220C02DBA00DC002F /* XFDTMemorySystemInfo+DB.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "XFDTMemorySystemInfo+DB.m"; sourceTree = "<group>"; };
+		5998C01320C02DBA00DC002F /* XFDTMemorySystemInfo.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XFDTMemorySystemInfo.m; sourceTree = "<group>"; };
+		5998C01420C02DBA00DC002F /* XFDTMemorySystemInfo+DB.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "XFDTMemorySystemInfo+DB.h"; sourceTree = "<group>"; };
+		5998C01520C02DBA00DC002F /* XFDTMemorySystemInfo.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XFDTMemorySystemInfo.h; sourceTree = "<group>"; };
+		5998C01720C02DBA00DC002F /* XFDTCPUSystemInfo+DB.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "XFDTCPUSystemInfo+DB.h"; sourceTree = "<group>"; };
+		5998C01820C02DBA00DC002F /* XFDTCPUSystemInfo.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XFDTCPUSystemInfo.m; sourceTree = "<group>"; };
+		5998C01920C02DBA00DC002F /* XFDTCPUSystemInfo+DB.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "XFDTCPUSystemInfo+DB.m"; sourceTree = "<group>"; };
+		5998C01A20C02DBA00DC002F /* XFDTCPUSystemInfo.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XFDTCPUSystemInfo.h; sourceTree = "<group>"; };
+		5998C01B20C02DBA00DC002F /* XFDTBaseSystemInfo.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XFDTBaseSystemInfo.m; sourceTree = "<group>"; };
+		5998C01D20C02DBA00DC002F /* XFDTBatterySystemInfo+DB.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "XFDTBatterySystemInfo+DB.h"; sourceTree = "<group>"; };
+		5998C01E20C02DBA00DC002F /* XFDTBatterySystemInfo.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XFDTBatterySystemInfo.m; sourceTree = "<group>"; };
+		5998C01F20C02DBA00DC002F /* XFDTBatterySystemInfo+DB.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "XFDTBatterySystemInfo+DB.m"; sourceTree = "<group>"; };
+		5998C02020C02DBA00DC002F /* XFDTBatterySystemInfo.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XFDTBatterySystemInfo.h; sourceTree = "<group>"; };
+		5998C02120C02DBA00DC002F /* XFSMSystemInfo.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XFSMSystemInfo.m; sourceTree = "<group>"; };
+		5998C02320C02DBA00DC002F /* .gitkeep */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = .gitkeep; sourceTree = "<group>"; };
+		5998C02420C02DBA00DC002F /* XFDTToolsConfig.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XFDTToolsConfig.m; sourceTree = "<group>"; };
+		5998C02620C02DBA00DC002F /* .gitkeep */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = .gitkeep; sourceTree = "<group>"; };
+		5998C02720C02DBA00DC002F /* XFDTTools.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XFDTTools.h; sourceTree = "<group>"; };
+		5998C02A20C02DBA00DC002F /* XFDTAppLogViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XFDTAppLogViewController.h; sourceTree = "<group>"; };
+		5998C02B20C02DBA00DC002F /* XFDTAppLogViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XFDTAppLogViewController.m; sourceTree = "<group>"; };
+		5998C02D20C02DBA00DC002F /* xfdt_create_app_log_table.sql */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = xfdt_create_app_log_table.sql; sourceTree = "<group>"; };
+		5998C02E20C02DBA00DC002F /* XFDTLogManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XFDTLogManager.h; sourceTree = "<group>"; };
+		5998C02F20C02DBA00DC002F /* XFDTLogManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XFDTLogManager.m; sourceTree = "<group>"; };
+		5998C03120C02DBA00DC002F /* XFDTAppLogUnitModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XFDTAppLogUnitModel.m; sourceTree = "<group>"; };
+		5998C03220C02DBA00DC002F /* XFDTAppLogUnitModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XFDTAppLogUnitModel.h; sourceTree = "<group>"; };
+		5998C03420C02DBA00DC002F /* XFDTAppLogTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XFDTAppLogTableViewCell.m; sourceTree = "<group>"; };
+		5998C03520C02DBA00DC002F /* XFDTLogLevelChooseView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XFDTLogLevelChooseView.h; sourceTree = "<group>"; };
+		5998C03620C02DBA00DC002F /* XFDTLogConfigView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XFDTLogConfigView.m; sourceTree = "<group>"; };
+		5998C03720C02DBA00DC002F /* XFDTAppLogTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XFDTAppLogTableViewCell.h; sourceTree = "<group>"; };
+		5998C03820C02DBA00DC002F /* XFDTLogConfigView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XFDTLogConfigView.h; sourceTree = "<group>"; };
+		5998C03920C02DBA00DC002F /* XFDTLogLevelChooseView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XFDTLogLevelChooseView.m; sourceTree = "<group>"; };
+		5998C03B20C02DBA00DC002F /* gt_checkbox.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = gt_checkbox.png; sourceTree = "<group>"; };
+		5998C03C20C02DBA00DC002F /* gt_checkbox_sel.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = gt_checkbox_sel.png; sourceTree = "<group>"; };
+		5998C03D20C02DBA00DC002F /* XFDTToolsDefine.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XFDTToolsDefine.h; sourceTree = "<group>"; };
+		5998C03E20C02DBA00DC002F /* XFDTToolsConfig.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XFDTToolsConfig.h; sourceTree = "<group>"; };
+		5998C04020C02DBA00DC002F /* XFDShowParamCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XFDShowParamCell.m; sourceTree = "<group>"; };
+		5998C04120C02DBA00DC002F /* XFDDetailViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XFDDetailViewController.h; sourceTree = "<group>"; };
+		5998C04420C02DBA00DC002F /* XFDTCpuDetailViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XFDTCpuDetailViewController.m; sourceTree = "<group>"; };
+		5998C04520C02DBA00DC002F /* XFDTCpuDetailViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XFDTCpuDetailViewController.h; sourceTree = "<group>"; };
+		5998C04720C02DBA00DC002F /* XFDTChartCommCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XFDTChartCommCell.h; sourceTree = "<group>"; };
+		5998C04820C02DBA00DC002F /* XFDTPerformanceInfoView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XFDTPerformanceInfoView.h; sourceTree = "<group>"; };
+		5998C04920C02DBA00DC002F /* XFDTChartCommCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XFDTChartCommCell.m; sourceTree = "<group>"; };
+		5998C04A20C02DBA00DC002F /* XFDTPerformanceInfoView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XFDTPerformanceInfoView.m; sourceTree = "<group>"; };
+		5998C04B20C02DBA00DC002F /* XFDBaseViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XFDBaseViewController.h; sourceTree = "<group>"; };
+		5998C04C20C02DBA00DC002F /* XFDUtilityWindow.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XFDUtilityWindow.h; sourceTree = "<group>"; };
+		5998C04D20C02DBA00DC002F /* XFDToolCategoryCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XFDToolCategoryCell.m; sourceTree = "<group>"; };
+		5998C04E20C02DBA00DC002F /* XFDPerformanceDetailController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XFDPerformanceDetailController.m; sourceTree = "<group>"; };
+		5998C05020C02DBA00DC002F /* XFDTLineAxis.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XFDTLineAxis.h; sourceTree = "<group>"; };
+		5998C05120C02DBA00DC002F /* XFDTGridLayer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XFDTGridLayer.h; sourceTree = "<group>"; };
+		5998C05220C02DBA00DC002F /* XFDTCavsObj.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XFDTCavsObj.h; sourceTree = "<group>"; };
+		5998C05320C02DBA00DC002F /* XFDTChartConfig.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XFDTChartConfig.h; sourceTree = "<group>"; };
+		5998C05420C02DBA00DC002F /* XFDTChartView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XFDTChartView.h; sourceTree = "<group>"; };
+		5998C05520C02DBA00DC002F /* XFDTLineAxis.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XFDTLineAxis.m; sourceTree = "<group>"; };
+		5998C05620C02DBA00DC002F /* XFDTCavsObj.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XFDTCavsObj.m; sourceTree = "<group>"; };
+		5998C05720C02DBA00DC002F /* XFDTGridLayer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XFDTGridLayer.m; sourceTree = "<group>"; };
+		5998C05820C02DBA00DC002F /* XFDTChartView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XFDTChartView.m; sourceTree = "<group>"; };
+		5998C05A20C02DBA00DC002F /* XFDMonitorConfig.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XFDMonitorConfig.h; sourceTree = "<group>"; };
+		5998C05B20C02DBA00DC002F /* XFDShowParamManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XFDShowParamManager.m; sourceTree = "<group>"; };
+		5998C05C20C02DBA00DC002F /* XFDTShowParamManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XFDTShowParamManager.h; sourceTree = "<group>"; };
+		5998C05D20C02DBA00DC002F /* XFDTMonitorConfig.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XFDTMonitorConfig.h; sourceTree = "<group>"; };
+		5998C05E20C02DBA00DC002F /* XFDShowParamManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XFDShowParamManager.h; sourceTree = "<group>"; };
+		5998C05F20C02DBA00DC002F /* XFDTShowParamManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XFDTShowParamManager.m; sourceTree = "<group>"; };
+		5998C06020C02DBA00DC002F /* XFDToolCommonCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XFDToolCommonCell.h; sourceTree = "<group>"; };
+		5998C06220C02DBA00DC002F /* XFDTLogoWindow.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XFDTLogoWindow.h; sourceTree = "<group>"; };
+		5998C06320C02DBA00DC002F /* XFDTLogoWindow.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XFDTLogoWindow.m; sourceTree = "<group>"; };
+		5998C06420C02DBA00DC002F /* XFDToolsCategoryCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XFDToolsCategoryCell.h; sourceTree = "<group>"; };
+		5998C06520C02DBA00DC002F /* XFDLogoWindow.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XFDLogoWindow.m; sourceTree = "<group>"; };
+		5998C06620C02DBA00DC002F /* XFDShowParamCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XFDShowParamCell.h; sourceTree = "<group>"; };
+		5998C06720C02DBA00DC002F /* XFDDetailViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XFDDetailViewController.m; sourceTree = "<group>"; };
+		5998C06820C02DBA00DC002F /* XFDToolCategoryCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XFDToolCategoryCell.h; sourceTree = "<group>"; };
+		5998C06A20C02DBA00DC002F /* XFDTShowParamCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XFDTShowParamCell.h; sourceTree = "<group>"; };
+		5998C06B20C02DBA00DC002F /* XFDTDetailViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XFDTDetailViewController.h; sourceTree = "<group>"; };
+		5998C06C20C02DBA00DC002F /* XFDTToolCommonCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XFDTToolCommonCell.h; sourceTree = "<group>"; };
+		5998C06D20C02DBA00DC002F /* XFDTUtilityWindow.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XFDTUtilityWindow.m; sourceTree = "<group>"; };
+		5998C06E20C02DBA00DC002F /* XFDTBaseViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XFDTBaseViewController.h; sourceTree = "<group>"; };
+		5998C06F20C02DBA00DC002F /* XFDTPerformanceDetailController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XFDTPerformanceDetailController.h; sourceTree = "<group>"; };
+		5998C07020C02DBA00DC002F /* XFDTToolCategoryCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XFDTToolCategoryCell.h; sourceTree = "<group>"; };
+		5998C07120C02DBA00DC002F /* XFDTShowParamCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XFDTShowParamCell.m; sourceTree = "<group>"; };
+		5998C07220C02DBA00DC002F /* XFDTDetailViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XFDTDetailViewController.m; sourceTree = "<group>"; };
+		5998C07320C02DBA00DC002F /* XFDTUtilityWindow.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XFDTUtilityWindow.h; sourceTree = "<group>"; };
+		5998C07420C02DBA00DC002F /* XFDTBaseViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XFDTBaseViewController.m; sourceTree = "<group>"; };
+		5998C07520C02DBA00DC002F /* XFDTToolCommonCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XFDTToolCommonCell.m; sourceTree = "<group>"; };
+		5998C07620C02DBA00DC002F /* XFDTToolCategoryCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XFDTToolCategoryCell.m; sourceTree = "<group>"; };
+		5998C07720C02DBA00DC002F /* XFDTPerformanceDetailController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XFDTPerformanceDetailController.m; sourceTree = "<group>"; };
+		5998C07820C02DBA00DC002F /* XFDUtilityWindow.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XFDUtilityWindow.m; sourceTree = "<group>"; };
+		5998C07920C02DBA00DC002F /* XFDBaseViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XFDBaseViewController.m; sourceTree = "<group>"; };
+		5998C07A20C02DBA00DC002F /* XFDLogoWindow.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XFDLogoWindow.h; sourceTree = "<group>"; };
+		5998C07B20C02DBA00DC002F /* XFDToolsCategoryCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XFDToolsCategoryCell.m; sourceTree = "<group>"; };
+		5998C07C20C02DBA00DC002F /* XFDToolCommonCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XFDToolCommonCell.m; sourceTree = "<group>"; };
+		5998C07D20C02DBA00DC002F /* XFDPerformanceDetailController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XFDPerformanceDetailController.h; sourceTree = "<group>"; };
 		716E1E53E55C5EF5EC90906F /* libPods-caogaoan3.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-caogaoan3.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		B2F471A9208D84760082C375 /* CollectionViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CollectionViewController.h; sourceTree = "<group>"; };
 		B2F471AA208D84760082C375 /* CollectionViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CollectionViewController.m; sourceTree = "<group>"; };
@@ -303,7 +361,7 @@
 		3F1F2C6320B3EEC800BAC7EE /* Monity */ = {
 			isa = PBXGroup;
 			children = (
-				3F90945820B80F0800B9FA31 /* XFDTTools */,
+				5998BFF920C02DBA00DC002F /* XFDTTools */,
 				3F1F2C6420B3EEDF00BAC7EE /* MonityViewController.h */,
 				3F1F2C6520B3EEDF00BAC7EE /* MonityViewController.m */,
 			);
@@ -453,8 +511,6 @@
 		3F7273F320BCE70D00907F12 /* Chart */ = {
 			isa = PBXGroup;
 			children = (
-				3FAB6DB220BEC4EF00279FD9 /* Charts */,
-				3FAB6DBC20BEC4EF00279FD9 /* CPUDetail */,
 				3F7273F420BCE72A00907F12 /* ChartViewController.h */,
 				3F7273F520BCE72A00907F12 /* ChartViewController.m */,
 			);
@@ -501,149 +557,6 @@
 			path = PresentVC;
 			sourceTree = "<group>";
 		};
-		3F90945820B80F0800B9FA31 /* XFDTTools */ = {
-			isa = PBXGroup;
-			children = (
-				3F90945920B80F0800B9FA31 /* Resource */,
-				3F90945C20B80F0800B9FA31 /* UIManager */,
-				3F90947420B80F0800B9FA31 /* XFDTTools.h */,
-				3F90947520B80F0800B9FA31 /* XFDTTools.m */,
-				3F90947620B80F0800B9FA31 /* XFDTToolsConfig.h */,
-				3F90947720B80F0800B9FA31 /* XFDTToolsConfig.m */,
-				3F90947820B80F0800B9FA31 /* XFDTToolsDefine.h */,
-				3F90947920B80F0800B9FA31 /* 性能监控 */,
-				3F90949720B80F0800B9FA31 /* 文件浏览 */,
-				3F90949820B80F0800B9FA31 /* 程序日志 */,
-				3F90949920B80F0800B9FA31 /* 网络分析 */,
-				3F90949A20B80F0800B9FA31 /* 运行时数据 */,
-			);
-			path = XFDTTools;
-			sourceTree = "<group>";
-		};
-		3F90945920B80F0800B9FA31 /* Resource */ = {
-			isa = PBXGroup;
-			children = (
-				3F90945A20B80F0800B9FA31 /* gt_checkbox.png */,
-				3F90945B20B80F0800B9FA31 /* gt_checkbox_sel.png */,
-			);
-			path = Resource;
-			sourceTree = "<group>";
-		};
-		3F90945C20B80F0800B9FA31 /* UIManager */ = {
-			isa = PBXGroup;
-			children = (
-				3F90945D20B80F0800B9FA31 /* Comm */,
-				3F90946120B80F0800B9FA31 /* Model */,
-				3F90946220B80F0800B9FA31 /* XFDBaseViewController.h */,
-				3F90946320B80F0800B9FA31 /* XFDBaseViewController.m */,
-				3F90946420B80F0800B9FA31 /* XFDDetailViewController.h */,
-				3F90946520B80F0800B9FA31 /* XFDDetailViewController.m */,
-				3F90946620B80F0800B9FA31 /* XFDLogoWindow.h */,
-				3F90946720B80F0800B9FA31 /* XFDLogoWindow.m */,
-				3F90946820B80F0800B9FA31 /* XFDPerformanceDetailController.h */,
-				3F90946920B80F0800B9FA31 /* XFDPerformanceDetailController.m */,
-				3F90946A20B80F0800B9FA31 /* XFDShowParamCell.h */,
-				3F90946B20B80F0800B9FA31 /* XFDShowParamCell.m */,
-				3F90946C20B80F0800B9FA31 /* XFDToolCategoryCell.h */,
-				3F90946D20B80F0800B9FA31 /* XFDToolCategoryCell.m */,
-				3F90946E20B80F0800B9FA31 /* XFDToolCommonCell.h */,
-				3F90946F20B80F0800B9FA31 /* XFDToolCommonCell.m */,
-				3F90947020B80F0800B9FA31 /* XFDToolsCategoryCell.h */,
-				3F90947120B80F0800B9FA31 /* XFDToolsCategoryCell.m */,
-				3F90947220B80F0800B9FA31 /* XFDUtilityWindow.h */,
-				3F90947320B80F0800B9FA31 /* XFDUtilityWindow.m */,
-			);
-			path = UIManager;
-			sourceTree = "<group>";
-		};
-		3F90945D20B80F0800B9FA31 /* Comm */ = {
-			isa = PBXGroup;
-			children = (
-				3F90945E20B80F0800B9FA31 /* XFDMonitorConfig.h */,
-				3F90945F20B80F0800B9FA31 /* XFDShowParamManager.h */,
-				3F90946020B80F0800B9FA31 /* XFDShowParamManager.m */,
-			);
-			path = Comm;
-			sourceTree = "<group>";
-		};
-		3F90946120B80F0800B9FA31 /* Model */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Model;
-			sourceTree = "<group>";
-		};
-		3F90947920B80F0800B9FA31 /* 性能监控 */ = {
-			isa = PBXGroup;
-			children = (
-				3F90947A20B80F0800B9FA31 /* Model */,
-				3F90948720B80F0800B9FA31 /* NSFileManager+XFDTExt.h */,
-				3F90948820B80F0800B9FA31 /* NSFileManager+XFDTExt.m */,
-				3F90948920B80F0800B9FA31 /* XFDTDBManager.h */,
-				3F90948A20B80F0800B9FA31 /* XFDTDBManager.m */,
-				3F90948B20B80F0800B9FA31 /* XFDTPerformanceDefine.h */,
-				3F90948C20B80F0800B9FA31 /* XFDTPerformanceMonitor.h */,
-				3F90948D20B80F0800B9FA31 /* XFDTPerformanceMonitor.m */,
-				3F90948E20B80F0800B9FA31 /* XFDTSystemInfoFetcher.h */,
-				3F90948F20B80F0800B9FA31 /* XFDTSystemInfoFetcher.m */,
-				3F90949020B80F0800B9FA31 /* XFDTSystemInfoFormatter.h */,
-				3F90949120B80F0800B9FA31 /* XFDTSystemInfoFormatter.m */,
-				3F90949220B80F0800B9FA31 /* XFDTTools.sqlite.sql */,
-				3F90949320B80F0800B9FA31 /* XFDTTools.TestData.DeleteAll.sqlite.sql */,
-				3F90949420B80F0800B9FA31 /* XFDTTools.TestData.Insert.sqlite.sql */,
-				3F90949520B80F0800B9FA31 /* XFSMSystemInfo.h */,
-				3F90949620B80F0800B9FA31 /* XFSMSystemInfo.m */,
-			);
-			path = "性能监控";
-			sourceTree = "<group>";
-		};
-		3F90947A20B80F0800B9FA31 /* Model */ = {
-			isa = PBXGroup;
-			children = (
-				3F90947B20B80F0800B9FA31 /* XFDTBaseSystemInfo.h */,
-				3F90947C20B80F0800B9FA31 /* XFDTBaseSystemInfo.m */,
-				3F90947D20B80F0800B9FA31 /* XFDTBatterySystemInfo.h */,
-				3F90947E20B80F0800B9FA31 /* XFDTBatterySystemInfo.m */,
-				3F90947F20B80F0800B9FA31 /* XFDTCPUSystemInfo+DB.h */,
-				3F90948020B80F0800B9FA31 /* XFDTCPUSystemInfo+DB.m */,
-				3F90948120B80F0800B9FA31 /* XFDTCPUSystemInfo.h */,
-				3F90948220B80F0800B9FA31 /* XFDTCPUSystemInfo.m */,
-				3F90948320B80F0800B9FA31 /* XFDTMemorySystemInfo.h */,
-				3F90948420B80F0800B9FA31 /* XFDTMemorySystemInfo.m */,
-				3F90948520B80F0800B9FA31 /* XFDTSystemInfo.h */,
-				3F90948620B80F0800B9FA31 /* XFDTSystemInfo.m */,
-			);
-			path = Model;
-			sourceTree = "<group>";
-		};
-		3F90949720B80F0800B9FA31 /* 文件浏览 */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = "文件浏览";
-			sourceTree = "<group>";
-		};
-		3F90949820B80F0800B9FA31 /* 程序日志 */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = "程序日志";
-			sourceTree = "<group>";
-		};
-		3F90949920B80F0800B9FA31 /* 网络分析 */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = "网络分析";
-			sourceTree = "<group>";
-		};
-		3F90949A20B80F0800B9FA31 /* 运行时数据 */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = "运行时数据";
-			sourceTree = "<group>";
-		};
 		3F991F742084E62200C4274D /* Runtime自动归档 */ = {
 			isa = PBXGroup;
 			children = (
@@ -657,33 +570,6 @@
 				3F884A12208F6F0D005D6CD8 /* Runtime_weak.m */,
 			);
 			path = "Runtime自动归档";
-			sourceTree = "<group>";
-		};
-		3FAB6DB220BEC4EF00279FD9 /* Charts */ = {
-			isa = PBXGroup;
-			children = (
-				3FAB6DB320BEC4EF00279FD9 /* XFDTCavsObj.h */,
-				3FAB6DB420BEC4EF00279FD9 /* XFDTCavsObj.m */,
-				3FAB6DB520BEC4EF00279FD9 /* XFDTChartConfig.h */,
-				3FAB6DB620BEC4EF00279FD9 /* XFDTChartView.h */,
-				3FAB6DB720BEC4EF00279FD9 /* XFDTChartView.m */,
-				3FAB6DB820BEC4EF00279FD9 /* XFDTGridLayer.h */,
-				3FAB6DB920BEC4EF00279FD9 /* XFDTGridLayer.m */,
-				3FAB6DBA20BEC4EF00279FD9 /* XFDTLineAxis.h */,
-				3FAB6DBB20BEC4EF00279FD9 /* XFDTLineAxis.m */,
-			);
-			path = Charts;
-			sourceTree = "<group>";
-		};
-		3FAB6DBC20BEC4EF00279FD9 /* CPUDetail */ = {
-			isa = PBXGroup;
-			children = (
-				3FAB6DBD20BEC4EF00279FD9 /* XFDTChartCommCell.h */,
-				3FAB6DBE20BEC4EF00279FD9 /* XFDTChartCommCell.m */,
-				3FAB6DBF20BEC4EF00279FD9 /* XFDTCpuDetailViewController.h */,
-				3FAB6DC020BEC4EF00279FD9 /* XFDTCpuDetailViewController.m */,
-			);
-			path = CPUDetail;
 			sourceTree = "<group>";
 		};
 		3FB8B1D820878DAB00F5E420 /* GCD */ = {
@@ -710,6 +596,321 @@
 				716E1E53E55C5EF5EC90906F /* libPods-caogaoan3.a */,
 			);
 			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		5998BFF920C02DBA00DC002F /* XFDTTools */ = {
+			isa = PBXGroup;
+			children = (
+				5998BFFA20C02DBA00DC002F /* 网络分析 */,
+				5998BFFC20C02DBA00DC002F /* XFDTTools.m */,
+				5998BFFD20C02DBA00DC002F /* 性能监控 */,
+				5998C02220C02DBA00DC002F /* 运行时数据 */,
+				5998C02420C02DBA00DC002F /* XFDTToolsConfig.m */,
+				5998C02520C02DBA00DC002F /* 文件浏览 */,
+				5998C02720C02DBA00DC002F /* XFDTTools.h */,
+				5998C02820C02DBA00DC002F /* 程序日志 */,
+				5998C03A20C02DBA00DC002F /* Resource */,
+				5998C03D20C02DBA00DC002F /* XFDTToolsDefine.h */,
+				5998C03E20C02DBA00DC002F /* XFDTToolsConfig.h */,
+				5998C03F20C02DBA00DC002F /* UIManager */,
+			);
+			name = XFDTTools;
+			path = ../../../../Desktop/XFDTTools;
+			sourceTree = "<group>";
+		};
+		5998BFFA20C02DBA00DC002F /* 网络分析 */ = {
+			isa = PBXGroup;
+			children = (
+				5998BFFB20C02DBA00DC002F /* .gitkeep */,
+			);
+			path = "网络分析";
+			sourceTree = "<group>";
+		};
+		5998BFFD20C02DBA00DC002F /* 性能监控 */ = {
+			isa = PBXGroup;
+			children = (
+				5998BFFE20C02DBA00DC002F /* XFDTDBManager.m */,
+				5998BFFF20C02DBA00DC002F /* XFDTSystemInfoFetcher.h */,
+				5998C00020C02DBA00DC002F /* XFDTPerformanceDefine.h */,
+				5998C00120C02DBA00DC002F /* Category */,
+				5998C00420C02DBA00DC002F /* XFDTPerformanceMonitor.m */,
+				5998C00520C02DBA00DC002F /* Resources */,
+				5998C00A20C02DBA00DC002F /* XFSMSystemInfo.h */,
+				5998C00B20C02DBA00DC002F /* XFDTSystemInfoFetcher.m */,
+				5998C00C20C02DBA00DC002F /* XFDTDBManager.h */,
+				5998C00D20C02DBA00DC002F /* XFDTPerformanceMonitor.h */,
+				5998C00E20C02DBA00DC002F /* Model */,
+				5998C02120C02DBA00DC002F /* XFSMSystemInfo.m */,
+			);
+			path = "性能监控";
+			sourceTree = "<group>";
+		};
+		5998C00120C02DBA00DC002F /* Category */ = {
+			isa = PBXGroup;
+			children = (
+				5998C00220C02DBA00DC002F /* NSFileManager+XFDTExt.h */,
+				5998C00320C02DBA00DC002F /* NSFileManager+XFDTExt.m */,
+			);
+			path = Category;
+			sourceTree = "<group>";
+		};
+		5998C00520C02DBA00DC002F /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				5998C00620C02DBA00DC002F /* SQL */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		5998C00620C02DBA00DC002F /* SQL */ = {
+			isa = PBXGroup;
+			children = (
+				5998C00720C02DBA00DC002F /* XFDTTools.sqlite.sql */,
+				5998C00820C02DBA00DC002F /* XFDTTools.DeleteAll.sqlite.sql */,
+				5998C00920C02DBA00DC002F /* XFDTTools.TestData.Insert.sqlite.sql */,
+			);
+			path = SQL;
+			sourceTree = "<group>";
+		};
+		5998C00E20C02DBA00DC002F /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				5998C00F20C02DBA00DC002F /* XFDTBaseSystemInfo.h */,
+				5998C01020C02DBA00DC002F /* XFDTBaseSystemInfoDBProxy.h */,
+				5998C01120C02DBA00DC002F /* Memory */,
+				5998C01620C02DBA00DC002F /* CPU */,
+				5998C01B20C02DBA00DC002F /* XFDTBaseSystemInfo.m */,
+				5998C01C20C02DBA00DC002F /* Battery */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		5998C01120C02DBA00DC002F /* Memory */ = {
+			isa = PBXGroup;
+			children = (
+				5998C01220C02DBA00DC002F /* XFDTMemorySystemInfo+DB.m */,
+				5998C01320C02DBA00DC002F /* XFDTMemorySystemInfo.m */,
+				5998C01420C02DBA00DC002F /* XFDTMemorySystemInfo+DB.h */,
+				5998C01520C02DBA00DC002F /* XFDTMemorySystemInfo.h */,
+			);
+			path = Memory;
+			sourceTree = "<group>";
+		};
+		5998C01620C02DBA00DC002F /* CPU */ = {
+			isa = PBXGroup;
+			children = (
+				5998C01720C02DBA00DC002F /* XFDTCPUSystemInfo+DB.h */,
+				5998C01820C02DBA00DC002F /* XFDTCPUSystemInfo.m */,
+				5998C01920C02DBA00DC002F /* XFDTCPUSystemInfo+DB.m */,
+				5998C01A20C02DBA00DC002F /* XFDTCPUSystemInfo.h */,
+			);
+			path = CPU;
+			sourceTree = "<group>";
+		};
+		5998C01C20C02DBA00DC002F /* Battery */ = {
+			isa = PBXGroup;
+			children = (
+				5998C01D20C02DBA00DC002F /* XFDTBatterySystemInfo+DB.h */,
+				5998C01E20C02DBA00DC002F /* XFDTBatterySystemInfo.m */,
+				5998C01F20C02DBA00DC002F /* XFDTBatterySystemInfo+DB.m */,
+				5998C02020C02DBA00DC002F /* XFDTBatterySystemInfo.h */,
+			);
+			path = Battery;
+			sourceTree = "<group>";
+		};
+		5998C02220C02DBA00DC002F /* 运行时数据 */ = {
+			isa = PBXGroup;
+			children = (
+				5998C02320C02DBA00DC002F /* .gitkeep */,
+			);
+			path = "运行时数据";
+			sourceTree = "<group>";
+		};
+		5998C02520C02DBA00DC002F /* 文件浏览 */ = {
+			isa = PBXGroup;
+			children = (
+				5998C02620C02DBA00DC002F /* .gitkeep */,
+			);
+			path = "文件浏览";
+			sourceTree = "<group>";
+		};
+		5998C02820C02DBA00DC002F /* 程序日志 */ = {
+			isa = PBXGroup;
+			children = (
+				5998C02920C02DBA00DC002F /* Controller */,
+				5998C02C20C02DBA00DC002F /* LogManager */,
+				5998C03020C02DBA00DC002F /* Model */,
+				5998C03320C02DBA00DC002F /* View */,
+			);
+			path = "程序日志";
+			sourceTree = "<group>";
+		};
+		5998C02920C02DBA00DC002F /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				5998C02A20C02DBA00DC002F /* XFDTAppLogViewController.h */,
+				5998C02B20C02DBA00DC002F /* XFDTAppLogViewController.m */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		5998C02C20C02DBA00DC002F /* LogManager */ = {
+			isa = PBXGroup;
+			children = (
+				5998C02D20C02DBA00DC002F /* xfdt_create_app_log_table.sql */,
+				5998C02E20C02DBA00DC002F /* XFDTLogManager.h */,
+				5998C02F20C02DBA00DC002F /* XFDTLogManager.m */,
+			);
+			path = LogManager;
+			sourceTree = "<group>";
+		};
+		5998C03020C02DBA00DC002F /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				5998C03120C02DBA00DC002F /* XFDTAppLogUnitModel.m */,
+				5998C03220C02DBA00DC002F /* XFDTAppLogUnitModel.h */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		5998C03320C02DBA00DC002F /* View */ = {
+			isa = PBXGroup;
+			children = (
+				5998C03420C02DBA00DC002F /* XFDTAppLogTableViewCell.m */,
+				5998C03520C02DBA00DC002F /* XFDTLogLevelChooseView.h */,
+				5998C03620C02DBA00DC002F /* XFDTLogConfigView.m */,
+				5998C03720C02DBA00DC002F /* XFDTAppLogTableViewCell.h */,
+				5998C03820C02DBA00DC002F /* XFDTLogConfigView.h */,
+				5998C03920C02DBA00DC002F /* XFDTLogLevelChooseView.m */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		5998C03A20C02DBA00DC002F /* Resource */ = {
+			isa = PBXGroup;
+			children = (
+				5998C03B20C02DBA00DC002F /* gt_checkbox.png */,
+				5998C03C20C02DBA00DC002F /* gt_checkbox_sel.png */,
+			);
+			path = Resource;
+			sourceTree = "<group>";
+		};
+		5998C03F20C02DBA00DC002F /* UIManager */ = {
+			isa = PBXGroup;
+			children = (
+				5998C04020C02DBA00DC002F /* XFDShowParamCell.m */,
+				5998C04120C02DBA00DC002F /* XFDDetailViewController.h */,
+				5998C04220C02DBA00DC002F /* CPUDetail */,
+				5998C04B20C02DBA00DC002F /* XFDBaseViewController.h */,
+				5998C04C20C02DBA00DC002F /* XFDUtilityWindow.h */,
+				5998C04D20C02DBA00DC002F /* XFDToolCategoryCell.m */,
+				5998C04E20C02DBA00DC002F /* XFDPerformanceDetailController.m */,
+				5998C04F20C02DBA00DC002F /* Charts */,
+				5998C05920C02DBA00DC002F /* Comm */,
+				5998C06020C02DBA00DC002F /* XFDToolCommonCell.h */,
+				5998C06120C02DBA00DC002F /* LogoUI */,
+				5998C06420C02DBA00DC002F /* XFDToolsCategoryCell.h */,
+				5998C06520C02DBA00DC002F /* XFDLogoWindow.m */,
+				5998C06620C02DBA00DC002F /* XFDShowParamCell.h */,
+				5998C06720C02DBA00DC002F /* XFDDetailViewController.m */,
+				5998C06820C02DBA00DC002F /* XFDToolCategoryCell.h */,
+				5998C06920C02DBA00DC002F /* BaseUI */,
+				5998C07820C02DBA00DC002F /* XFDUtilityWindow.m */,
+				5998C07920C02DBA00DC002F /* XFDBaseViewController.m */,
+				5998C07A20C02DBA00DC002F /* XFDLogoWindow.h */,
+				5998C07B20C02DBA00DC002F /* XFDToolsCategoryCell.m */,
+				5998C07C20C02DBA00DC002F /* XFDToolCommonCell.m */,
+				5998C07D20C02DBA00DC002F /* XFDPerformanceDetailController.h */,
+			);
+			path = UIManager;
+			sourceTree = "<group>";
+		};
+		5998C04220C02DBA00DC002F /* CPUDetail */ = {
+			isa = PBXGroup;
+			children = (
+				5998C04320C02DBA00DC002F /* Controller */,
+				5998C04620C02DBA00DC002F /* View */,
+			);
+			path = CPUDetail;
+			sourceTree = "<group>";
+		};
+		5998C04320C02DBA00DC002F /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				5998C04420C02DBA00DC002F /* XFDTCpuDetailViewController.m */,
+				5998C04520C02DBA00DC002F /* XFDTCpuDetailViewController.h */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		5998C04620C02DBA00DC002F /* View */ = {
+			isa = PBXGroup;
+			children = (
+				5998C04720C02DBA00DC002F /* XFDTChartCommCell.h */,
+				5998C04820C02DBA00DC002F /* XFDTPerformanceInfoView.h */,
+				5998C04920C02DBA00DC002F /* XFDTChartCommCell.m */,
+				5998C04A20C02DBA00DC002F /* XFDTPerformanceInfoView.m */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		5998C04F20C02DBA00DC002F /* Charts */ = {
+			isa = PBXGroup;
+			children = (
+				5998C05020C02DBA00DC002F /* XFDTLineAxis.h */,
+				5998C05120C02DBA00DC002F /* XFDTGridLayer.h */,
+				5998C05220C02DBA00DC002F /* XFDTCavsObj.h */,
+				5998C05320C02DBA00DC002F /* XFDTChartConfig.h */,
+				5998C05420C02DBA00DC002F /* XFDTChartView.h */,
+				5998C05520C02DBA00DC002F /* XFDTLineAxis.m */,
+				5998C05620C02DBA00DC002F /* XFDTCavsObj.m */,
+				5998C05720C02DBA00DC002F /* XFDTGridLayer.m */,
+				5998C05820C02DBA00DC002F /* XFDTChartView.m */,
+			);
+			path = Charts;
+			sourceTree = "<group>";
+		};
+		5998C05920C02DBA00DC002F /* Comm */ = {
+			isa = PBXGroup;
+			children = (
+				5998C05A20C02DBA00DC002F /* XFDMonitorConfig.h */,
+				5998C05B20C02DBA00DC002F /* XFDShowParamManager.m */,
+				5998C05C20C02DBA00DC002F /* XFDTShowParamManager.h */,
+				5998C05D20C02DBA00DC002F /* XFDTMonitorConfig.h */,
+				5998C05E20C02DBA00DC002F /* XFDShowParamManager.h */,
+				5998C05F20C02DBA00DC002F /* XFDTShowParamManager.m */,
+			);
+			path = Comm;
+			sourceTree = "<group>";
+		};
+		5998C06120C02DBA00DC002F /* LogoUI */ = {
+			isa = PBXGroup;
+			children = (
+				5998C06220C02DBA00DC002F /* XFDTLogoWindow.h */,
+				5998C06320C02DBA00DC002F /* XFDTLogoWindow.m */,
+			);
+			path = LogoUI;
+			sourceTree = "<group>";
+		};
+		5998C06920C02DBA00DC002F /* BaseUI */ = {
+			isa = PBXGroup;
+			children = (
+				5998C06A20C02DBA00DC002F /* XFDTShowParamCell.h */,
+				5998C06B20C02DBA00DC002F /* XFDTDetailViewController.h */,
+				5998C06C20C02DBA00DC002F /* XFDTToolCommonCell.h */,
+				5998C06D20C02DBA00DC002F /* XFDTUtilityWindow.m */,
+				5998C06E20C02DBA00DC002F /* XFDTBaseViewController.h */,
+				5998C06F20C02DBA00DC002F /* XFDTPerformanceDetailController.h */,
+				5998C07020C02DBA00DC002F /* XFDTToolCategoryCell.h */,
+				5998C07120C02DBA00DC002F /* XFDTShowParamCell.m */,
+				5998C07220C02DBA00DC002F /* XFDTDetailViewController.m */,
+				5998C07320C02DBA00DC002F /* XFDTUtilityWindow.h */,
+				5998C07420C02DBA00DC002F /* XFDTBaseViewController.m */,
+				5998C07520C02DBA00DC002F /* XFDTToolCommonCell.m */,
+				5998C07620C02DBA00DC002F /* XFDTToolCategoryCell.m */,
+				5998C07720C02DBA00DC002F /* XFDTPerformanceDetailController.m */,
+			);
+			path = BaseUI;
 			sourceTree = "<group>";
 		};
 		6EDA0B61A819BC1A6871022B /* Pods */ = {
@@ -849,19 +1050,23 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5998C08520C02DBA00DC002F /* XFDTTools.TestData.Insert.sqlite.sql in Resources */,
 				3F82D3E7208E1D4F00F7D4F0 /* 1.plist in Resources */,
+				5998C09A20C02DBA00DC002F /* gt_checkbox_sel.png in Resources */,
 				3F3B8D8220557A70000CD179 /* LaunchScreen.storyboard in Resources */,
+				5998C09920C02DBA00DC002F /* gt_checkbox.png in Resources */,
+				5998C09320C02DBA00DC002F /* xfdt_create_app_log_table.sql in Resources */,
 				3F82D3E6208E1D4F00F7D4F0 /* 2.plist in Resources */,
+				5998C07E20C02DBA00DC002F /* .gitkeep in Resources */,
 				3F3B8D7F20557A70000CD179 /* Assets.xcassets in Resources */,
-				3F90949C20B80F0800B9FA31 /* gt_checkbox_sel.png in Resources */,
+				5998C08320C02DBA00DC002F /* XFDTTools.sqlite.sql in Resources */,
 				3F82D3E9208E1D4F00F7D4F0 /* 3.plist in Resources */,
-				3F90949B20B80F0800B9FA31 /* gt_checkbox.png in Resources */,
+				5998C08F20C02DBA00DC002F /* .gitkeep in Resources */,
 				3F82D3E8208E1D4F00F7D4F0 /* 0.plist in Resources */,
-				3F9094B420B80F0800B9FA31 /* XFDTTools.sqlite.sql in Resources */,
+				5998C08420C02DBA00DC002F /* XFDTTools.DeleteAll.sqlite.sql in Resources */,
 				3F3B8DA820557B1C000CD179 /* Podfile in Resources */,
-				3F9094B620B80F0800B9FA31 /* XFDTTools.TestData.Insert.sqlite.sql in Resources */,
-				3F9094B520B80F0800B9FA31 /* XFDTTools.TestData.DeleteAll.sqlite.sql in Resources */,
 				3F3B8D7D20557A70000CD179 /* Main.storyboard in Resources */,
+				5998C09120C02DBA00DC002F /* .gitkeep in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -937,73 +1142,89 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5998C0AA20C02DBA00DC002F /* XFDTUtilityWindow.m in Sources */,
+				5998C0A920C02DBA00DC002F /* XFDDetailViewController.m in Sources */,
 				3F1F2C6620B3EEDF00BAC7EE /* MonityViewController.m in Sources */,
+				5998C08820C02DBA00DC002F /* XFDTMemorySystemInfo.m in Sources */,
 				3F3B8DB820557C25000CD179 /* Son.m in Sources */,
-				3F9094AE20B80F0800B9FA31 /* XFDTSystemInfo.m in Sources */,
 				3F82D3EC208E1F5100F7D4F0 /* CusModel.m in Sources */,
-				3F9094A620B80F0800B9FA31 /* XFDUtilityWindow.m in Sources */,
+				5998C0B320C02DBA00DC002F /* XFDToolsCategoryCell.m in Sources */,
+				5998C08D20C02DBA00DC002F /* XFDTBatterySystemInfo+DB.m in Sources */,
+				5998C08C20C02DBA00DC002F /* XFDTBatterySystemInfo.m in Sources */,
+				5998C09F20C02DBA00DC002F /* XFDToolCategoryCell.m in Sources */,
+				5998C0A520C02DBA00DC002F /* XFDShowParamManager.m in Sources */,
+				5998C0B020C02DBA00DC002F /* XFDTPerformanceDetailController.m in Sources */,
 				3F3B8D7A20557A70000CD179 /* ViewController.m in Sources */,
 				3F3EFC67208253A4002948DF /* LookBlockInRuntime.m in Sources */,
+				5998C0B420C02DBA00DC002F /* XFDToolCommonCell.m in Sources */,
 				3F37236420AD6BD000059A8F /* BlePeripheral.m in Sources */,
+				5998C09820C02DBA00DC002F /* XFDTLogLevelChooseView.m in Sources */,
 				3FB8B1DB20878DCC00F5E420 /* GCDViewController.m in Sources */,
-				3F9094A420B80F0800B9FA31 /* XFDToolCommonCell.m in Sources */,
-				3F9094A820B80F0800B9FA31 /* XFDTToolsConfig.m in Sources */,
-				3F9094B120B80F0800B9FA31 /* XFDTPerformanceMonitor.m in Sources */,
-				3FAB6DC120BEC4EF00279FD9 /* XFDTCavsObj.m in Sources */,
-				3FAB6DC420BEC4EF00279FD9 /* XFDTLineAxis.m in Sources */,
+				5998C08E20C02DBA00DC002F /* XFSMSystemInfo.m in Sources */,
+				5998C09420C02DBA00DC002F /* XFDTLogManager.m in Sources */,
 				3F3B8DB420557C25000CD179 /* Father.m in Sources */,
-				3F9094A120B80F0800B9FA31 /* XFDPerformanceDetailController.m in Sources */,
-				3F9094AD20B80F0800B9FA31 /* XFDTMemorySystemInfo.m in Sources */,
-				3F9094AA20B80F0800B9FA31 /* XFDTBatterySystemInfo.m in Sources */,
+				5998C0A820C02DBA00DC002F /* XFDLogoWindow.m in Sources */,
+				5998C09D20C02DBA00DC002F /* XFDTChartCommCell.m in Sources */,
+				5998C09020C02DBA00DC002F /* XFDTToolsConfig.m in Sources */,
+				5998C08A20C02DBA00DC002F /* XFDTCPUSystemInfo+DB.m in Sources */,
+				5998C08120C02DBA00DC002F /* NSFileManager+XFDTExt.m in Sources */,
+				5998C09E20C02DBA00DC002F /* XFDTPerformanceInfoView.m in Sources */,
 				3F52E279209FE9D300F32721 /* PHManager.m in Sources */,
 				3F82D480205FEFE900853596 /* IMController.m in Sources */,
+				5998C0B120C02DBA00DC002F /* XFDUtilityWindow.m in Sources */,
+				5998C0A620C02DBA00DC002F /* XFDTShowParamManager.m in Sources */,
+				5998C09B20C02DBA00DC002F /* XFDShowParamCell.m in Sources */,
+				5998C09520C02DBA00DC002F /* XFDTAppLogUnitModel.m in Sources */,
 				3F82D478205FDDFB00853596 /* CoreTextController.m in Sources */,
 				3F3B8DB520557C25000CD179 /* TestMsgSend.m in Sources */,
 				B2F471AB208D84760082C375 /* CollectionViewController.m in Sources */,
+				5998C08920C02DBA00DC002F /* XFDTCPUSystemInfo.m in Sources */,
+				5998C07F20C02DBA00DC002F /* XFDTTools.m in Sources */,
 				3F37236020AD5AFD00059A8F /* BLEManager.m in Sources */,
 				3F3B8D8520557A70000CD179 /* main.m in Sources */,
-				3F90949D20B80F0800B9FA31 /* XFDShowParamManager.m in Sources */,
-				3F9094A320B80F0800B9FA31 /* XFDToolCategoryCell.m in Sources */,
+				5998C08720C02DBA00DC002F /* XFDTMemorySystemInfo+DB.m in Sources */,
 				3F52E271209FE1BA00F32721 /* RILIViewController.m in Sources */,
-				3F9094AB20B80F0800B9FA31 /* XFDTCPUSystemInfo+DB.m in Sources */,
+				5998C09C20C02DBA00DC002F /* XFDTCpuDetailViewController.m in Sources */,
 				3F3B8D7720557A70000CD179 /* AppDelegate.m in Sources */,
-				3F90949F20B80F0800B9FA31 /* XFDDetailViewController.m in Sources */,
 				3F3B8DB720557C25000CD179 /* TestMsgSendFather.m in Sources */,
-				3FAB6DC620BEC4EF00279FD9 /* XFDTCpuDetailViewController.m in Sources */,
 				3F82D3EF208E213D00F7D4F0 /* CusFlowLayout.m in Sources */,
-				3F9094B320B80F0800B9FA31 /* XFDTSystemInfoFormatter.m in Sources */,
-				3F90949E20B80F0800B9FA31 /* XFDBaseViewController.m in Sources */,
-				3F9094AC20B80F0800B9FA31 /* XFDTCPUSystemInfo.m in Sources */,
-				3FAB6DC320BEC4EF00279FD9 /* XFDTGridLayer.m in Sources */,
 				3F82D47B205FDE1900853596 /* CTDisplayView.m in Sources */,
-				3FAB6DC520BEC4EF00279FD9 /* XFDTChartCommCell.m in Sources */,
-				3FAB6DC220BEC4EF00279FD9 /* XFDTChartView.m in Sources */,
-				3F9094A720B80F0800B9FA31 /* XFDTTools.m in Sources */,
+				5998C08020C02DBA00DC002F /* XFDTDBManager.m in Sources */,
 				3F991F7A2084E6BA00C4274D /* ArchiverTool.m in Sources */,
 				3F3B8DB620557C25000CD179 /* TestMsgsend1.m in Sources */,
+				5998C09220C02DBA00DC002F /* XFDTAppLogViewController.m in Sources */,
+				5998C0A020C02DBA00DC002F /* XFDPerformanceDetailController.m in Sources */,
 				3F8B784D20A9261900163DE8 /* TestPresentController.m in Sources */,
+				5998C0B220C02DBA00DC002F /* XFDBaseViewController.m in Sources */,
 				3F7273F620BCE72A00907F12 /* ChartViewController.m in Sources */,
 				3F991F7D2084EA6400C4274D /* ArchiveCopyController.m in Sources */,
 				3F991F832084EB1700C4274D /* RootViewController.m in Sources */,
 				3F52E276209FE95700F32721 /* PHViewController.m in Sources */,
 				3F991F772084E64B00C4274D /* Person.m in Sources */,
-				3F9094B020B80F0800B9FA31 /* XFDTDBManager.m in Sources */,
 				3F884A13208F6F0D005D6CD8 /* Runtime_weak.m in Sources */,
-				3F9094A520B80F0800B9FA31 /* XFDToolsCategoryCell.m in Sources */,
-				3F9094AF20B80F0800B9FA31 /* NSFileManager+XFDTExt.m in Sources */,
+				5998C0AD20C02DBA00DC002F /* XFDTBaseViewController.m in Sources */,
 				3F52E27F20A035FB00F32721 /* PhotoBrowerController.m in Sources */,
-				3F9094A920B80F0800B9FA31 /* XFDTBaseSystemInfo.m in Sources */,
+				5998C0AC20C02DBA00DC002F /* XFDTDetailViewController.m in Sources */,
+				5998C0A420C02DBA00DC002F /* XFDTChartView.m in Sources */,
+				5998C0A720C02DBA00DC002F /* XFDTLogoWindow.m in Sources */,
 				3F82D3E1208E1C3300F7D4F0 /* CustomLayout.m in Sources */,
-				3F9094B720B80F0800B9FA31 /* XFSMSystemInfo.m in Sources */,
+				5998C08620C02DBA00DC002F /* XFDTSystemInfoFetcher.m in Sources */,
+				5998C0AB20C02DBA00DC002F /* XFDTShowParamCell.m in Sources */,
+				5998C08B20C02DBA00DC002F /* XFDTBaseSystemInfo.m in Sources */,
+				5998C09720C02DBA00DC002F /* XFDTLogConfigView.m in Sources */,
 				3F82D484205FF89800853596 /* RACController.m in Sources */,
 				3F8B785020A9262900163DE8 /* PresentChildController.m in Sources */,
 				3F52E27C20A02EC900F32721 /* PHBrower.m in Sources */,
-				3F9094A220B80F0800B9FA31 /* XFDShowParamCell.m in Sources */,
+				5998C08220C02DBA00DC002F /* XFDTPerformanceMonitor.m in Sources */,
+				5998C0AF20C02DBA00DC002F /* XFDTToolCategoryCell.m in Sources */,
 				3F52E28220A0364C00F32721 /* PhotoBrowerTransition.m in Sources */,
-				3F9094A020B80F0800B9FA31 /* XFDLogoWindow.m in Sources */,
+				5998C0A120C02DBA00DC002F /* XFDTLineAxis.m in Sources */,
+				5998C09620C02DBA00DC002F /* XFDTAppLogTableViewCell.m in Sources */,
+				5998C0A220C02DBA00DC002F /* XFDTCavsObj.m in Sources */,
 				3F37235D20AD5AEA00059A8F /* BLEViewController.m in Sources */,
-				3F9094B220B80F0800B9FA31 /* XFDTSystemInfoFetcher.m in Sources */,
+				5998C0AE20C02DBA00DC002F /* XFDTToolCommonCell.m in Sources */,
 				3FBF8DB7205ABC0700D6A716 /* SocketController.m in Sources */,
+				5998C0A320C02DBA00DC002F /* XFDTGridLayer.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
