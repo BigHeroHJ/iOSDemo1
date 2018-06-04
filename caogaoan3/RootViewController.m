@@ -16,7 +16,7 @@
 #import "BLEViewController.h"
 #import "MonityViewController.h"
 #import "ChartViewController.h"
-
+#import <WechatOpenSDK/WXApi.h>
 
 @interface RootViewController ()
 @property (nonatomic, strong) NSArray * dataArray;
